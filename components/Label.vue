@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class=" pt-10">
         <div class="w-full cover flex justify-center items-center text-center">
-            <div>
+            <div class=" w-4/6">
                 <h1 class=" mb-11">{{page}}</h1>
                 <p class="text-white mb-24">{{text}}</p>
                 <BreadCrumbs />

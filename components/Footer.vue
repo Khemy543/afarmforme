@@ -6,7 +6,7 @@
 
                 <ul>
                     <li>
-                        Our fees
+                        <nuxt-link to="/our-fees">Our fees</nuxt-link>
                     </li>
                     <li>
                         Download the app
@@ -18,7 +18,7 @@
                         How it works
                     </li>
                     <li>
-                        Corporate Social Responsibility
+                        <nuxt-link to='/csr'>Corporate Social Responsibility</nuxt-link>
                     </li>
                 </ul>
             </div>
@@ -33,7 +33,7 @@
                         Our farms
                     </li>
                     <li>
-                        Frequently Asked Questions
+                        <nuxt-link to='/faqs'>Frequently Asked Questions</nuxt-link>
                     </li>
                 </ul>
             </div>

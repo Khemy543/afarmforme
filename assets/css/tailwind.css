@@ -7,7 +7,7 @@
 }
 
 .app-button {
-    @apply bg-primary rounded-full px-5 text-white py-2;
+    @apply bg-primary rounded-full px-7 text-white py-4;
 }
 
 .app-button:disabled{
