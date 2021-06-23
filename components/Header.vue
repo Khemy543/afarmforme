@@ -4,7 +4,7 @@
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <nuxt-link to="/" class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
-          <!-- Emeverse -->
+          <img src="~/static/img/logo-two.png" alt="logo" />
         </nuxt-link>
         <button class="text-white cursor-pointer text-xl leading-none py-1 bg-transparent block lg:hidden focus:outline-none" type="button" v-on:click="toggleNavbar()">
           <i class="fa fa-bars"></i>
@@ -13,7 +13,7 @@
       <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
         <ul class="flex flex-col lg:flex-row list-none ml-auto" @click="() => showMenu = false">
           <li class="nav-item">
-            <nuxt-link to="/" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/about-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
               <span>About us</span>
             </nuxt-link>
           </li>
@@ -38,7 +38,7 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/shop" class="mx-3 py-2 flex items-center app-button" >
+            <nuxt-link to="/shop" class="mx-3 flex items-center app-button" >
              <span >Create Account</span>
             </nuxt-link>
           </li>
@@ -90,6 +90,6 @@ export default {
 </script>
 <style scoped>
 .nuxt-link-exact-active{
-  border-bottom: 3px solid white;
+  @apply text-primary
 }
 </style>
