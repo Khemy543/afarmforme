@@ -5,16 +5,58 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 .app-button {
-    @apply bg-primary rounded-full px-5 text-white;
+    @apply bg-primary rounded-full px-5 text-white py-2;
+}
+
+.app-button:disabled{
+    background: #D6D6D6 0% 0% no-repeat padding-box !important;
+    color: #707070;
 }
 
 .header-text {
-    font: normal normal normal 18px/22px Proxima Nova;
+    font: normal normal normal 18px/22px Poppins;
     letter-spacing: 0px;
     color:#767676;
     opacity: 1;
+}
+.gray-card {
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.app-input { 
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    border: 1px solid #F4F4F4;
+    border-radius: 36px;
+    opacity: 1;
+    color: #2C2C2C;
+    @apply outline-none appearance-none px-6 py-4;
+}
+
+h3{
+    font: normal normal bold 30px/55px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+h4{
+    font: normal normal bold 20px/35px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+p{
+    font: normal normal normal 18px/30px Poppins;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+}
+
+.icon-button{
+    @apply h-11 w-11 rounded-full p-3 flex justify-center items-center;
+    background: #E8E8E8 0% 0% no-repeat padding-box;
 }

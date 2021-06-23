@@ -28,17 +28,17 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/service" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/partner-with-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
              <span >Partner with us</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/about-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/contact-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
              <span >Contact Us</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/shop" class="mx-3 py-2 flex items-center app-button" >
+            <nuxt-link to="/shop" class="mx-3 flex items-center app-button" >
              <span >Create Account</span>
             </nuxt-link>
           </li>

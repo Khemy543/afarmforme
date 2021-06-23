@@ -245,25 +245,6 @@ ul .active {
     @apply border-r-4 border-primary text-primary;
     color :#206E00 !important;
 }
-h3{
-    font: normal normal bold 30px/55px Poppins;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-}
-p{
-    font: normal normal normal 18px/30px Poppins;
-    letter-spacing: 0px;
-    color: #2C2C2C;
-    opacity: 1;
-}
-
-h4{
-    font: normal normal bold 20px/35px Poppins;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-}
 
 h5{
     font: normal normal normal 16px/25px Poppins;
@@ -272,10 +253,6 @@ h5{
     opacity: 1;
 }
 
-.gray-card {
-    background: #F4F4F4 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
 .about-fixed {
   position: fixed;
   top: 0;

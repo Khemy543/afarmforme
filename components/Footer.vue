@@ -70,7 +70,7 @@
 
         </div>
         <h3 class=" mt-24 text-center">IF YOU ATE TODAY THANK A FARMER.</h3>
-        <div class=" border-t-2 border-b-2 border-gray-300 mt-8">
+        <div class=" border-t-2 border-b-2 border-gray-300 mt-8 py-2">
             <p>By using this website, you accept our <span>Terms of Use</span> and <span>Privacy Policy</span>. Past performance is no guarantee of future results. Any historical returns, expected returns, or probability projections may not reflect actual future performance.</p>
         </div>
 
@@ -81,7 +81,7 @@
             <div>
                 <div class=" grid grid-cols-2">
                 <p>Terms of Agreement</p>
-                <p>Privacy policy</p>
+                <nuxt-link to='/privacy-policy'><p>Privacy policy</p></nuxt-link>
                 </div>
             </div>
         </div>
