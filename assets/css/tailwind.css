@@ -5,7 +5,9 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .app-button {
     @apply bg-primary rounded-full px-5 text-white;
 }

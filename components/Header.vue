@@ -13,17 +13,17 @@
       <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
         <ul class="flex flex-col lg:flex-row list-none ml-auto" @click="() => showMenu = false">
           <li class="nav-item">
-            <nuxt-link to="/" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/about-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
               <span>About us</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/talent" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/our-packages" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
               <span >Our farms</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/career" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/how-it-works" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
              <span >How it works</span>
             </nuxt-link>
           </li>
