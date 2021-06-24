@@ -56,6 +56,9 @@
     height: 100vh !important;
     width: auto;
     object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /* card styles */
@@ -131,6 +134,10 @@ p{
 
 .small-padding {    
     padding-top: 30px;
+}
+
+.xs-padding {
+    padding-top: 10px;
 }
 
 .avatar {

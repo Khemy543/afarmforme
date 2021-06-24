@@ -75,7 +75,7 @@
            </div>
 
            <div class="medium-padding text-center">
-              <button class="app-button">Browse more farms</button>
+              <nuxt-link to='/our-packages' class="app-button">Browse more farms</nuxt-link>
            </div>
 
            <div class=" medium-padding grid grid-cols-2 gap-5">
@@ -112,7 +112,7 @@
 
     <div class="text-center extra-big-padding">
       <h3>We are excited <span>helping achieve the sustainable</span> development goals.</h3>
-      <div class=" grid grid-cols-3 small-padding gap-14">
+      <div class=" grid grid-cols-3 small-padding gap-5">
         <img src="~/static/img/farm/SDG-goal-01.png" />
         <img src="~/static/img/farm/SDG-goal-02.png"/>
         <img src="~/static/img/farm/SDG-goal-05.png"/>
@@ -184,7 +184,8 @@
     </div>
 
     <div class="px-72 medium-padding">
-      <div class="deep-green-card px-56 py-20 text-center">
+      <div class="deep-green-card px-56 py-20 text-center relative">
+        <img src="~/static/img/summary/newsletter-illustration.png" class="newsletter-bg" />
         <h4 class=" text-white">Sign up for our promotions and newsletters.</h4>
 
         <p class=" py-12 text-white">We may not give out a plot of land for free. But once in a while, we will be giving out discount offers and tips and tricks you don’t want to miss.</p>
@@ -237,5 +238,11 @@ export default {
 .read-more{
   color: #206E00;
   font-weight: 700;
+}
+
+.newsletter-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 </style>
