@@ -1,5 +1,5 @@
 <template>
-    <div class=" pt-10">
+    <div >
         <Label 
             page='about us.'
             text='The future of investment.'
@@ -235,7 +235,7 @@ export default {
 </script>
 <style scoped>
 ul li a {
-    font: normal normal normal 18px/40px Poppins;
+    font: normal normal normal 18px/40px Proxima Nova;
     letter-spacing: 0px;
     color: #767676;
     opacity: 1;
@@ -246,8 +246,15 @@ ul .active {
     color :#206E00 !important;
 }
 
+ul .active a {
+    font: normal normal normal 18px/40px Proxima Nova;
+    letter-spacing: 0px;
+    color: #206E00 !important;
+    opacity: 1;
+}
+
 h5{
-    font: normal normal normal 16px/25px Poppins;
+    font: normal normal normal 16px/25px Proxima Nova;
     letter-spacing: 0px;
     color: #2C2C2C;
     opacity: 1;

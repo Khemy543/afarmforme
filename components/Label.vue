@@ -1,5 +1,5 @@
 <template>
-    <div class=" pt-10">
+    <div >
         <div class="w-full cover flex justify-center items-center text-center">
             <div class=" w-4/6">
                 <h1 class=" mb-11">{{page}}</h1>

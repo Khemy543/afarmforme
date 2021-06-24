@@ -1,5 +1,5 @@
 <template>
-    <div class=" pt-10">
+    <div >
         <Label 
              page='Partner with us.'
             text='We believe in global partnerships.'
@@ -99,20 +99,27 @@
                 
             </div>
 
-            <form class="text-center mt-32 w-4/6 mx-auto">
+            <form class="text-center mt-32 w-4/6 mx-auto" @submit.prevent="SendPartnerUs">
                 <h4>Get in touch.</h4>
-                <div class=" grid grid-cols-2 gap-5 mt-16">
-                    <input class="app-input" placeholder="Name of company" />
-                    <input class="app-input" placeholder="Name of contact person" />
+                <div class=" grid grid-cols-2 gap-5 small-padding">
+                    <input class="app-input" v-model="company" placeholder="Name of company"/>
+                    <input class="app-input" v-model="name" placeholder="Name of contact person" required/>
                 </div>
-                <div class=" grid grid-cols-2 mt-14 gap-5">
-                    <input class="app-input" placeholder="Name of company" />
-                    <input class="app-input" placeholder="Phone number of contact person" />
+                <div class=" grid grid-cols-2 small-padding gap-5">
+                    <select class="app-input" v-model="partner_type">
+                        <option value="" disabled>Partnering as:</option>
+                        <option>Partner 1</option>
+                        <option>Partner 2</option>
+                        <option>Partner 3</option>
+                    </select>
+                    
+                    <input class="app-input" type="tel" v-model="phone_number" placeholder="Phone number of contact person" required/>
                 </div>
-                <textarea class=" app-input h-64 w-full mt-14" placeholder="Details of what you want to supply, provide or off take"></textarea>
-
-                <div class=" w-full flex justify-center pt-20">
-                    <button class="app-button" disabled>Send message</button>
+                <div class="small-padding">
+                    <textarea class=" app-input h-64 w-full" v-model="message" placeholder="Details of what you want to supply, provide or off take" required></textarea>
+                </div>
+                <div class=" w-full flex justify-end small-padding">
+                    <button type="submit" class="app-button">Send request</button>
                 </div>
             </form>
         </div>
@@ -122,12 +129,27 @@
 export default {
     components: {
         Label : () => import('~/components/Label.vue')
+    },
+    data(){
+        return {
+            company: '',
+            name : '',
+            partner_type : '',
+            phone_number : '',
+            message : ''
+        }
+    },
+
+    methods : {
+        SendPartnerUs(){
+            alert('received !')
+        }
     }
 }
 </script>
 <style scoped>
 p{
-    font: normal normal normal 18px/30px Poppins;
+    font: normal normal normal 18px/30px Proxima Nova;
     letter-spacing: 0px;
     color: #2C2C2C;
     opacity: 1;
@@ -140,13 +162,13 @@ p{
     opacity: 1;
 }
 h3{
-    font: normal normal bold 20px/35px Poppins;
+    font: normal normal bold 20px/35px Proxima Nova;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
 }
 h4{
-    font: normal normal bold 30px/55px Poppins;
+    font: normal normal bold 30px/55px Proxima Nova;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;

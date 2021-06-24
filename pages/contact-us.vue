@@ -1,5 +1,5 @@
 <template>
-    <div class=" pt-10">
+    <div >
         <Label 
              page='Contact Us.'
             text='The future of investment.'
@@ -34,17 +34,20 @@
                 </div>
             </div>
 
-            <form class="text-center mt-32 w-4/6 mx-auto">
+            <form class="text-center mt-32 w-4/6 mx-auto" @submit.prevent="ContactUs">
                 <h4>Send us a message.</h4>
-                <div class=" grid grid-cols-2 gap-5 mt-16">
-                    <input class="app-input" placeholder="Name of company" />
-                    <input class="app-input" placeholder="Name of contact person" />
+                <div class=" grid grid-cols-2 gap-5 small-padding">
+                    <input class="app-input" v-model="name" placeholder="Your name" required/>
+                    <input class="app-input" v-model="email" placeholder="Enter your e-mail address" required/>
                 </div>
-                <input class="app-input w-full mt-14" placeholder="Subject" />
-                <textarea class=" app-input h-64 w-full mt-14" placeholder="Details of what you want to supply, provide or off take"></textarea>
-
-                <div class=" w-full flex justify-center pt-20">
-                    <button class="app-button" disabled>Send message</button>
+                <div class="small-padding">
+                    <input class="app-input w-full" v-model="subject" placeholder="Subject" required/>
+                </div>
+                <div class=" small-padding">
+                    <textarea class=" app-input h-64 w-full small-padding" v-model="message" placeholder="Type your message here" required></textarea>
+                </div>
+                <div class=" w-full flex justify-end small-padding">
+                    <button type="submit" class="app-button">Send message</button>
                 </div>
             </form>
         </div>
@@ -54,6 +57,19 @@
 export default {
     components: {
         Label : () => import('~/components/Label.vue')
+    },
+    data(){
+        return{
+            name : '',
+            email : '',
+            subject : '',
+            message : ''
+        }
+    },
+    methods : {
+        ContactUs(){
+            alert('submitted !')
+        }
     }
 }
 </script>

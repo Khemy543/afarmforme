@@ -1,5 +1,5 @@
 <template>
-    <div class=" pt-10">
+    <div>
         <Label 
             page='Our Farms.'
             text='Well-tailored packages to meet your investment needs.'

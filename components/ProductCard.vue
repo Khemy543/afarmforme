@@ -21,7 +21,7 @@ export default {
     opacity: 1;
 }
 h4{
-    font: normal normal bold 20px/35px Poppins;
+    font: normal normal bold 20px/35px Proxima Nova;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;

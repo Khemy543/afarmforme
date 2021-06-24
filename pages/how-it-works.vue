@@ -1,5 +1,5 @@
 <template>
-    <div class=" pt-10">
+    <div >
         <Label 
             page='How it works.'
             text='Farming made easy for you.'
@@ -95,7 +95,7 @@ export default {
 </script>
 <style scoped>
 h3{
-    font: normal normal bold 30px/55px Poppins;
+    font: normal normal bold 30px/55px Proxima Nova;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
@@ -103,7 +103,7 @@ h3{
 }
 
 p{
-    font: normal normal normal 20px/32px Poppins;
+    font: normal normal normal 20px/32px Proxima Nova;
     letter-spacing: 0px;
     color: #2C2C2C;
     opacity: 1;
@@ -113,7 +113,7 @@ p{
     border-radius: 21px;
 }
 h4{
-    font: normal normal bold 20px/35px Poppins;
+    font: normal normal bold 20px/35px Proxima Nova;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;

@@ -1,5 +1,5 @@
 <template>
-    <div class=" pt-10">
+    <div >
         <Label 
              page='Corporate social responsibility.'
             text=''

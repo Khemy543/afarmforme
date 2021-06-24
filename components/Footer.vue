@@ -99,27 +99,27 @@ export default {
 }
 
 h4{
-    font: normal normal bold 20px/35px Poppins;
+    font: normal normal bold 20px/35px Proxima Nova;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
 }
 ul li{
-    font: normal normal normal 18px/30px Poppins;
+    font: normal normal normal 18px/30px Proxima Nova;
     letter-spacing: 0px;
     color: #2C2C2C;
     opacity: 1;
 }
 
 h3{
-    font: normal normal bold 18px/40px Poppins;
+    font: normal normal bold 18px/40px Proxima Nova;
     letter-spacing: 18px;
     color: #707070;
     opacity: 1;
 }
 p{
      text-align: center;
-    font: normal normal normal 16px/25px Poppins;
+    font: normal normal normal 16px/25px Proxima Nova;
     letter-spacing: 0px;
     color: #707070;
 }
