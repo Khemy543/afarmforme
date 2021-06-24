@@ -18,22 +18,22 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/talent" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/our-packages" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
               <span >Our farms</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/career" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/how-it-works" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
              <span >How it works</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/service" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/partner-with-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
              <span >Partner with us</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/about-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/contact-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
              <span >Contact Us</span>
             </nuxt-link>
           </li>
