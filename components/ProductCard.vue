@@ -29,6 +29,7 @@ h4{
 .product-image {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    width: 100%;
     object-fit: cover;
 }
 </style>

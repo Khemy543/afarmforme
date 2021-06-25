@@ -4,7 +4,7 @@
              page='Privacy policy.'
             text='The future of investment.'
         />
-        <div class=" py-32 px-72">
+        <div class=" py-32 side-padding">
             <p>
                 This Privacy Policy guides the approach in which A FARM FOR ME collects, uses, guards, maintains and discloses information collected from users (each, a “User”) on the https://www.afarmforme.com website and mobile application, including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the “Site”). Please read this Privacy Policy carefully. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS THE SITE.<br/>
                 <br/>
@@ -154,7 +154,7 @@
                 <h3>Contact us.</h3>
                 <p class="mt-5">If you have questions or comments about this Privacy Policy, please contact us at</p>
 
-                <div class=" grid grid-cols-3 gap-5 mt-5">
+                <div class=" grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
                     <div>
                         <h4>Head office location:</h4>
                         <p>F-393/4 Otswe Street, Osu Ako-Adjei<br/> Accra - Ghana<br/> 00233</p>

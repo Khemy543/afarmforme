@@ -1,12 +1,9 @@
 <template>
   <div class="pb-10">
-    <div class="container px-32 mx-auto flex flex-wrap items-center justify-between">
     <!-- main section -->
-      <div class=" grid grid-cols-2 h-screen overflow-x-hidden ">
-
-        <div class="flex justify-center items-center">
-          <div class="">
-            <h1 class=" text-black big-text mb-14">
+        <div class="px-4 lg:px-48 h-screen xl:overflow-x-hidden flex justify-center xl:justify-between items-center">
+          <div class="w-full xl:w-7/12">
+            <h1 class=" text-black big-text mb-14 text-left">
               The future of investment.
             </h1>
             <p class="text-color">Sit home, watch us dirty our hands, enjoy your profits</p>
@@ -14,24 +11,22 @@
               <button class="app-button mr-10">Get started</button> <p class="read-more">Read more</p>
             </div>
           </div>
+          
+          <div class=" hidden xl:block">
+            <img class="image-banner" src="~static/img/home-one/main-banner-edited.png" alt="image">
+          </div>
         </div>
-
-        <div>
-          <img class="image-banner" src="~static/img/home-one/main-banner-edited.png" alt="image">
-        </div>
-      </div>
       <!-- end main section -->
-    </div>
 
-    <div class="px-72 section-padding">
+    <div class="big-side-padding big-padding">
         <div class=" text-center">
           <h3>New <span>opportunities.</span></h3>
           <p>All these years, individuals have always wanted to venture into agriculture, but barriers such as lack of technical knowledge, access to land, inadequate finance and unavailability of produce off takers etc have prevented such people. <b>A farm for me</b> has removed such barriers by way of :</p>
         </div>
 
-        <div class=" mt-28 grid grid-cols-2 gap-5">
+        <div class=" mt-28 grid grid-cols-1 lg:grid-cols-2 gap-5">
 
-          <div>
+          <div class="flex justify-center">
             <img src="~/static/img/summary/1.png" />
           </div>
           <div class=" flex justify-center items-center">
@@ -47,11 +42,11 @@
               <p>Fostering partnerships with farmers and necessary stakeholder we trust to run activities on our farms.</p>
             </div>
           </div>
-          <div>
+          <div class="flex justify-center">
             <img src="~/static/img/summary/2.png" />
           </div>
 
-          <div>
+          <div class="flex justify-center">
             <img src="~/static/img/summary/3.png" />
           </div>
           <div class=" flex h-full items-center">
@@ -68,7 +63,7 @@
            <h3 class="text-center">Our <span>farms.</span></h3>
            <p class="text-center">All farms are automatically insured.</p>
 
-           <div class=" medium-padding grid grid-cols-3 gap-10">
+           <div class=" medium-padding grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-5 xl:gap-10">
              <ProductCard 
                     v-for="n in 3" :key="n"
                 />
@@ -78,8 +73,8 @@
               <nuxt-link to='/our-packages' class="app-button">Browse more farms</nuxt-link>
            </div>
 
-           <div class=" medium-padding grid grid-cols-2 gap-5">
-             <div class=" px-20 py-10 brown-card">
+           <div class=" medium-padding grid grid-cols-1 lg:grid-cols-2 gap-5">
+             <div class=" px-8 lg:px-14 xl:px-20 py-4 lg:py-6 xl:py-10 brown-card">
 
                <img src="~/static/img/blog/safe-and-secure-icon.png" />
                <h4 class=" small-padding">Transparent</h4>
@@ -87,7 +82,7 @@
 
              </div>
              
-             <div class=" px-20 py-10 voilet-card">
+             <div class=" px-8 lg:px-20 py-4 lg:py-10 voilet-card">
                <img src="~/static/img/blog/transparent-icon.png" />
                <h4 class=" small-padding">Safe and secured</h4>
                <p class=" mt-5">Your cards and other personal data are protected with an AES-256 bit encryption to ensure that your data doesn’t get into the wrong hands.</p>
@@ -97,7 +92,7 @@
     </div>
 
     <div class="medium-padding">
-      <div class="green-card grid grid-cols-2 gap-5 py-16 px-72">
+      <div class="green-card grid grid-cols-1 lg:grid-cols-2 gap-5 py-16 big-side-padding">
           <div>
             <h3>Risk less; Earn more with our <span>diversified portfolio packages.</span></h3>
           </div>
@@ -123,13 +118,13 @@
     </div>
 
     <div class="medium-padding">
-      <div class="gray-card grid grid-cols-2 py-16 gap-5 px-72">
+      <div class="gray-card grid grid-cols-1 lg:grid-cols-2 py-16 gap-5 big-side-padding">
           <div>
             <h3>Stay connected wherever <span>you are, whenever you want.</span></h3>
             <p class="small-padding">Download our mobile app now from any of the app stores and stay up-to-date with progress on your investments.</p>
             <div class="flex small-padding">
-              <img src="~/static/img/summary/google-playstore.png"  class=" mr-5"/>
-              <img src="~/static/img/summary/apple-appstore.png" />
+              <img src="~/static/img/summary/google-playstore.png"   class=" mr-2 lg:mr-5 w-3/6 lg:w-full"/>
+              <img src="~/static/img/summary/apple-appstore.png" class="w-3/6 lg:w-full" />
             </div>
           </div>
           <div>
@@ -138,10 +133,10 @@
       </div>
     </div>
 
-    <div class="medium-padding px-72">
+    <div class="medium-padding big-side-padding">
       <h3 class=" text-center">A few nice things that our <span>customers</span> are saying <span>about us.</span></h3>
       <div class=" small-padding">
-        <div class=" grid grid-cols-3 gap-14">
+        <div class=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-14">
 
           <div class="gray-card pt-14 px-8 pb-1 rounded-2xl">
             <p>I invested in A poultry farm last year August. I was skeptical but when I saw my returns, I was so happy that I have decided to invest in 3 more farms and the diversified package. This is awesome and I thank the team for their 24/7 customer support.</p>
@@ -183,8 +178,8 @@
 
     </div>
 
-    <div class="px-72 medium-padding">
-      <div class="deep-green-card px-56 py-20 text-center relative">
+    <div class="big-side-padding medium-padding">
+      <div class="deep-green-card px-4 lg:px-28 xl:px-56 py-10 lg:py-14 xl:py-20 text-center relative">
         <img src="~/static/img/summary/newsletter-illustration.png" class="newsletter-bg" />
         <h4 class=" text-white">Sign up for our promotions and newsletters.</h4>
 
@@ -229,10 +224,6 @@ export default {
     background: transparent linear-gradient(269deg, #55893F 0%, #206E00 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 15px;
-}
-
-.extra-big-padding{
-  padding: 120px 518px;
 }
 
 .read-more{

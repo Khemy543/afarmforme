@@ -4,9 +4,9 @@
             page='about us.'
             text='The future of investment.'
         />
-        <div class=" py-32 px-72 grid grid-cols-9">
-            <div class=" col-span-2">
-                <div  class="w-full gray-card pl-5 pt-5 pb-5">
+        <div class=" py-32 side-padding grid grid-cols-1 lg:grid-cols-9">
+            <div class=" cols-span-1 lg:col-span-2">
+                <div  class="w-full gray-card pl-5 pt-5 pb-5 hidden lg:block">
                     <ul>
                         <li class="active">
                             <a href="#about-us">About us</a>
@@ -38,7 +38,7 @@
                     </ul>
                 </div>
             </div>
-            <div class=" col-span-7 px-12">
+            <div class="col-span-1 lg:col-span-7 lg:px-12">
                 <div id="about-us">
                     <h3>About us</h3>
                     <p>
@@ -52,7 +52,7 @@
                     </p>
                 </div>
 
-                <div class=" mt-32" id="our-missions">
+                <div class="medium-padding" id="our-missions">
                     <h3>Our mission</h3>
                     <p>
                         To promote innovations in sustainable agriculture.
@@ -63,14 +63,14 @@
                     </p>
                 </div>
 
-                <div class=" mt-32" id="our-vision">
+                <div class="" id="our-vision">
                     <h3>Our vision</h3>
                     <p>
                         Farm for me is a community development driven organization, whose vision is to become one of the best agribusiness companies to improve livelihoods of rural communities through sustainable agricultural practices.
                     </p>
                 </div>
 
-                <div class=" mt-32" id="who-are-we">
+                <div class=" medium-padding" id="who-are-we">
                     <h3>Who we are</h3>
                     <p>
                         We are a team of innovative entrepreneurs, passionate about improving efficiencies in agriculture and achieving the United Nations Sustainable Development Goal number 1.
@@ -78,16 +78,16 @@
                 </div>
 
                 
-                <div class=" mt-32" id="why-we-do-it">
+                <div class=" medium-padding" id="why-we-do-it">
                     <h3>Why we do it</h3>
                     <p>
                         We believe that improving agriculture means improving society by way of ending poverty, ending hunger and causing sustainable employments.
                     </p>
                 </div>
 
-                <div class="mt-32" id="core-values">
+                <div class="medium-padding" id="core-values">
                     <h3>Our core values</h3>
-                    <div class=" grid grid-cols-3 gap-4">
+                    <div class=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                         <div class=" gray-card p-5" v-for="n in core_values" :key="n.id">
                             <h4>{{n.head}}</h4>
                             <h5> 
@@ -97,28 +97,28 @@
                     </div>
                 </div>
 
-                <div class=" mt-32" id="advisory-bod">
+                <div class=" medium-padding" id="advisory-bod">
                     <h3>Advisory and Board of Directors</h3>
                     <p>
                         Our advisory board and board of directors consist of innovative high-level personalities who support our company with their experience, their contacts and their wealth of ideas. They are executives from leading companies who offer strategic guidance and expertise on the latest advances and demands in in their industry. Our board plays an integral role in defining and directing our operations and investments strategy. They allow us to leverage opportunities and provide direct access to key decision makers within their respective markets. The strength of our board is a testament to our strong network and commitment to delivering excellence.
                     </p>
                 </div>
 
-                <div class=" grid grid-cols-4 gap-4 mt-7">
+                <div class=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 mt-7">
                     <div class="gray-card p-4 text-center" v-for="n in 5" :key="n">
                         <h4>First and last names</h4>
                         <p>Board Chair</p>
                     </div>
                 </div>
 
-                <div class=" mt-32" id="management-team">
+                <div class=" medium-padding" id="management-team">
                     <h3>Management team</h3>
                     <p>
                         Our ability to deliver outstanding results for our clients start with our team of smart, dedicated, innovative and capable individuals. We come from a diverse set of experiences and background that range from management to experienced farmers. As unique as we are individually, we share mutual passion for agriculture and technology and delivering excellent results for our clients and partners. We pride ourselves on our strategic, integrated approach to achieving excellence results.
                     </p>
                 </div>
 
-                <div class=" grid grid-cols-4 gap-4 mt-7">
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 mt-7">
                     <div class="gray-card p-4 text-center" v-for="n in management" :key="n.id">
                         <h4>{{n.name}}</h4>
                         <p>{{n.title}}</p>

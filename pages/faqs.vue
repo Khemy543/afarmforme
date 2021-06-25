@@ -4,7 +4,7 @@
              page='Frequently asked questions.'
             text=''
         />
-        <div class=" py-32 px-72">
+        <div class=" py-32 side-padding">
             <h4>What is A FARM FOR ME about?</h4>
             <p>A farm for me is an agriculture investment platform that allow people interested in farms but do not have the time, skills, resources etc. sponsor in farm units and earn return on in investment after a compete farming cycle.</p>
         

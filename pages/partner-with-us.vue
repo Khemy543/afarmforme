@@ -4,7 +4,7 @@
              page='Partner with us.'
             text='We believe in global partnerships.'
         />
-        <div class=" py-32 px-72">
+        <div class=" py-32 side-padding">
             <p>
                 A farm for me is the ideal partner to achieve social impact through agriculture. We therefore pool the strengths of different stakeholder’s thus Government organizations, private companies, social entrepreneurs, civil societies etc. through our innovative collaboration models.
                 <br/> <br/>
@@ -13,7 +13,7 @@
                 We rely on individuals, foundations, organizations and corporate contributions to develop our work in achieving our goals around the word and to further our vision of achieving the sustainable development goals.
             </p>
 
-            <div class=" grid grid-cols-3 gap-5 mt-24">
+            <div class=" grid grid-cols-1 lg:grid-cols-3 gap-5 mt-24">
                 <div class=" p-5 outlin-card">
                     <h3>BE OUR SUPPLIER. IF YOU CAN SUPPLY US WITH:</h3>
 
@@ -99,7 +99,7 @@
                 
             </div>
 
-            <form class="text-center mt-32 w-4/6 mx-auto" @submit.prevent="SendPartnerUs">
+            <form class="text-center mt-32 w-full lg:w-4/6 mx-auto" @submit.prevent="SendPartnerUs">
                 <h4>Get in touch.</h4>
                 <div class=" grid grid-cols-2 gap-5 small-padding">
                     <input class="app-input" v-model="company" placeholder="Name of company"/>
@@ -118,7 +118,7 @@
                 <div class="small-padding">
                     <textarea class=" app-input h-64 w-full" v-model="message" placeholder="Details of what you want to supply, provide or off take" required></textarea>
                 </div>
-                <div class=" w-full flex justify-end small-padding">
+                <div class=" w-full flex justify-center lg:justify-end small-padding">
                     <button type="submit" class="app-button">Send request</button>
                 </div>
             </form>

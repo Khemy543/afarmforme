@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import "font-awesome/css/font-awesome.min.css";
 
 @font-face {
     font-family: Proxima Nova;
@@ -15,6 +16,19 @@
 *{
     font-family: Proxima Nova;
 }
+
+
+.side-padding {
+    @apply px-4 lg:px-16 xl:px-32;
+}
+
+.big-side-padding {
+    @apply px-4 lg:px-32 xl:px-72;
+}
+
+.extra-big-padding{
+    padding: 120px 1rem;
+  }
 
 /* button styles */
 .app-button {
@@ -46,10 +60,19 @@
 }
 
 .big-text{
-    font: normal normal 900 90px/100px Proxima Nova Black;
+    font: normal normal 900 55px/80px Proxima Nova Black;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
 }
 
 .image-banner {
@@ -114,30 +137,30 @@ p{
 }
 
 .logo {
-    height: 40px;
+    @apply h-7 lg:h-10;
     width: auto;
 }
 
 /* paddings */
 
 .section-padding {
-    padding-top: 300px;
+    padding-top: 18.75rem;
 }
 
 .big-padding {
-    padding-top: 200px;
+    padding-top: 12.5rem;
 }
 
 .medium-padding {
-    padding-top: 120px;
+    padding-top: 7.5rem;
 }
 
 .small-padding {    
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 
 .xs-padding {
-    padding-top: 10px;
+    padding-top: 0.625rem;
 }
 
 .avatar {
@@ -145,5 +168,80 @@ p{
     height: 50px;
     border-radius: 100px;
     object-fit: cover;
+}
+
+
+/* screens */
+@media (min-width: 640px) {
+    h1{
+        font-size: 50px !important;
+    }
+
+    .extra-big-padding{
+        padding: 120px 518px;
+    }
+
+    .big-text{
+        font: normal normal 900 90px/100px Proxima Nova Black;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 50px !important;
+    }
+
+    .extra-big-padding{
+        padding: 120px 218px;
+    }
+
+    .big-text{
+        font: normal normal 900 90px/100px Proxima Nova Black;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1280px) {
+    h1{
+        font-size: 109px !important;
+    }
+
+    .extra-big-padding{
+        padding: 120px 518px;
+    }
+
+    .big-text{
+        font: normal normal 900 90px/100px Proxima Nova Black;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1536px) {
+    h1 {
+        font-size: 109px;
+    }
+
+    .extra-big-padding{
+        padding: 120px 518px;
+    }
+
+    .big-text{
+        font: normal normal 900 90px/100px Proxima Nova Black;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
 }
 

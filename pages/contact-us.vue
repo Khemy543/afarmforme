@@ -4,8 +4,8 @@
              page='Contact Us.'
             text='The future of investment.'
         />
-        <div class=" py-32 px-72">
-            <div class=" grid grid-cols-2">
+        <div class=" py-32 side-padding">
+            <div class=" grid grid-cols-1 lg:grid-cols-2">
                 <div>
                     <h3>Contact us.</h3>
                     <p>Head office location: <br/>
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <form class="text-center mt-32 w-4/6 mx-auto" @submit.prevent="ContactUs">
+            <form class="text-center mt-32 w-full lg:w-4/6 mx-auto" @submit.prevent="ContactUs">
                 <h4>Send us a message.</h4>
                 <div class=" grid grid-cols-2 gap-5 small-padding">
                     <input class="app-input" v-model="name" placeholder="Your name" required/>
@@ -46,7 +46,7 @@
                 <div class=" small-padding">
                     <textarea class=" app-input h-64 w-full small-padding" v-model="message" placeholder="Type your message here" required></textarea>
                 </div>
-                <div class=" w-full flex justify-end small-padding">
+                <div class=" w-full flex justify-center lg:justify-end small-padding">
                     <button type="submit" class="app-button">Send message</button>
                 </div>
             </form>

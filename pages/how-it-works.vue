@@ -4,7 +4,7 @@
             page='How it works.'
             text='Farming made easy for you.'
         />
-        <div class=" py-32 px-72">
+        <div class=" py-32 side-padding">
             <h3 class=" mb-28">Our model</h3>
             <div class=" flex justify-center">
                 <img src="~/static/img/summary/how-it-works.png" />
@@ -13,7 +13,7 @@
             <div>
                 <h3 class=" mt-28 mb-10">How to sponsor <span class=" text-primary">a farm unit.</span></h3>
 
-                <div class="gray-card grid grid-cols-3 px-40 py-20 tile mb-5">
+                <div class="gray-card grid grid-cols-3 px-2 lg:px-40 py-4 lg:py-20 tile mb-5">
                     <div class=" col-span-2">
                         <p>
                             Get set up to sponsor a farm unit by providing us with required information. This will help us furnish you with your login details, which will grant you access to our platform.
@@ -22,7 +22,7 @@
                     </div>
                 </div>
 
-                <div class="gray-card grid grid-cols-3 px-40 py-20 tile mb-5">
+                <div class="gray-card grid grid-cols-3 px-2 lg:px-40 py-4 lg:py-20 tile mb-5">
                     <div></div>
                     <div class=" col-span-2">
                         <p>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="gray-card grid grid-cols-3 px-40 py-20 tile mb-5">
+                <div class="gray-card grid grid-cols-3 px-2 lg:px-40 py-4 lg:py-20 tile mb-5">
                     <div></div>
                     <div class=" col-span-2">
                         <p>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
 
-                <div class="gray-card grid grid-cols-3 px-40 py-20 tile mb-5">
+                <div class="gray-card grid grid-cols-3 px-2 lg:px-40 py-4 lg:py-20 tile mb-5">
                     <div></div>
                     <div class=" col-span-2">
                         <p>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="gray-card grid grid-cols-3 px-40 py-20 tile mb-5">
+                <div class="gray-card grid grid-cols-3 px-2 lg:px-40 py-4 lg:py-20 tile mb-5">
                     <div></div>
                     <div class=" col-span-2">
                         <p>
@@ -68,7 +68,7 @@
 
             <div>
                 <h3>Our special <span class=" text-primary">features.</span></h3>
-                <div class=" grid grid-cols-3 mt-16 gap-4">
+                <div class=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-16 gap-10 xl:gap-4">
                     <div v-for="n in 7" :key="n">
                         <h4>Farm insurance</h4>
                         <p>

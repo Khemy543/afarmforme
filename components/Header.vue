@@ -1,13 +1,13 @@
 <template>
 <div>
   <nav class="fixed inset-x-0  px-2 py-1 z-10 bg-white">
-    <div class="container px-32 mx-auto flex flex-wrap items-center justify-between">
+    <div class="container xl:px-28 mx-auto flex flex-wrap items-center justify-between">
 
       <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <nuxt-link to="/" class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
           <img src="~/static/img/logo-two.png" alt="logo" class="logo" />
         </nuxt-link>
-        <button class="text-white cursor-pointer text-xl leading-none py-1 bg-transparent block lg:hidden focus:outline-none" type="button" v-on:click="toggleNavbar()">
+        <button class="text-black cursor-pointer text-xl leading-none py-1 bg-transparent block lg:hidden focus:outline-none" type="button" v-on:click="toggleNavbar()">
           <i class="fa fa-bars"></i>
         </button>
       </div>
@@ -39,11 +39,6 @@
              <span >Contact Us</span>
             </nuxt-link>
           </li>
-        </ul>
-      </div>
-
-      <div>
-        <ul class="flex flex-col lg:flex-row list-none ml-auto">
           <li class="nav-item">
             <nuxt-link to="/shop" class="mx-3 flex items-center app-button" >
              <span >Start farming</span>

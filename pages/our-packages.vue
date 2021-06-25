@@ -4,7 +4,7 @@
             page='Our Farms.'
             text='Well-tailored packages to meet your investment needs.'
         />
-        <div class="px-72">
+        <div class="side-padding">
             <div class="inset-x-0  px-2 pt-3 mb-3 z-10 bg-white mt-8">
                 <div class="container mx-auto flex flex-wrap items-center justify-between">
                     <div class=" border-b-2 border-gray-200 w-full">
@@ -42,7 +42,7 @@
             </div>
 
             <!-- content here -->
-            <div class="grid grid-cols-3 gap-8 py-28">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 py-28">
                 <ProductCard 
                     v-for="n in 6" :key="n"
                 />
