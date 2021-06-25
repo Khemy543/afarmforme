@@ -136,7 +136,7 @@
     <div class="medium-padding big-side-padding">
       <h3 class=" text-center">A few nice things that our <span>customers</span> are saying <span>about us.</span></h3>
       <div class=" small-padding">
-        <div class=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-14">
+        <div class=" grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-14">
 
           <div class="gray-card pt-14 px-8 pb-1 rounded-2xl">
             <p>I invested in A poultry farm last year August. I was skeptical but when I saw my returns, I was so happy that I have decided to invest in 3 more farms and the diversified package. This is awesome and I thank the team for their 24/7 customer support.</p>

@@ -93,7 +93,7 @@ export default {
 </script>
 <style scoped>
 .nuxt-link-exact-active span{
-  font: normal normal normal 18px/22px Proxima Nova;
+  font: normal normal 700 18px/22px Proxima Nova;
   letter-spacing: 0px;
   color: #206E00;
   opacity: 1;
