@@ -40,12 +40,12 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/shop" class="mx-3 flex items-center app-button" >
+            <nuxt-link to="/auth/register" class="mx-3 flex items-center app-button" >
              <span >Start farming</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/shop" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/auth/login" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >
              <span >Login</span>
             </nuxt-link>
           </li>

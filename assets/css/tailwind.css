@@ -32,7 +32,7 @@
 
 /* button styles */
 .app-button {
-    @apply bg-primary rounded-full px-6 text-white py-3;
+    @apply bg-primary rounded-full px-6 text-white py-3 leading-none outline-none appearance-none inline-block;
 }
 
 .app-button:hover {
@@ -42,6 +42,17 @@
 
 .app-button:disabled {
     background: #D6D6D6 0% 0% no-repeat padding-box;
+}
+
+.auth-button {
+    @apply bg-black rounded-full text-white px-6 py-3 w-full outline-none appearance-none;
+}
+
+.app-modal {
+    @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 60;
+
 }
 
 /* text styles */
@@ -104,6 +115,12 @@ h1{
 .app-input:focus {
     border: 1.5px solid #1a5702;
     background-color: white;
+}
+
+.auth-input {
+    background: #1E5F04 0% 0% no-repeat padding-box;
+    opacity: 1;
+    @apply outline-none px-6 py-3 rounded-full w-full;
 }
 
 h3{
