@@ -5,7 +5,7 @@
         <div class=" w-full flex flex-col h-screen overflow-x-hidden">
 
             <Topbar />
-            <div class=" w-full overflow-x-hidden flex flex-col px-32 py-10">
+            <div class=" w-full overflow-x-hidden flex flex-col px-32 py-4">
                 <Nuxt />
             </div>
         </div>
@@ -20,3 +20,5 @@ export default {
 
 }
 </script>
+<style scoped>
+</style>
