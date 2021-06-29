@@ -2,8 +2,8 @@
     <div >
         <div class=" w-full cover flex justify-center items-center text-center">
             <div class="w-11/12 lg:w-4/6">
-                <h1 class="mb-11">{{page}}</h1>
-                <p class="text-white mb-24">{{text}}</p>
+                <h1 class="mb-6">{{page}}</h1>
+                <p class="text-white mb-12">{{text}}</p>
                 <BreadCrumbs />
             </div>
         </div>

@@ -200,6 +200,44 @@ p{
     object-fit: cover;
 }
 
+/* tables css */
+table {
+    border-collapse: collapse;
+    width : 100%;
+}
+
+.table-head {
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.table-head th {
+    @apply py-3;
+    color: #767676;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+table th:last-child {
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+table th:first-child {
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+td {
+    border-bottom: 1px solid #767676;
+    text-align: center;
+    font: normal normal normal 18px/23px Proxima Nova;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    @apply py-3;
+} 
+
 
 /* screens */
 @media (min-width: 640px) {

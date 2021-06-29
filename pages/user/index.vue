@@ -12,7 +12,7 @@
         <!-- main content -->
 
         <div>
-            <h4>Active farms</h4>
+            <h4 class=" gray-heading">Active farms</h4>
             <div class=" flex h-52">
                 <div class=" bg-primary w-52 rounded-xl mr-3 text-center p-4">
                     <h4 class="text-white">New Farm</h4>
@@ -22,22 +22,61 @@
                 <ProductTile /> -->
             </div>
             
-            <div class="grid grid-cols-2 gap-5 small-padding">
-                <div class=" bg-white px-5 py-6 flex rounded-xl">
-                    <div>
-                        <b>Fertiliser Application</b>
-                        <ul class=" mt-10">
-                            <li>Phosphorus</li>
-                            <li>Amide nitrogen</li>
-                            <li>Nitrate nitrogen</li>
-                        </ul>
+            <div class="small-padding">
+                <h4 class="gray-heading">Statitics</h4>
+                <div class="grid grid-cols-2 gap-5">
+                    <div class=" bg-white px-5 py-6 rounded-xl">
+                        <h5>Fertiliser Application</h5>
+                        <div class="chart-wrapper">
+                            <PieChart :chartdata="chartdata" :options="options" />
+                        </div>
                     </div>
-                    <div class=" ">
-                        <PieChart :chartdata="chartdata" :options="options" />
+                    <div class=" bg-white px-5 py-6 rounded-xl">
+                         <h5>Rain Pattern</h5>
+                        <div class="chart-wrapper">
+                            <BarChart :chartdata="chartdata" :options="options" />
+                        </div>
                     </div>
                 </div>
-                <div>
+            </div>
 
+            <div class=" small-padding">
+                <h4 class="gray-heading">Farm history</h4>
+                <div class=" bg-white px-5 py-6 rounded-xl">
+                    <table>
+                        <tr class="table-head">
+                            <th>Name</th>
+                            <th>Location</th>
+                            <th>Quantity</th>
+                            <th>ROI</th>
+                            <th>Duration</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Pepper farm</td>
+                            <td>Kpetoe V/R</td>
+                            <td>13 plots</td>
+                            <td>80%</td>
+                            <td>3 months</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Pepper farm</td>
+                            <td>Kpetoe V/R</td>
+                            <td>13 plots</td>
+                            <td>80%</td>
+                            <td>3 months</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Pepper farm</td>
+                            <td>Kpetoe V/R</td>
+                            <td>13 plots</td>
+                            <td>80%</td>
+                            <td>3 months</td>
+                            <td>Active</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -48,7 +87,8 @@ export default {
     layout : 'dashboard',
     components : {
         FarmTile : () => import('~/components/dashboard/farmTile.vue'),
-        PieChart : () => import('~/components/charts/PieChart.js')
+        PieChart : () => import('~/components/charts/PieChart.js'),
+        BarChart : () => import('~/components/charts/BarChart.js')
     },
     data(){
         return{
@@ -71,4 +111,14 @@ export default {
 }
 </script>
 <style scoped>
+.gray-heading { 
+    color: #767676;
+}
+
+h5 {
+    font: normal normal bold 20px/23px Proxima Nova;
+    letter-spacing: 0px;
+    color: #767676;
+    opacity: 1;
+}
 </style>

@@ -8,7 +8,7 @@
                 </div>
                  <p class=" px-5 text-white">Sign up</p>
             </div>
-            <div class="medium-padding">
+            <div class="small-padding">
                 <input placeholder="Full name" type="text" class="auth-input" />
             </div>
             <div class="small-padding">
