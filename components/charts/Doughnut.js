@@ -1,8 +1,8 @@
-import { Bar, mixins } from "vue-chartjs";
+import { Doughnut, mixins } from "vue-chartjs";
 const { reactiveProp } = mixins;
 
 export default {
-  extends: Bar,
+  extends: Doughnut,
   mixins: [reactiveProp],
   props: ["chartData"],
   data() {
@@ -22,7 +22,10 @@ export default {
         },
         responsive: true,
         maintainAspectRatio: false,
-        legend : false
+        legend : {
+          position : 'left',
+          fullSize : false
+        }
       }
     };
   },
