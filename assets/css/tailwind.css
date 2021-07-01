@@ -32,7 +32,7 @@
 
 /* button styles */
 .app-button {
-    @apply bg-primary rounded-full px-6 text-white py-3 leading-none outline-none appearance-none inline-block;
+    @apply bg-primary rounded-full px-6 text-white py-5 lg:py-4 leading-none outline-none appearance-none inline-block;
 }
 
 .app-button:hover {
@@ -45,7 +45,7 @@
 }
 
 .auth-button {
-    @apply bg-black rounded-full text-white px-6 py-3 w-full outline-none appearance-none;
+    @apply bg-black rounded-full text-white px-6 py-5 lg:py-4 w-full outline-none appearance-none;
 }
 
 .dash-button {

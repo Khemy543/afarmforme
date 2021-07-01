@@ -8,11 +8,11 @@
           <img src="~/static/img/logo-two.png" alt="logo" class="logo" />
         </nuxt-link>
         <button class="text-black cursor-pointer text-xl leading-none py-1 bg-transparent block lg:hidden focus:outline-none" type="button" v-on:click="toggleNavbar()">
-          <i class="fa fa-bars"></i>
+          <i :class="!showMenu ? 'fa fa-bars' : 'fa fa-close'"></i>
         </button>
       </div>
 
-      <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
+      <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow h-screen lg:h-auto">
         <ul class="flex flex-col lg:flex-row list-none ml-auto" @click="() => showMenu = false">
           <li class="nav-item">
             <nuxt-link to="/about-us" class="mx-3 py-2 flex items-center header-text hover:opacity-75" >

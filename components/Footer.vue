@@ -74,12 +74,12 @@
             <p>By using this website, you accept our <span>Terms of Use</span> and <span>Privacy Policy</span>. Past performance is no guarantee of future results. Any historical returns, expected returns, or probability projections may not reflect actual future performance.</p>
         </div>
 
-        <div class=" grid grid-cols-2 mt-8">
+        <div class=" grid grid-cols-1 lg:grid-cols-2 mt-8">
             <div>
                 <p>Copyright 2020 A farm for me. All rights reserved.</p>
             </div>
             <div>
-                <div class=" grid grid-cols-2">
+                <div class=" grid grid-cols-1 lg:grid-cols-2">
                 <p>Terms of Agreement</p>
                 <nuxt-link to='/privacy-policy'><p>Privacy policy</p></nuxt-link>
                 </div>

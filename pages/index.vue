@@ -6,7 +6,7 @@
             <h1 class=" text-black big-text mb-14 text-left">
               The future of investment.
             </h1>
-            <p class="text-color">Sit home, watch us dirty our hands, enjoy your profits</p>
+            <p class="text-color">Well-tailored packages to meet your investment needs</p>
             <div class="flex mt-14">
               <button class="app-button mr-10">Get started</button> <p class="read-more">Read more</p>
             </div>
@@ -36,22 +36,28 @@
             </div>
           </div>
 
-          <div class=" flex justify-center items-center">
+          <div class=" hidden lg:flex justify-center items-center mt-48">
             <div>
-              <h4 class=" mt-48">Partnerships</h4>
+              <h4 >Partnerships</h4>
               <p>Fostering partnerships with farmers and necessary stakeholder we trust to run activities on our farms.</p>
             </div>
           </div>
-          <div class="flex justify-center">
+          <div class="flex justify-center mt-48">
             <img src="~/static/img/summary/2.png" />
           </div>
+          <div class=" flex lg:hidden justify-center items-center">
+            <div>
+              <h4 class=" mt-8">Partnerships</h4>
+              <p>Fostering partnerships with farmers and necessary stakeholder we trust to run activities on our farms.</p>
+            </div>
+          </div>
 
-          <div class="flex justify-center">
+          <div class="flex justify-center mt-48">
             <img src="~/static/img/summary/3.png" />
           </div>
           <div class=" flex h-full items-center">
             <div>
-              <h4 class=" mt-48">Analytics</h4>
+              <h4 class=" mt-8">Analytics</h4>
               <p>Researching, analysing and gathering industry data helps drive higher returns on your investments.</p>
             </div>
           </div>
@@ -184,9 +190,11 @@
         <h4 class=" text-white">Sign up for our promotions and newsletters.</h4>
 
         <p class=" py-12 text-white">We may not give out a plot of land for free. But once in a while, we will be giving out discount offers and tips and tricks you don’t want to miss.</p>
-        <div class="flex w-full">
-          <input class="app-input w-5/6 mr-4" placeholder="Enter your email here…" />
-          <button class="app-button">Send</button>
+        <div class="w-full">
+          <input class="app-input w-full mr-4" placeholder="Enter your email here…" />
+        </div>
+        <div class="small-padding">
+          <button class="app-button w-full">Send</button>
         </div>
       </div>
     </div>
