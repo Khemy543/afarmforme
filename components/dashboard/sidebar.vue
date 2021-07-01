@@ -5,7 +5,7 @@
                 <img src="~/static/img/logo-two.png" />
             </nuxt-link>
         </div>
-        <nav class=" mt-28">
+        <nav class=" mt-20">
             <ul class="side-nav px-6">
                 <nuxt-link title="Dashboard" to="/user" class="flex items-center py-3 px-4  nav-item">
                     <i class=" fa fa-th-large mr-3" />

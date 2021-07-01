@@ -3,11 +3,11 @@
     <!-- main section -->
         <div class="px-4 lg:px-48 h-screen xl:overflow-x-hidden flex justify-center xl:justify-between items-center">
           <div class="w-full xl:w-7/12">
-            <h1 class=" text-black big-text mb-14 text-left">
-              The future of investment.
+            <h1 class=" text-black big-text mb-12 text-left">
+              The<br/> future of investment.
             </h1>
             <p class="text-color">Well-tailored packages to meet your investment needs</p>
-            <div class="flex mt-14">
+            <div class="flex mt-12">
               <button class="app-button mr-10">Get started</button> <p class="read-more">Read more</p>
             </div>
           </div>
