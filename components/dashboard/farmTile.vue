@@ -6,7 +6,7 @@
             <p>13 plots</p>
             <small>54 days old</small>
             <small>Kpetoe, V/R</small><br/>
-            <button class="light-green-button">Details</button>
+            <button class="light-green-button px-6 py-5 lg:py-4">Details</button>
         </div>
     </div>
 </template>

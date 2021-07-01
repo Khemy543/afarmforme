@@ -15,8 +15,18 @@
     <!-- main content -->
 
     <div class="w-full">
-      <h4 class=" gray-heading mb-5">Active farms</h4>
-      <div class=" flex h-54 w-full overflow-x-scroll">
+      <div class=" flex justify-between">
+        <h4 class=" gray-heading mb-5">Active farms</h4>
+        <div>
+          <button class="light-green-button px-4 py-3" @click="scrollCarousel('left')">
+            <i class="fa fa-chevron-left" />
+          </button>
+          <button class="light-green-button px-4 py-3" @click="scrollCarousel('right')">
+            <i class="fa fa-chevron-right" />
+          </button>
+        </div>
+      </div>
+      <div class=" flex h-54 w-full overflow-x-scroll slick-carousel" ref="slick-carousel" >
         <div class=" bg-primary w-52 rounded-xl mr-3 text-center p-4 flex-shrink-0">
           <h4 class="text-white">New Farm</h4>
           <p class=" text-white">
@@ -49,38 +59,42 @@
         <h4 class="gray-heading mb-5">Farm history</h4>
         <div class=" bg-white px-5 py-6 rounded-xl shadow-lg">
           <table>
-            <tr class="table-head">
-              <th>Name</th>
-              <th>Location</th>
-              <th>Quantity</th>
-              <th>ROI</th>
-              <th>Duration</th>
-              <th>Status</th>
-            </tr>
-            <tr>
-              <td>Pepper farm</td>
-              <td>Kpetoe V/R</td>
-              <td>13 plots</td>
-              <td>80%</td>
-              <td>3 months</td>
-              <td>Active</td>
-            </tr>
-            <tr>
-              <td>Pepper farm</td>
-              <td>Kpetoe V/R</td>
-              <td>13 plots</td>
-              <td>80%</td>
-              <td>3 months</td>
-              <td>Active</td>
-            </tr>
-            <tr>
-              <td>Pepper farm</td>
-              <td>Kpetoe V/R</td>
-              <td>13 plots</td>
-              <td>80%</td>
-              <td>3 months</td>
-              <td>Active</td>
-            </tr>
+            <thead class="table-head">
+              <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Quantity</th>
+                <th>ROI</th>
+                <th>Duration</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pepper farm</td>
+                <td>Kpetoe V/R</td>
+                <td>13 plots</td>
+                <td>80%</td>
+                <td>3 months</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Pepper farm</td>
+                <td>Kpetoe V/R</td>
+                <td>13 plots</td>
+                <td>80%</td>
+                <td>3 months</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Pepper farm</td>
+                <td>Kpetoe V/R</td>
+                <td>13 plots</td>
+                <td>80%</td>
+                <td>3 months</td>
+                <td>Active</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
@@ -134,6 +148,19 @@ export default {
         position: "relative"
       };
     }
+  },
+  mounted(){
+    /* let slick_carousel = this.$refs['slick-carousel'];
+    slick_carousel.addEventListener('scroll', this.handleScroll()) */
+  },
+  methods : {
+    scrollCarousel(direction){
+      this.$refs['slick-carousel'].scrollBy({
+        ...(direction === 'left' ? { left : -300 } : { left : 300 } ),
+        top : 0,
+        behavior: 'smooth'
+    });
+    }
   }
 };
 </script>
@@ -143,5 +170,14 @@ h5 {
   letter-spacing: 0px;
   color: #767676;
   opacity: 1;
+}
+.slick-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.slick-carousel {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>

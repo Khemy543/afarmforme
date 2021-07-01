@@ -56,7 +56,7 @@
 }
 
 .light-green-button {
-  @apply rounded-full px-6 text-white py-3 leading-none outline-none appearance-none inline-block;
+  @apply rounded-full leading-none outline-none appearance-none inline-block;
   border-radius: 16px;
   background : rgba(32, 110, 0, 0.1);
   color:#206e00;
