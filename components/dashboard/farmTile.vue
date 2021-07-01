@@ -1,5 +1,5 @@
 <template>
-    <div class="flex rounded-xl product-tile">
+    <div class="flex rounded-xl product-tile flex-shrink-0">
         <img src="~/static/img/farm/pepper-farm.png" class=" w-7/12 product-image" />
         <div class=" gray-background p-6">
             <h4>Pepper farm</h4>

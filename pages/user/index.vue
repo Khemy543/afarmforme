@@ -14,17 +14,17 @@
 
     <!-- main content -->
 
-    <div>
+    <div class="w-full">
       <h4 class=" gray-heading mb-5">Active farms</h4>
-      <div class=" flex h-52 w-full">
-        <div class=" bg-primary w-52 rounded-xl mr-3 text-center p-4">
+      <div class=" flex h-54 w-full overflow-x-scroll">
+        <div class=" bg-primary w-52 rounded-xl mr-3 text-center p-4 flex-shrink-0">
           <h4 class="text-white">New Farm</h4>
           <p class=" text-white">
             Choose the option that best meets your investment needs.
           </p>
           <button class=" dash-button mt-3">Purchase farm</button>
         </div>
-        <FarmTile class="mr-3" v-for="n in 2" :key="n" />
+        <FarmTile class="mr-3" v-for="n in 3" :key="n" />
       </div>
 
       <div class="small-padding">
