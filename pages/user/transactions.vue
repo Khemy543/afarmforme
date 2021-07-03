@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <div class=" bg-white px-5 py-6 rounded-xl">
+        <div class=" bg-white px-5 py-6 rounded-xl overflow-x-auto">
         <table>
             <thead class="table-head">
                 <tr>

@@ -1,12 +1,15 @@
 <template>
-    <header class="w-full items-center gray-background py-2 px-32 hidden sm:flex">
+    <header class="w-full items-center gray-background py-2 px-4 lg:px-32 flex">
         <div class="w-1/2">
-            <!-- <p>
-                Active Tab name
-            </p> -->
+             <button
+                @click="openSideBar"
+                class="header-text focus:outline-none sm:hidden"
+            >
+                <i  :class="!isOpen ? 'fa fa-bars' : 'fa fa-times'"></i>
+            </button>
         </div>
         <div class=" relative w-1/2 flex justify-end">
-            <ul class="flex flex-col lg:flex-row list-none ml-auto">
+            <ul class="flex lg:flex-row list-none ml-auto">
                 <li class="nav-item">
                     <span class="mx-3 py-2 flex items-center header-text hover:opacity-75">
                         <i class="fa fa-bell-o" />
@@ -22,7 +25,24 @@
     </header>
 </template>
 <script>
+import { mapGetters } from 'vuex' 
 export default {
-    
+    data(){
+        return{
+            
+        }
+    },
+
+    computed : {
+        ...(mapGetters({
+            isOpen : 'isOpen'
+        }))
+    },
+
+    methods : {
+        openSideBar(){
+            this.$store.dispatch('toggleSideBar')
+        }
+    }
 }
 </script>

@@ -39,7 +39,7 @@
 
       <div class="small-padding">
         <h4 class="gray-heading mb-5">Statitics</h4>
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div class=" bg-white px-5 py-6 rounded-xl">
             <h5>Fertiliser Application</h5>
             <div class="chart-wrapper">
@@ -57,7 +57,7 @@
 
       <div class=" small-padding">
         <h4 class="gray-heading mb-5">Farm history</h4>
-        <div class=" bg-white px-5 py-6 rounded-xl shadow-lg">
+        <div class=" bg-white px-5 py-6 rounded-xl shadow-lg overflow-x-auto">
           <table>
             <thead class="table-head">
               <tr>
