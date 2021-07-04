@@ -40,7 +40,7 @@
                     </nav>
                 </aside>
 
-                 <div class="inset-x-0  px-2 pt-3 mb-3 z-10 bg-white mt-8 lg:hidden overflow-x-auto border-b-2 border-gray-200 " :class="fixed ? 'phone-fix-side px-6' : 'relative'">
+                 <div class="inset-x-0  px-2 pt-3 mb-3 z-10 bg-white mt-8 lg:hidden overflow-x-auto border-b-2 border-gray-200 " :class="phone_fixed ? 'phone-fix-side px-6' : 'relative'">
                 <div class="container mx-auto flex flex-wrap items-center justify-between">
                     <div class=" w-full">
                         <ul class="list-reset flex">
@@ -115,7 +115,7 @@
 
             </div>
             <div class="col-span-1 lg:col-span-7 lg:px-12">
-                <div id="about-us" :class="fixed ? 'medium-padding' : ''">
+                <div id="about-us" :class="phone_fixed ? 'medium-padding' : ''">
                     <h3>About us</h3>
                     <p>
                         A Farm for me is an investment system of smart farming designed for persons who have interest in agriculture and want to own farms but do not have the time, lands, resources, technical knowledge etc. It is also designed for persons or individuals who are looking for investment opportunities to earn returns, which will serve as an extra source of income.
@@ -291,20 +291,35 @@ export default {
                 }
             ],
             fixed : false,
+            phone_fixed :false,
+            phone_size:false,
             activeTab : 1
         }
     },
     mounted(){
         window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.resize)
     },
     methods : {
         handleScroll(){
             console.log(window.top.scrollY)
-            if(window.top.scrollY >= 680){
+            if( window.top.scrollY >= 680 && window.top.scrollY <= 7410 && this.phone_size){
+                this.phone_fixed = true;
+            }
+            else if( window.top.scrollY >= 610 && window.top.scrollY <= 4400 && !this.phone_size){
                 this.fixed = true;
             }
-            else{
+            else {
                 this.fixed = false;
+                this.phone_fixed = false;
+            }
+        },
+
+        resize(){
+            if(window.innerWidth <= 768){
+                this.phone_size = true;
+            }else{
+                this.phone_size =false
             }
         },
         
