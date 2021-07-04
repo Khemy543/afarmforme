@@ -39,9 +39,83 @@
                         </ul>
                     </nav>
                 </aside>
+
+                 <div class="inset-x-0  px-2 pt-3 mb-3 z-10 bg-white mt-8 lg:hidden overflow-x-auto border-b-2 border-gray-200 " :class="fixed ? 'phone-fix-side px-6' : 'relative'">
+                <div class="container mx-auto flex flex-wrap items-center justify-between">
+                    <div class=" w-full">
+                        <ul class="list-reset flex">
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a 
+                                href="#about-us"
+                                class="bg-white text-sm inline-block py-2 cursor-pointer" 
+                                >
+                                About us
+                                </a>
+                            </li>
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a
+                                    href="#our-missions"
+                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer" 
+                                    >Our Mission
+                                </a>
+                            </li>
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a
+                                    href="#our-vision"
+                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
+                                    >Our Vision
+                                </a>
+                            </li>
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a
+                                    href="#who-we-are"
+                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
+                                    >Who We Are
+                                </a>
+                            </li>
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a
+                                    href="#what-we-do"
+                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
+                                    >What We Do
+                                </a>
+                            </li>
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a
+                                    href="#why-we-do-it"
+                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
+                                    >Why We Do It
+                                </a>
+                            </li>
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a
+                                    href="#core-values"
+                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
+                                    >Our Core Values
+                                </a>
+                            </li>
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a
+                                    href="#advisory-bod"
+                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
+                                    >Advisory & BOD
+                                </a>
+                            </li>
+                            <li class="p-0 mb-0 flex-shrink-0">
+                                <a
+                                    href="#management-team"
+                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
+                                    >Management Team
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             </div>
             <div class="col-span-1 lg:col-span-7 lg:px-12">
-                <div id="about-us">
+                <div id="about-us" :class="fixed ? 'medium-padding' : ''">
                     <h3>About us</h3>
                     <p>
                         A Farm for me is an investment system of smart farming designed for persons who have interest in agriculture and want to own farms but do not have the time, lands, resources, technical knowledge etc. It is also designed for persons or individuals who are looking for investment opportunities to earn returns, which will serve as an extra source of income.
@@ -216,7 +290,8 @@ export default {
                     twitter : ''
                 }
             ],
-            fixed : false
+            fixed : false,
+            activeTab : 1
         }
     },
     mounted(){
@@ -224,18 +299,24 @@ export default {
     },
     methods : {
         handleScroll(){
-            if(window.top.scrollY >= 610){
+            console.log(window.top.scrollY)
+            if(window.top.scrollY >= 680){
                 this.fixed = true;
             }
             else{
                 this.fixed = false;
             }
+        },
+        
+    
+        changeTab(id){
+            this.activeTab = id
         }
-    }
+    },
 }
 </script>
 <style scoped>
-.main-content {
+body {
     scroll-behavior: smooth;
 }
 
@@ -251,7 +332,7 @@ ul .active {
     color :#206E00 !important;
 }
 
-ul .active a {
+ul li a:active {
     font: normal normal normal 18px/40px Proxima Nova;
     letter-spacing: 0px;
     color: #206E00 !important;
@@ -268,6 +349,11 @@ h5{
 .fix-side {
   position: fixed;
   top: 70px;
+}
+
+.phone-fix-side {
+  position: fixed;
+  top: 20px;
 }
 
 @keyframes smoothScroll {

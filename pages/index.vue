@@ -8,7 +8,7 @@
             </h1>
             <p class="text-color">Well-tailored packages to meet your investment needs</p>
             <div class="lg:flex mt-12">
-              <button class="app-button lg:mr-10">Get started</button> <p class="read-more mt-3">Read more</p>
+              <button class="app-button lg:mr-10">Get started</button> <p class="mt-3"><a class="read-more" href="#new-opportunities">Read more</a></p>
             </div>
           </div>
           
@@ -18,7 +18,7 @@
         </div>
       <!-- end main section -->
 
-    <div class="big-side-padding big-padding">
+    <div class="big-side-padding big-padding" id="new-opportunities">
         <div class=" text-center">
           <h3>New <span>opportunities.</span></h3>
           <p>All these years, individuals have always wanted to venture into agriculture, but barriers such as lack of technical knowledge, access to land, inadequate finance and unavailability of produce off takers etc have prevented such people. <b>A farm for me</b> has removed such barriers by way of :</p>
@@ -192,9 +192,11 @@
         <p class=" py-12 text-white">We may not give out a plot of land for free. But once in a while, we will be giving out discount offers and tips and tricks you don’t want to miss.</p>
         <div class="w-full">
           <input class="app-input w-full mr-4" placeholder="Enter your email here…" />
-        </div>
-        <div class="small-padding">
-          <button class="app-button w-full">Send</button>
+
+          <div class="lg:small-padding">
+            <button class="app-button w-full">Send</button>
+          </div>
+
         </div>
       </div>
     </div>

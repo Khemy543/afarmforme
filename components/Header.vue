@@ -1,6 +1,6 @@
 <template>
 <div>
-  <nav class="fixed inset-x-0  px-2 py-1 z-10 bg-white">
+  <nav class="fixed inset-x-0  px-2 py-1 bg-white z-30">
     <div class="container xl:px-28 mx-auto flex flex-wrap items-center justify-between">
 
       <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
