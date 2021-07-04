@@ -45,7 +45,7 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/auth/register" class="mx-3 my-5 lg:my-auto flex items-center app-button  w-auto" >
+            <nuxt-link to="/auth/register" class="mx-3 my-5 lg:my-auto flex items-center app-button" style="width:auto">
              <span >Start farming</span>
             </nuxt-link>
           </li>
@@ -102,5 +102,9 @@ export default {
   letter-spacing: 0px;
   color: #206E00;
   opacity: 1;
+}
+
+.fade-down {
+  animation : slideInDown 500ms ease-in-out;
 }
 </style>

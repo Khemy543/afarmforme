@@ -1,42 +1,44 @@
 <template>
-    <div >
+    <div class="main-content">
         <Label 
             page='about us.'
             text='The future of investment.'
         />
         <div class=" py-32 side-padding grid grid-cols-1 lg:grid-cols-9">
             <div class=" cols-span-1 lg:col-span-2">
-                <div  class="w-full gray-card pl-5 pt-5 pb-5 hidden lg:block">
-                    <ul>
-                        <li class="active">
-                            <a href="#about-us">About us</a>
-                        </li>
-                        <li>
-                            <a href="#our-missions">Our Mission</a>
-                        </li>
-                        <li>
-                            <a href="#our-vision">Our Vision</a>
-                        </li>
-                        <li>
-                            <a href="#who-we-are">Who We Are</a>
-                        </li>
-                        <li>
-                            <a href="#what-we-do">What We Do</a>
-                        </li>
-                        <li>
-                            <a href="#why-we-do-it">Why We Do It</a>
-                        </li>
-                        <li>
-                            <a href="#core-values">Our Core Values</a>
-                        </li>
-                        <li>
-                            <a href="#advisory-bod">Advisory & BOD</a>
-                        </li>
-                        <li>
-                            <a href="#management-team">Management Team</a>
-                        </li>
-                    </ul>
-                </div>
+                <aside  class="w-64 gray-card pl-5 pt-5 pb-5 hidden lg:block fixed" :class="fixed ? 'fix-side' : 'relative'" ref="about-nav">
+                    <nav>
+                        <ul class="side-nav">
+                            <li class="active">
+                                <a href="#about-us">About us</a>
+                            </li>
+                            <li>
+                                <a href="#our-missions">Our Mission</a>
+                            </li>
+                            <li>
+                                <a href="#our-vision">Our Vision</a>
+                            </li>
+                            <li>
+                                <a href="#who-we-are">Who We Are</a>
+                            </li>
+                            <li>
+                                <a href="#what-we-do">What We Do</a>
+                            </li>
+                            <li>
+                                <a href="#why-we-do-it">Why We Do It</a>
+                            </li>
+                            <li>
+                                <a href="#core-values">Our Core Values</a>
+                            </li>
+                            <li>
+                                <a href="#advisory-bod">Advisory & BOD</a>
+                            </li>
+                            <li>
+                                <a href="#management-team">Management Team</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
             </div>
             <div class="col-span-1 lg:col-span-7 lg:px-12">
                 <div id="about-us">
@@ -63,14 +65,14 @@
                     </p>
                 </div>
 
-                <div class="" id="our-vision">
+                <div class="medium-padding" id="our-vision">
                     <h3>Our vision</h3>
                     <p>
                         Farm for me is a community development driven organization, whose vision is to become one of the best agribusiness companies to improve livelihoods of rural communities through sustainable agricultural practices.
                     </p>
                 </div>
 
-                <div class=" medium-padding" id="who-are-we">
+                <div class=" medium-padding" id="who-we-are">
                     <h3>Who we are</h3>
                     <p>
                         We are a team of innovative entrepreneurs, passionate about improving efficiencies in agriculture and achieving the United Nations Sustainable Development Goal number 1.
@@ -222,8 +224,7 @@ export default {
     },
     methods : {
         handleScroll(){
-            console.log(window.top.scrollY);
-            if(window.top.scrollY >= 0){
+            if(window.top.scrollY >= 610){
                 this.fixed = true;
             }
             else{
@@ -234,6 +235,10 @@ export default {
 }
 </script>
 <style scoped>
+.main-content {
+    scroll-behavior: smooth;
+}
+
 ul li a {
     font: normal normal normal 18px/40px Proxima Nova;
     letter-spacing: 0px;
@@ -260,11 +265,9 @@ h5{
     opacity: 1;
 }
 
-.about-fixed {
+.fix-side {
   position: fixed;
-  top: 0;
-  left: 0;
-  animation: smoothScroll 1s forwards;
+  top: 70px;
 }
 
 @keyframes smoothScroll {

@@ -8,7 +8,7 @@
             </h1>
             <p class="text-color">Well-tailored packages to meet your investment needs</p>
             <div class="lg:flex mt-12">
-              <button class="app-button lg:mr-10">Get started</button> <p class="read-more mt-4">Read more</p>
+              <button class="app-button lg:mr-10">Get started</button> <p class="read-more mt-3">Read more</p>
             </div>
           </div>
           

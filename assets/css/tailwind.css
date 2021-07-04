@@ -17,6 +17,10 @@
     font-family: Proxima Nova;
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 
 .side-padding {
     @apply px-4 lg:px-16 xl:px-32;
@@ -32,7 +36,7 @@
 
 /* button styles */
 .app-button {
-    @apply bg-primary rounded-full w-full lg:w-auto px-6 text-white py-5 lg:py-4 leading-none outline-none focus:outline-none appearance-none inline-block;
+    @apply bg-primary rounded-full w-full lg:w-auto px-6 text-white py-4  leading-none outline-none focus:outline-none appearance-none inline-block;
 }
 
 .app-button:hover {
@@ -45,7 +49,7 @@
 }
 
 .auth-button {
-    @apply bg-black rounded-full text-white px-6 py-5 lg:py-4 w-full outline-none focus:outline-none appearance-none;
+    @apply bg-black rounded-full text-white px-6 py-4 w-full outline-none focus:outline-none appearance-none;
 }
 
 .dash-button {
@@ -56,10 +60,15 @@
 }
 
 .light-green-button {
-  @apply rounded-full leading-none outline-none focus:outline-none appearance-none inline-block;
+  @apply rounded-full leading-none outline-none focus:outline-none appearance-none inline-block ;
   border-radius: 16px;
-  background : rgba(32, 110, 0, 0.1);
+  background : rgba(26, 92, 1, 0.1);
   color:#206e00;
+}
+
+.light-green-button:hover {
+    background: rgba(30, 109, 2, 0.459);
+    transition : 0.5s;
 }
 
 .app-outline-button {
@@ -319,4 +328,13 @@ td {
         opacity: 1;
     }
 }
+
+/* animation css */
+@keyframes slideInDown {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+  
 
