@@ -306,7 +306,7 @@ export default {
             if( window.top.scrollY >= 680 && window.top.scrollY <= 7410 && this.phone_size){
                 this.phone_fixed = true;
             }
-            else if( window.top.scrollY >= 610 && window.top.scrollY <= 4400 && !this.phone_size){
+            else if( window.top.scrollY >= 610 && window.top.scrollY <= 4300 && !this.phone_size){
                 this.fixed = true;
             }
             else {
@@ -316,7 +316,7 @@ export default {
         },
 
         resize(){
-            if(window.innerWidth <= 768){
+            if(window.innerWidth < 1024){
                 this.phone_size = true;
             }else{
                 this.phone_size =false

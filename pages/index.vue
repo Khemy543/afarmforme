@@ -190,14 +190,14 @@
         <h4 class=" text-white">Sign up for our promotions and newsletters.</h4>
 
         <p class=" py-12 text-white">We may not give out a plot of land for free. But once in a while, we will be giving out discount offers and tips and tricks you don’t want to miss.</p>
-        <div class="w-full">
-          <input class="app-input w-full mr-4" placeholder="Enter your email here…" />
+        <form class="w-full lg:flex" @submit.prevent="NewsLetterSubscribe">
+          <input class="app-input w-full lg:auto mr-4" required placeholder="Enter your email here…" type="email" v-model="email"/>
 
-          <div class="lg:small-padding">
-            <button class="app-button w-full">Send</button>
+          <div class=" pt-5 lg:pt-0">
+            <button class="app-button w-full" type="submit">Send</button>
           </div>
 
-        </div>
+        </form>
       </div>
     </div>
     
@@ -208,6 +208,12 @@
 export default {
   components : {
     ProductCard : () => import('~/components/ProductCard.vue')
+  },
+
+  methods : {
+    NewsLetterSubscribe(){
+      this.alert('success')
+    }
   }
 }
 </script>
