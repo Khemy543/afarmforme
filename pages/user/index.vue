@@ -26,7 +26,7 @@
           </button>
         </div>
       </div>
-      <div class=" flex h-30 lg:h-54 w-full overflow-y-hidden overflow-x-scroll slick-carousel" ref="slick-carousel" >
+      <div class=" flex w-full overflow-y-hidden overflow-x-scroll slick-carousel h-52" ref="slick-carousel">
         <div class=" bg-primary w-52 rounded-xl mr-3 text-center p-4 flex-shrink-0">
           <h4 class="text-white">New Farm</h4>
           <p class=" text-white">
