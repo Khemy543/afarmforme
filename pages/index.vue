@@ -44,7 +44,7 @@
     </div>
     <!-- end main section -->
 
-    <div class=" bg-gray-100 py-12 mt-16 " id="new-opportunities">
+    <div class=" py-12 mt-16 " id="new-opportunities">
       <div class=" w-full flex justify-center">
         <div class=" w-full lg:w-1/2 text-center">
           <div class=" text-lg font-bold mb-5">New opportunities</div>
@@ -59,7 +59,7 @@
       </div>
 
       <div class=" mt-14 w-full flex justify-center">
-        <div class=" flex space-x-10 w-full lg:w-5/6">
+        <div class=" flex space-x-10 w-full">
           <div class=" w-1/3 rounded-xl p-6 h-96 bg-gray-300 relative">
             <div class=" absolute bottom-6">
               <div class=" text-base font-bold">Technology</div>
@@ -91,7 +91,7 @@
       </div>
 
       <div class=" mt-44 w-full flex justify-center">
-        <div class=" w-5/6">
+        <div>
           <h3 class="text-center text-lg font-bold mb-5">Our farms.</h3>
           <p class="text-center text-base font-normal">
             All farms are automatically insured.
@@ -157,16 +157,16 @@
               <div class=" mt-6">
                 <ul class=" space-y-3">
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Minimum of 1 unit.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 1 unit.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for="">Minimum of 1 unit</label>
+                      <input type="checkbox" name="" id="" checked> <label for="">Minimum of 1 unit</label>
                   </li>
                 </ul>
               </div>
@@ -187,16 +187,16 @@
               <div class=" mt-6">
                 <ul class=" space-y-3">
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Minimum of 20 units.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 20 units.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Minimum of 20 units.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 20 units.</label>
                   </li>
                 </ul>
               </div>
@@ -217,16 +217,16 @@
               <div class=" mt-6">
                 <ul class=" space-y-3">
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Minimum of 20 units.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 20 units.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id=""> <label for=""> Minimum of 20 units.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 20 units.</label>
                   </li>
                 </ul>
               </div>
@@ -245,23 +245,49 @@
 
 
     <div class=" py-12">
+      <div class=" w-full flex justify-center">
+        <div class=" w-1/2 font-bold text-lg uppercase text-center">
+            We are excited helping achieve the sustainable development goals.
+        </div>
+      </div>
 
+      <div class=" grid grid-cols-6 gap-4 w-full mt-8">
+        <img src="~/static/img/farm/SDG-goal-01.png" class=" w-full h-auto object-cover" />
+        <img src="~/static/img/farm/SDG-goal-02.png" class=" w-full h-auto object-cover"/>
+        <img src="~/static/img/farm/SDG-goal-05.png" class=" w-full h-auto object-cover" />
+        <img src="~/static/img/farm/SDG-goal-08.png" class=" w-full h-auto object-cover"/>
+        <img src="~/static/img/farm/SDG-goal-09.png" class=" w-full h-auto object-cover"/>
+        <img src="~/static/img/farm/SDG-goal-15.png" class=" w-full h-auto object-cover"/>
+      </div>
+    </div>
+
+    <div class=" my-16 p-10 flex space-x-4 bg-blue-500 rounded-lg items-center">
+      <div class=" w-1/2 text-white font-bold text-3xl">
+        <div class=" w-4/6">
+          Begin your journey of becoming a Agripreneur.
+        </div>
+      </div>
+      <div class=" flex space-x-4 w-1/2">
+        <div class="w-1/2">
+        <div class=" text-base font-bold text-white">Simple Pricing</div>
+        <div class=" mt-4 text-sm font-normal text-white">
+          We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+        </div>
+        
+        <button class=" app-button bg-white border border-gray-300 rounded-md mt-6">Start Farming</button>
+      </div>
+
+      <div class=" w-1/2">
+        <div class=" text-base font-bold text-white">Simple Pricing</div>
+        <div class=" mt-4 text-sm font-normal text-white">
+          We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+        </div>
+        
+      </div>
+      </div>
     </div>
 
    <!--  <div class="text-center extra-big-padding">
-      <h3>
-        We are excited <span>helping achieve the sustainable</span> development
-        goals.
-      </h3>
-      <div class=" grid grid-cols-3 small-padding gap-5">
-        <img src="~/static/img/farm/SDG-goal-01.png" />
-        <img src="~/static/img/farm/SDG-goal-02.png" />
-        <img src="~/static/img/farm/SDG-goal-05.png" />
-        <img src="~/static/img/farm/SDG-goal-08.png" />
-        <img src="~/static/img/farm/SDG-goal-09.png" />
-        <img src="~/static/img/farm/SDG-goal-15.png" />
-      </div>
-    </div>
 
     <div class="medium-padding">
       <div

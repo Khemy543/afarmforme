@@ -15,7 +15,8 @@ module.exports = {
       secondary : "#D6D6D6",
       gray : colors.gray,
       black : colors.black,
-      white : colors.white
+      white : colors.white,
+      blue : colors.blue
     }
   },
   variants: {

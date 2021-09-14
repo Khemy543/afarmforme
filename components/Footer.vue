@@ -1,88 +1,81 @@
 <template>
-    <div class="wrapper side-padding pt-28">
+    <div class=" w-full max-w-6xl mx-auto px-4 border-t border-gray-300 py-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
-                <h4>Discover</h4>
+                <h4 class=" text-base font-bold">Discover</h4>
 
                 <ul>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         <nuxt-link to="/our-fees">Our fees</nuxt-link>
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         Download the app
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         Careers
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         How it works
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         <nuxt-link to='/csr'>Corporate Social Responsibility</nuxt-link>
                     </li>
                 </ul>
             </div>
             <div>
-                <h4>Learn more</h4>
+                <h4 class=" text-base font-bold">Learn more</h4>
 
                 <ul>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         Blog
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         Our farms
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         <nuxt-link to='/faqs'>Frequently Asked Questions</nuxt-link>
                     </li>
                 </ul>
             </div>
             <div>
-                <h4>Customer helplines</h4>
+                <h4 class=" text-base font-bold">Customer helplines</h4>
 
                 <ul>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         +233 0000000
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         +233 0000000
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         +233 0000000
                     </li>
                 </ul>
             </div>
             <div>
-                <h4>Get connected</h4>
+                <h4 class=" text-base font-bold">Get connected</h4>
 
                 <ul>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         Facebook
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         Twitter
                     </li>
-                    <li>
+                    <li class=" text-sm font-normal py-2">
                         Email
                     </li>
                 </ul>
             </div>
 
         </div>
-        <h3 class=" mt-24 text-center">IF YOU ATE TODAY THANK A FARMER.</h3>
-        <div class=" border-t-2 border-b-2 border-gray-300 mt-8 py-2">
-            <p>By using this website, you accept our <span>Terms of Use</span> and <span>Privacy Policy</span>. Past performance is no guarantee of future results. Any historical returns, expected returns, or probability projections may not reflect actual future performance.</p>
-        </div>
-
-        <div class=" grid grid-cols-1 lg:grid-cols-2 mt-8">
-            <div>
-                <p>Copyright 2020 A farm for me. All rights reserved.</p>
-            </div>
-            <div>
-                <div class=" grid grid-cols-1 lg:grid-cols-2">
-                <p>Terms of Agreement</p>
-                <nuxt-link to='/privacy-policy'><p>Privacy policy</p></nuxt-link>
-                </div>
+        <div class=" w-full flex justify-center">   
+            <div class=" mt-8 py-2 w-1/2 text-center">
+                <div class="text-sm font-normal text-gray-700">
+                    Past performance is no guarantee of future results. Any historical returns, expected returns, or probability projections may not reflect actual future performance.
+                </div> 
+            
+                <div class=" text-sm font-bold mt-4">© 2020 A farm for me. All rights reserved. If you ate today thank a farmer.</div>
             </div>
         </div>
     </div>
@@ -93,38 +86,4 @@ export default {
 }
 </script>
 <style scoped>
-.wrapper {
-    background: #EBEBEB 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-
-h4{
-    font: normal normal bold 20px/35px Proxima Nova;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-}
-ul li{
-    font: normal normal normal 18px/30px Proxima Nova;
-    letter-spacing: 0px;
-    color: #2C2C2C;
-    opacity: 1;
-}
-
-h3{
-    font: normal normal bold 18px/40px Proxima Nova;
-    letter-spacing: 18px;
-    color: #707070;
-    opacity: 1;
-}
-p{
-     text-align: center;
-    font: normal normal normal 16px/25px Proxima Nova;
-    letter-spacing: 0px;
-    color: #707070;
-}
-
-p span {
-    color: black !important;
-}
 </style>
