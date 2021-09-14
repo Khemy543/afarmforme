@@ -21,8 +21,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.app-button {
+    @apply text-sm w-full lg:w-auto px-6 py-3  leading-none outline-none focus:outline-none appearance-none inline-block;
+}
 
-.side-padding {
+
+/* .side-padding {
     @apply px-4 lg:px-16 xl:px-32;
 }
 
@@ -34,7 +38,6 @@ html {
     padding: 120px 1rem;
   }
 
-/* button styles */
 .app-button {
     @apply bg-primary rounded-full w-full lg:w-auto px-6 text-white py-4  leading-none outline-none focus:outline-none appearance-none inline-block;
 }
@@ -84,7 +87,6 @@ html {
 }
 
 
-/* text styles */
 .header-text {
     font: normal normal normal 18px/22px Proxima Nova;
     letter-spacing: 0px;
@@ -124,13 +126,11 @@ h1{
     top: 0;
 }
 
-/* card styles */
 .gray-card {
     background: #F4F4F4 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
-/* input styles */
 .app-input { 
     background: #F4F4F4 0% 0% no-repeat padding-box;
     border: 1px solid #F4F4F4;
@@ -197,7 +197,6 @@ p{
     width: auto;
 }
 
-/* paddings */
 
 .section-padding {
     padding-top: 18.75rem;
@@ -226,7 +225,6 @@ p{
     object-fit: cover;
 }
 
-/* tables css */
 table {
     border-collapse: collapse;
     width : 100%;
@@ -265,7 +263,6 @@ td {
 } 
 
 
-/* screens */
 @media (min-width: 640px) {
     h1{
         font-size: 50px !important;
@@ -335,12 +332,11 @@ td {
     }
 }
 
-/* animation css */
 @keyframes slideInDown {
     0% {
       transform: translateY(-100px);
       opacity: 0;
     }
   }
-  
+   */
 

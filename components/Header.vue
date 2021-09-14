@@ -1,16 +1,12 @@
 <template>
 <div>
-  <nav class="fixed inset-x-0  px-2 py-1 bg-white z-30">
-    <div class="container xl:px-28 mx-auto flex flex-wrap items-center justify-between">
+  <nav class="fixed inset-x-0 py-1 bg-white z-30">
+    <div class="container max-w-6xl px-4 mx-auto flex flex-wrap items-center justify-between">
 
-      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-        <nuxt-link to="/" class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
-          <img src="~/static/img/logo-two.png" alt="logo" class="logo" />
+      <div class="w-full relative flex items-center justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <nuxt-link to="/" class="text-base font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
+          <img src="~/static/img/logo-two.png" alt="logo" class=" h-8 w-auto" />
         </nuxt-link>
-
-        <!-- <nuxt-link to="/auth/register" class="mx-3 flex items-center app-button" >
-          <span >Start farming</span>
-        </nuxt-link> -->
 
         <button class="text-black cursor-pointer text-xl leading-none py-1 bg-transparent block lg:hidden focus:outline-none" type="button" v-on:click="toggleNavbar()">
           <i :class="!showMenu ? 'fa fa-bars' : 'fa fa-close'"></i>
@@ -20,37 +16,42 @@
       <div v-bind:class="{'hidden': !showMenu, 'flex fade-down': showMenu}" class="lg:flex lg:flex-grow h-screen lg:h-auto">
         <ul class="flex flex-col lg:flex-row list-none ml-auto" @click="() => showMenu = false">
           <li class="nav-item">
-            <nuxt-link to="/about-us" class="mx-3 py-5 lg:py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/about-us" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
               <span>About us</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/our-packages" class="mx-3 py-5 lg:py-2 flex items-center header-text hover:opacity-75" >
-              <span >Our farms</span>
+            <nuxt-link to="/our-packages" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
+              <span >Products</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/how-it-works" class="mx-3 py-5 lg:py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/how-it-works" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
              <span >How it works</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/partner-with-us" class="mx-3 py-5 lg:py-2 flex items-center header-text hover:opacity-75" >
-             <span >Partner with us</span>
+            <nuxt-link to="/partner-with-us" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
+             <span >Partners</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/contact-us" class="mx-3 py-5 lg:py-2 flex items-center header-text hover:opacity-75" >
-             <span >Contact Us</span>
+            <nuxt-link to="/contact-us" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
+             <span >Contacts</span>
             </nuxt-link>
           </li>
+        </ul>
+      </div>
+      
+      <div class="lg:flex lg:flex-grow h-screen lg:h-auto">
+        <ul class="flex flex-col lg:flex-row list-none ml-auto">
           <li class="nav-item">
-            <nuxt-link to="/auth/register" class="mx-3 my-5 lg:my-auto flex items-center app-button" style="width:auto">
+            <nuxt-link to="/auth/register" class="mx-3 rounded-full bg-primary text-white lg:my-auto flex items-center app-button" style="width:auto">
              <span >Start farming</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/auth/login" class="mx-3 py-5 lg:py-2 flex items-center header-text hover:opacity-75" >
+            <nuxt-link to="/auth/login" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
              <span >Login</span>
             </nuxt-link>
           </li>
