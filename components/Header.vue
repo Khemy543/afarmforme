@@ -5,10 +5,10 @@
 
       <div class="w-full relative flex items-center justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <nuxt-link to="/" class="text-base font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
-          <img src="~/static/img/logo-two.png" alt="logo" class=" h-8 w-auto" />
+          <img src="~/static/img/logo-two.png" alt="logo" class=" h-10 w-auto" />
         </nuxt-link>
 
-        <button class="text-black cursor-pointer text-xl leading-none py-1 bg-transparent block lg:hidden focus:outline-none" type="button" v-on:click="toggleNavbar()">
+        <button class="text-black font-normal cursor-pointer text-base leading-none py-1 bg-transparent block lg:hidden focus:outline-none" type="button" v-on:click="toggleNavbar()">
           <i :class="!showMenu ? 'fa fa-bars' : 'fa fa-close'"></i>
         </button>
       </div>
@@ -16,27 +16,27 @@
       <div v-bind:class="{'hidden': !showMenu, 'flex fade-down': showMenu}" class="lg:flex lg:flex-grow h-screen lg:h-auto">
         <ul class="flex flex-col lg:flex-row list-none ml-auto" @click="() => showMenu = false">
           <li class="nav-item">
-            <nuxt-link to="/about-us" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
+            <nuxt-link to="/about-us" class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75" >
               <span>About us</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/our-packages" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
+            <nuxt-link to="/our-packages" class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75" >
               <span >Products</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/how-it-works" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
+            <nuxt-link to="/how-it-works" class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75" >
              <span >How it works</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/partner-with-us" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
+            <nuxt-link to="/partner-with-us" class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75" >
              <span >Partners</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/contact-us" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
+            <nuxt-link to="/contact-us" class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75" >
              <span >Contacts</span>
             </nuxt-link>
           </li>
@@ -44,15 +44,15 @@
       </div>
       
       <div class="lg:flex lg:flex-grow h-screen lg:h-auto">
-        <ul class="flex flex-col lg:flex-row list-none ml-auto">
+        <ul class="flex flex-col lg:flex-row list-none ml-auto items-center">
           <li class="nav-item">
-            <nuxt-link to="/auth/register" class="mx-3 rounded-full bg-primary text-white lg:my-auto flex items-center app-button" style="width:auto">
-             <span >Start farming</span>
+            <nuxt-link to="/auth/login" class="mx-4 py-5 lg:py-2 flex items-center text-sm hover:opacity-75" >
+             <span >Login</span>
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/auth/login" class="mx-3 py-5 lg:py-2 flex items-center text-base hover:opacity-75" >
-             <span >Login</span>
+            <nuxt-link to="/auth/register" class="mx-4 rounded-full bg-primary text-white lg:my-auto flex items-center app-button" style="width:auto">
+             <span >Start farming</span>
             </nuxt-link>
           </li>
         </ul>
@@ -99,10 +99,7 @@ export default {
 </script>
 <style scoped>
 .nuxt-link-exact-active span{
-  font: normal normal 700 18px/22px Proxima Nova;
-  letter-spacing: 0px;
-  color: #206E00;
-  opacity: 1;
+  @apply border-b-4 border-indigo-400
 }
 
 .fade-down {

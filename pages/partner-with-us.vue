@@ -1,9 +1,5 @@
 <template>
     <div >
-        <Label 
-             page='Partner with us.'
-            text='We believe in global partnerships.'
-        />
         <div class=" py-32 side-padding">
             <p>
                 A farm for me is the ideal partner to achieve social impact through agriculture. We therefore pool the strengths of different stakeholder’s thus Government organizations, private companies, social entrepreneurs, civil societies etc. through our innovative collaboration models.

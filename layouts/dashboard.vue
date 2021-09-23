@@ -6,7 +6,7 @@
         <div class=" w-full flex flex-col h-screen overflow-x-hidden">
 
             <Topbar />
-            <div class=" w-full overflow-x-hidden flex flex-col px-4 lg:px-32 py-4">
+            <div class=" w-full overflow-x-hidden flex flex-col px-4 max-w-6xl mx-auto">
                 <Nuxt />
             </div>
         </div>

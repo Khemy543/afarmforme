@@ -16,7 +16,22 @@ module.exports = {
       gray : colors.gray,
       black : colors.black,
       white : colors.white,
-      blue : colors.blue
+      blue : colors.blue,
+      'indigo':colors.indigo,
+    },
+    fontFamily : {
+      'proxima-nova' : ['Proxima Nova']
+    },
+    fontSize : {
+      'small':['12px', '42px'],
+      'xxs' : ['14px', '18px'],
+      'xs' : ['15px', '22px'],
+      'xsm': ['16px', '18px'],
+      'sm' : ['16px', '55px'],
+      'md' : ['20px','28px'],
+      'base' : ['30px', '42px'],
+      'lg' : ['50px', '62px'],
+      'xl' : ['80px', '85px']
     }
   },
   variants: {

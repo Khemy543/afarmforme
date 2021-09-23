@@ -1,206 +1,130 @@
 <template>
-    <div class="main-content">
-        <Label 
-            page='about us.'
-            text='The future of investment.'
-        />
-        <div class=" py-32 side-padding grid grid-cols-1 lg:grid-cols-9">
-            <div class=" cols-span-1 lg:col-span-2">
-                <aside  class="w-64 gray-card pl-5 pt-5 pb-5 hidden lg:block fixed" :class="fixed ? 'fix-side' : 'relative'" ref="about-nav">
-                    <nav>
-                        <ul class="side-nav">
-                            <li class="active">
-                                <a href="#about-us">About us</a>
-                            </li>
-                            <li>
-                                <a href="#our-missions">Our Mission</a>
-                            </li>
-                            <li>
-                                <a href="#our-vision">Our Vision</a>
-                            </li>
-                            <li>
-                                <a href="#who-we-are">Who We Are</a>
-                            </li>
-                            <li>
-                                <a href="#what-we-do">What We Do</a>
-                            </li>
-                            <li>
-                                <a href="#why-we-do-it">Why We Do It</a>
-                            </li>
-                            <li>
-                                <a href="#core-values">Our Core Values</a>
-                            </li>
-                            <li>
-                                <a href="#advisory-bod">Advisory & BOD</a>
-                            </li>
-                            <li>
-                                <a href="#management-team">Management Team</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </aside>
+    <div>
+        <div class=" pt-48 max-w-5xl mx-auto px-4">
+            <div class=" text-xl font-bold text-center">About Us.</div>
+            <div class=" flex space-x-5 mt-8">
+                <div class=" w-1/2">
+                   <p class="text-xs font-normal">A Farm For Me is an investment system of smart farming designed for persons who have interest in agriculture and want to own farms but do not have the time, lands, resources, technical knowledge etc. It is also designed for persons or individuals who are looking for investment opportunities to earn returns, which will serve as an extra source of income.
+                    <br/><br/>
+                    A Farm for me give individuals the opportunity to invest or sponsor our crop and animal farm units and be able to monitor farm activities through our web and mobile applications right on their smart devices at the comfort of their homes, offices or wherever they find themselves provided they have access to internet connection.
+                    <br/><br/>
+                    The cost of farm unit sells between GHS 1200 – GHS 6000 and a profit of 16% - 44% (GHS 264.00 - GHS 2640.00) as return on investments per cycle depending on crop and duration.
+                    <br/><br/>
+                    </p> 
 
-                 <div class="inset-x-0  px-2 pt-3 mb-3 z-10 bg-white mt-8 lg:hidden overflow-x-auto border-b-2 border-gray-200 " :class="phone_fixed ? 'phone-fix-side px-6' : 'relative'">
-                <div class="container mx-auto flex flex-wrap items-center justify-between">
-                    <div class=" w-full">
-                        <ul class="list-reset flex">
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a 
-                                href="#about-us"
-                                class="bg-white text-sm inline-block py-2 cursor-pointer" 
-                                >
-                                About us
-                                </a>
-                            </li>
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a
-                                    href="#our-missions"
-                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer" 
-                                    >Our Mission
-                                </a>
-                            </li>
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a
-                                    href="#our-vision"
-                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
-                                    >Our Vision
-                                </a>
-                            </li>
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a
-                                    href="#who-we-are"
-                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
-                                    >Who We Are
-                                </a>
-                            </li>
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a
-                                    href="#what-we-do"
-                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
-                                    >What We Do
-                                </a>
-                            </li>
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a
-                                    href="#why-we-do-it"
-                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
-                                    >Why We Do It
-                                </a>
-                            </li>
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a
-                                    href="#core-values"
-                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
-                                    >Our Core Values
-                                </a>
-                            </li>
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a
-                                    href="#advisory-bod"
-                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
-                                    >Advisory & BOD
-                                </a>
-                            </li>
-                            <li class="p-0 mb-0 flex-shrink-0">
-                                <a
-                                    href="#management-team"
-                                    class="bg-white text-sm inline-block py-2 ml-10 cursor-pointer"
-                                    >Management Team
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                    <div class=" text-sm font-bold">Our Mission</div>
 
-            </div>
-            <div class="col-span-1 lg:col-span-7 lg:px-12">
-                <div id="about-us" :class="phone_fixed ? 'medium-padding' : ''">
-                    <h3>About us</h3>
-                    <p>
-                        A Farm for me is an investment system of smart farming designed for persons who have interest in agriculture and want to own farms but do not have the time, lands, resources, technical knowledge etc. It is also designed for persons or individuals who are looking for investment opportunities to earn returns, which will serve as an extra source of income.
-                        <br/>
-                        <br/>
-                         A Farm for me give individuals the opportunity to invest or sponsor our crop and animal farm units and be able to monitor farm activities through our web and mobile applications right on their smart devices at the comfort of their homes, offices or wherever they find themselves provided they have access to internet connection. 
-                         <br/>
-                         <br/>
-                         The cost of a farm unit sells between GHC 1200 – GHC 6000 and a profit of 16% - 44% (GHC 264.00 - GHC 2640.00) as return on investments per cycle depending on crop type and duration.
-                    </p>
-                </div>
-
-                <div class="medium-padding" id="our-missions">
-                    <h3>Our mission</h3>
-                    <p>
+                    <p class=" text-xs font-normal">
                         To promote innovations in sustainable agriculture.
                         <br/>
                         To contribute to food security and no hunger goal of the global sustainable development goals.
                         <br/>
-                        To provide employment in rural communities to minimise urban migration.
+                        Provide employment in rural communities to minimise urban migration.
                     </p>
-                </div>
+                    <div class=" text-sm font-bold">Our Vision</div>
 
-                <div class="medium-padding" id="our-vision">
-                    <h3>Our vision</h3>
-                    <p>
+                    <p class=" text-xs font-normal">
                         Farm for me is a community development driven organization, whose vision is to become one of the best agribusiness companies to improve livelihoods of rural communities through sustainable agricultural practices.
                     </p>
-                </div>
+                    <div class=" text-sm font-bold">Who We Are</div>
 
-                <div class=" medium-padding" id="who-we-are">
-                    <h3>Who we are</h3>
-                    <p>
-                        We are a team of innovative entrepreneurs, passionate about improving efficiencies in agriculture and achieving the United Nations Sustainable Development Goal number 1.
+                    <p class=" text-xs font-normal">
+                        We are a team of innovative entrepreneurs, passionate about improving efficiencies in agriculture and achieving sustainable goal number 1.
                     </p>
-                </div>
+                    <div class=" text-sm font-bold">What We Do</div>
 
-                
-                <div class=" medium-padding" id="why-we-do-it">
-                    <h3>Why we do it</h3>
-                    <p>
-                        We believe that improving agriculture means improving society by way of ending poverty, ending hunger and causing sustainable employments.
+                    <p class=" text-xs font-normal">
+                        We are providing a digital platform that will give individuals the opportunity to own farm units and earn returns without being physically involved in the day-to-day activities on the farm.
                     </p>
-                </div>
+                    
+                    <div class=" text-sm font-bold">Why We Do It</div>
 
-                <div class="medium-padding" id="core-values">
-                    <h3>Our core values</h3>
-                    <div class=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-                        <div class=" gray-card p-5" v-for="n in core_values" :key="n.id">
-                            <h4>{{n.head}}</h4>
-                            <h5> 
-                               {{n.text}}
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=" medium-padding" id="advisory-bod">
-                    <h3>Advisory and Board of Directors</h3>
-                    <p>
-                        Our advisory board and board of directors consist of innovative high-level personalities who support our company with their experience, their contacts and their wealth of ideas. They are executives from leading companies who offer strategic guidance and expertise on the latest advances and demands in in their industry. Our board plays an integral role in defining and directing our operations and investments strategy. They allow us to leverage opportunities and provide direct access to key decision makers within their respective markets. The strength of our board is a testament to our strong network and commitment to delivering excellence.
+                    <p class=" text-xs font-normal">
+                       We believe that improving agriculture means improving society by way of ending poverty, ending hunger and causing sustainable employments.
                     </p>
-                </div>
 
-                <div class=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 mt-7">
-                    <div class="gray-card p-4 text-center" v-for="n in 5" :key="n">
-                        <h4>First and last names</h4>
-                        <p>Board Chair</p>
-                    </div>
                 </div>
+                <div class=" w-1/2">
+                    <div class=" w-full h-96 bg-gray-100 rounded-lg">
 
-                <div class=" medium-padding" id="management-team">
-                    <h3>Management team</h3>
-                    <p>
-                        Our ability to deliver outstanding results for our clients start with our team of smart, dedicated, innovative and capable individuals. We come from a diverse set of experiences and background that range from management to experienced farmers. As unique as we are individually, we share mutual passion for agriculture and technology and delivering excellent results for our clients and partners. We pride ourselves on our strategic, integrated approach to achieving excellence results.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 mt-7">
-                    <div class="gray-card p-4 text-center" v-for="n in management" :key="n.id">
-                        <h4>{{n.name}}</h4>
-                        <p>{{n.title}}</p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class=" max-w-6xl mx-auto px-4 mt-16">
+            <div class="bg-blue-300 py-10 px-28 rounded-xl">
+                <div class=" text-base font-bold text-white">Our core values</div>
+
+                <div class=" mt-8 grid grid-cols-4 gap-5">
+                    <div v-for="value in core_values" :key="value.id">
+                        <div class=" text-sm font-bold text-white">{{value.head}}</div>
+                        <p class=" text-xs font-normal text-white">{{value.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" max-w-5xl mx-auto px-4 border-t border-b border-gray-300 py-20 my-20">
+            <div class=" max-w-3xl mx-auto">
+                <div class=" text-base font-bold text-center">Advisory & Board of directors</div>
+                <p class=" text-xs font-normal text-center">Our advisory board and board of directors consist of innovative high-level personalities who support our company with their experience, their contacts and their wealth of ideas. They are executives from leading companies who offer strategic guidance and expertise on the latest advances and demands in in their industry. Our board plays an integral role in defining and directing our operations and investments strategy. They allow us to leverage opportunities and provide direct access to key decision makers within their respective markets. The strength of our board is a testament to our strong network and commitment to delivering excellence.</p>
+
+                <div class=" mt-10 grid grid-cols-3 gap-8">
+                    <div v-for="n in 9" :key="n">
+                        <div class=" rounded-lg bg-gray-100 h-48">
+
+                        </div>
+                        <div class="mt-2 text-center">
+                            <div class=" text-sm font-bold">Name</div>
+                            <div class=" text-xs font-normal">Name</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" max-w-5xl mx-auto px-4">
+            <div class=" max-w-3xl mx-auto text-center">
+                <div class=" text-base font-bold">Management team</div>
+
+                <p class=" text-xs font-normal">
+                    Our ability to deliver outstanding results for our clients start with our team of smart, dedicated, innovative and capable individuals. We come from a diverse set of experiences and background that range from management to experienced farmers. As unique as we are individually, we share mutual passion for agriculture and technology and delivering excellent results for our clients and partners. We pride ourselves on our strategic, integrated approach to achieving excellence results.
+                </p>
+            </div>
+
+            <div class=" mt-5 grid grid-cols-4 gap-4">
+                <div class=" bg-gray-100 rounded-lg h-48" v-for="n in 11" :key="n">
+
+                </div>
+            </div>
+        </div>
+        <div class=" max-w-6xl mx-auto px-4">
+        <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-500 rounded-lg items-center ">
+            <div class=" w-1/2 pr-10">
+                <div class="text-lg font-bold text-white">
+                Begin your journey of becoming a Agripreneur.
+                </div>
+            </div>
+            <div class=" flex space-x-4 w-1/2">
+                <div class="w-1/2">
+                <div class=" text-sm font-bold text-white">Simple Pricing</div>
+                <div class=" mt-4 text-xs font-normal text-white">
+                We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+                </div>
+                
+                <button class=" app-button bg-white border border-gray-300 rounded-xl mt-6">Start Farming</button>
+            </div>
+
+            <div class=" w-1/2">
+                <div class=" text-sm font-bold text-white">Simple Pricing</div>
+                <div class=" mt-4 text-xs font-normal text-white">
+                We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+                </div>
+                
+            </div>
+            </div>
+        </div>
         </div>
     </div>
 </template>
@@ -214,8 +138,8 @@ export default {
             core_values : [
                 {
                     id : 1,
-                    head : 'Sustainability',
-                    text : 'Our commitment to sustainability refers to our mindfulness of the effects of some farm practices on the environment. We therefore are committed to practicing and supporting sustainable ways of producing food.'
+                    head : 'Corporate responsibility',
+                    text : 'We serve and improve the communities in which we live in by supporting company sponsored community projects. We ensure the conduct of the business is a credit to the community.'
                 },
                 {
                     id : 2,
@@ -229,29 +153,29 @@ export default {
                 },
                 {
                     id : 4,
-                    head : 'Partnership and collaboration',
+                    head : 'Partnership & collaboration',
                     text : 'We pursue productive and beneficial partnerships and strategic alliance with clearly defined roles, responsibilities, governance and supportive mechanisms so as to ensure effective collaboration and synergies that have a direct bearing to the company’s mission.'
                 },
                 {
                     id : 5,
+                    head : 'Sustainability',
+                    text : 'Our commitment to sustainability refers to our mindfulness of the effects of some farm practices on the environment. We therefore are committed to practicing and supporting sustainable ways of producing food.'
+                },
+                {
+                    id : 6,
+                    head : 'Customer excellence',
+                    text : 'We strive for excellence in all areas of delivery, going above and beyond to exceed our clients’ expectations. We aim to “surprise and delight” in all customer dealings and never let our customers down. We are committed to being the best we can be and go the extra mile to get the job done and give 100% in all that we do and approach everything with a “can do” spirit.'
+                },
+                {
+                    id : 7,
                     head : 'Innovation',
                     text : 'We apply the creative ingenuity necessary to make us better faster first. We recognize the need for new or modified approaches and champion them, and generate ideas that go beyond the status quo.'
                 },
                 {
-                    id : 6,
-                    head : 'Corporate responsibility',
-                    text : 'We serve and improve the communities in which we live in by supporting company sponsored community projects. We ensure the conduct of the business is a credit to the community.'
-                },
-                {
-                    id : 7,
+                    id : 8,
                     head : 'Integrity',
                     text : 'We strive to do what is right always and we do what we say we will do.'
                 },
-                {
-                    id : 8,
-                    head : 'Customer excellence',
-                    text : 'We strive for excellence in all areas of delivery, going above and beyond to exceed our clients’ expectations. We aim to “surprise and delight” in all customer dealings and never let our customers down. We are committed to being the best we can be and go the extra mile to get the job done and give 100% in all that we do and approach everything with a “can do” spirit.'
-                }
             ],
             management : [
                 {

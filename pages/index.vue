@@ -2,22 +2,22 @@
   <div>
     <!-- main section -->
     <div
-      class="px-4 h-screen xl:overflow-x-hidden flex justify-center xl:justify-between items-center"
+      class="h-screen xl:overflow-x-hidden flex justify-center xl:justify-between items-center max-w-6xl px-4 mx-auto"
     >
       <div class="w-full xl:w-7/12">
-        <h1 class=" text-7xl text-left font-bold">
+        <h1 class=" text-xl text-left font-bold">
           The<br />
           future of <br />investment.
         </h1>
-        <p class=" mt-12 font-normal text-base">
+        <p class=" mt-12 font-normal text-md">
           Sit home, watch us dirty our hands, enjoy your profits.
         </p>
         <div class="lg:flex mt-6 space-x-5 items-center">
-          <button class=" app-button rounded-lg bg-primary text-white">
-            Get started
+          <button class=" app-button rounded-xl bg-primary text-white">
+            Start Farming
           </button>
           <button
-            class="app-button bg-white text-black border border-gray-400 rounded-lg"
+            class="app-button bg-white text-black border border-gray-400 rounded-xl"
           >
             Learn more
           </button>
@@ -44,11 +44,12 @@
     </div>
     <!-- end main section -->
 
-    <div class=" py-12 mt-16 " id="new-opportunities">
+    <div class=" bg-gray-100">
+    <div class=" py-24 mt-16 max-w-6xl px-4 mx-auto" id="new-opportunities">
       <div class=" w-full flex justify-center">
         <div class=" w-full lg:w-1/2 text-center">
-          <div class=" text-lg font-bold mb-5">New opportunities</div>
-          <p>
+          <div class=" text-base font-bold mb-5">New opportunities</div>
+          <p class=" text-xs font-normal">
             All these years, individuals have always wanted to venture into
             agriculture, but barriers such as lack of technical knowledge,
             access to land, inadequate finance and unavailability of produce off
@@ -58,30 +59,30 @@
         </div>
       </div>
 
-      <div class=" mt-14 w-full flex justify-center">
+      <div class=" mt-12 w-full flex justify-center">
         <div class=" flex space-x-10 w-full">
-          <div class=" w-1/3 rounded-xl p-6 h-96 bg-gray-300 relative">
-            <div class=" absolute bottom-6">
-              <div class=" text-base font-bold">Technology</div>
-              <div class=" mt-1 text-sm font-normal">
+          <div class=" w-1/3 rounded-xl h-96 bg-gray-300 relative">
+            <div class=" absolute bottom-0 left-0 right-0 p-6">
+              <div class=" text-sm font-bold">Technology</div>
+              <div class=" mt-1 text-xs font-normal">
                 Taking maximum advantage of technology to sponsor farms and earn
                 very cool returns without a physical involvement.
               </div>
             </div>
           </div>
-          <div class=" w-1/3 rounded-xl p-6 h-96 bg-gray-300 relative">
-            <div class=" absolute bottom-6">
-              <div class=" text-base font-bold">Partnerships</div>
-              <div class=" mt-1 text-sm font-normal">
+          <div class=" w-1/3 rounded-xl h-96 bg-gray-300 relative">
+            <div class=" absolute bottom-0 left-0 right-0 p-6">
+              <div class=" text-sm font-bold">Partnerships</div>
+              <div class=" mt-1 text-xs font-normal">
                 Fostering partnerships with farmers and necessary stakeholder we
                 trust to run activities on our farms.
               </div>
             </div>
           </div>
-          <div class=" w-1/3 rounded-xl p-6 h-96 bg-gray-300 relative">
-            <div class=" absolute bottom-6">
-              <div class=" text-base font-bold">Analytics</div>
-              <div class=" mt-1 text-sm font-normal">
+          <div class=" w-1/3 rounded-xl h-96 bg-gray-300 relative">
+            <div class=" absolute bottom-0 left-0 right-0 p-6">
+              <div class=" text-sm font-bold">Analytics</div>
+              <div class=" mt-1 text-xs font-normal">
                 Researching, analysing and gathering industry data helps drive
                 higher returns on your investments.
               </div>
@@ -90,10 +91,10 @@
         </div>
       </div>
 
-      <div class=" mt-44 w-full flex justify-center">
+      <div class=" mt-52 w-full flex justify-center">
         <div>
-          <h3 class="text-center text-lg font-bold mb-5">Our farms.</h3>
-          <p class="text-center text-base font-normal">
+          <h3 class="text-center text-base font-bold mb-5">Our farms.</h3>
+          <p class="text-center text-sm font-normal">
             All farms are automatically insured.
           </p>
 
@@ -110,33 +111,19 @@
           </div>
         </div>
 
-        <!-- <div class=" medium-padding grid grid-cols-1 lg:grid-cols-2 gap-5">
-             <div class=" px-8 lg:px-14 xl:px-20 py-4 lg:py-6 xl:py-10 brown-card">
-
-               <img src="~/static/img/blog/safe-and-secure-icon.png" />
-               <h4 class=" small-padding">Transparent</h4>
-               <p class=" mt-5">We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.</p>
-
-             </div>
-             
-             <div class=" px-8 lg:px-20 py-4 lg:py-10 voilet-card">
-               <img src="~/static/img/blog/transparent-icon.png" />
-               <h4 class=" small-padding">Safe and secured</h4>
-               <p class=" mt-5">Your cards and other personal data are protected with an AES-256 bit encryption to ensure that your data doesn’t get into the wrong hands.</p>
-             </div>
-           </div> -->
       </div>
     </div>
+    </div>
 
-    <div class="py-16 ">
-      <div class=" bg-gray-300 rounded-xl h-96 w-full"></div>
+    <div class="py-28 max-w-6xl px-4 mx-auto">
+      <div class=" bg-gray-100 rounded-lg w-full" style="height:706px"></div>
 
-      <div class=" w-full flex justify-center mt-12">
+      <div class=" w-full flex justify-center mt-28">
         <div class=" w-full lg:w-1/2 text-center">
-          <div class=" text-lg font-bold mb-5">
+          <div class=" text-base font-bold mb-5">
             Well-tailored packages to meet your investment needs.
           </div>
-          <p>
+          <p class=" text-xs font-normal">
             A Farm For Me offers its clients a variety of well-tailored and
             pre-prepared farm sponsorship packages, so you can choose the option
             that best meets your investment needs. We offer a number of
@@ -148,93 +135,93 @@
 
       <div class=" flex justify-center w-full mt-12">
         <div class=" md:flex w-full space-x-5 hidden " >
-          <div class=" px-6 py-12 bg-gray-200 w-1/3 rounded-md">
-              <div class=" font-bold text-base">Individual Investor</div>
-              <div class="text-sm font-normal mt-6">
+          <div class=" px-6 py-12 bg-gray-100 w-1/3 rounded-xl">
+              <div class=" font-bold text-sm">Individual Investor</div>
+              <div class="text-xs font-normal mt-5">
                 Appropriate for individuals/new investors looking to enlarge their range of investments with a tangible asset.
               </div>
 
               <div class=" mt-6">
-                <ul class=" space-y-3">
+                <ul class=" space-y-1">
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 1 unit.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 1 unit.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="">Minimum of 1 unit</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal">Minimum of 1 unit</label>
                   </li>
                 </ul>
               </div>
 
-              <div class=" mt-6 text-sm uppercase text-gray-500 font-bold">STARTING AT</div>
-              <div class=" mt-2 text-lg font-bold">GHS 2,000</div>
+              <div class=" mt-5 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
+              <div class=" mt-2 text-base font-bold">GHS 2,000</div>
 
-              <div class=" mt-8 text-base font-bold">
+              <div class=" mt-8 text-sm font-bold">
                 Get Started 
               </div>
           </div>
-          <div class=" shadow-md rounded-md px-6 py-12 bg-white border border-gray-200  w-1/3">
-              <div class=" font-bold text-base">Institutional Investor</div>
-              <div class="text-sm font-normal mt-6">
+          <div class=" shadow-lg rounded-xl px-6 py-12 bg-white border border-gray-200  w-1/3">
+              <div class=" font-bold text-sm">Institutional Investor</div>
+              <div class="text-xs font-normal mt-5">
                 Appropriate for institutions and high capacity investors looking to enlarge their range of investments with a tangible asset.
               </div>
 
               <div class=" mt-6">
-                <ul class=" space-y-3">
+                <ul class=" space-y-1">
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""  class="text-xs font-normal"> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 20 units.</label>
+                      <input type="checkbox" name="" id="" checked> <label for=""  class="text-xs font-normal"> Minimum of 20 units.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 20 units.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 20 units.</label>
                   </li>
                 </ul>
               </div>
 
-              <div class=" mt-6 text-sm uppercase text-gray-500 font-bold">STARTING AT</div>
-              <div class=" mt-2 text-lg font-bold">GHS 22,000</div>
+              <div class=" mt-5 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
+              <div class=" mt-2 text-base font-bold">GHS 22,000</div>
 
-              <div class=" mt-8 text-base font-bold">
+              <div class=" mt-8 text-sm font-bold">
                 Get Started 
               </div>
           </div>
-          <div class=" px-6 py-12 bg-gray-200 w-1/3 rounded-md">
-              <div class=" font-bold text-base">Institutional Investor</div>
-              <div class="text-sm font-normal mt-6">
+          <div class=" px-6 py-12 bg-gray-100 w-1/3 rounded-xl">
+              <div class=" font-bold text-sm">Institutional Investor</div>
+              <div class="text-xs font-normal mt-5">
                 Appropriate for institutions and high capacity investors looking to enlarge their range of investments with a tangible asset.
               </div>
 
               <div class=" mt-6">
-                <ul class=" space-y-3">
+                <ul class=" space-y-1">
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 20 units.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 20 units.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Purchase of crop/animal farm.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
                   </li>
                   <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""> Minimum of 20 units.</label>
+                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 20 units.</label>
                   </li>
                 </ul>
               </div>
 
-              <div class=" mt-6 text-sm uppercase text-gray-500 font-bold">STARTING AT</div>
-              <div class=" mt-2 text-lg font-bold">GHS 50,000</div>
+              <div class=" mt-6 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
+              <div class=" mt-2 text-base font-bold">GHS 50,000</div>
 
-              <div class=" mt-8 text-base font-bold">
+              <div class=" mt-8 text-sm font-bold">
                 Get Started 
               </div>
           </div>
@@ -243,10 +230,25 @@
       </div>
     </div>
 
+    <div class=" bg-blue-500">
+      <div class=" max-w-6xl mx-auto px-4 flex space-x-0 py-72 ">
+        <div class=" w-1/2">
+            <div class=" text-base font-bold text-white mb-5">Become A Partner</div>
+            <p class=" text-xs font-normal text-white mb-5">
+              A Farm For Me offers its clients a variety of well-tailored and pre-prepared farm sponsorship packages, so you can choose the option that best meets your investment needs. We offer a number of different packages to suit the needs of individuals, organisations, families, students, groups etc.
+            </p>
 
-    <div class=" py-12">
+            <button class=" app-button rounded-xl text-black border border-gray-300 bg-white">
+              Learn More
+            </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=" py-28 max-w-6xl px-4 mx-auto">
       <div class=" w-full flex justify-center">
-        <div class=" w-1/2 font-bold text-lg uppercase text-center">
+        <div class=" w-1/2 font-bold text-base text-center">
             We are excited helping achieve the sustainable development goals.
         </div>
       </div>
@@ -260,154 +262,34 @@
         <img src="~/static/img/farm/SDG-goal-15.png" class=" w-full h-auto object-cover"/>
       </div>
     </div>
+    <div class="max-w-6xl mx-auto px-4 pb-48">
 
-    <div class=" my-16 p-10 flex space-x-4 bg-blue-500 rounded-lg items-center">
-      <div class=" w-1/2 text-white font-bold text-3xl">
-        <div class=" w-4/6">
+    <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-500 rounded-lg items-center ">
+      <div class=" w-1/2 pr-10">
+        <div class="text-lg font-bold text-white">
           Begin your journey of becoming a Agripreneur.
         </div>
       </div>
       <div class=" flex space-x-4 w-1/2">
         <div class="w-1/2">
-        <div class=" text-base font-bold text-white">Simple Pricing</div>
-        <div class=" mt-4 text-sm font-normal text-white">
+        <div class=" text-sm font-bold text-white">Simple Pricing</div>
+        <div class=" mt-4 text-xs font-normal text-white">
           We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
         </div>
         
-        <button class=" app-button bg-white border border-gray-300 rounded-md mt-6">Start Farming</button>
+        <button class=" app-button bg-white border border-gray-300 rounded-xl mt-6">Start Farming</button>
       </div>
 
       <div class=" w-1/2">
-        <div class=" text-base font-bold text-white">Simple Pricing</div>
-        <div class=" mt-4 text-sm font-normal text-white">
+        <div class=" text-sm font-bold text-white">Simple Pricing</div>
+        <div class=" mt-4 text-xs font-normal text-white">
           We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
         </div>
         
       </div>
       </div>
     </div>
-
-   <!--  <div class="text-center extra-big-padding">
-
-    <div class="medium-padding">
-      <div
-        class="gray-card grid grid-cols-1 lg:grid-cols-2 py-16 gap-5 big-side-padding"
-      >
-        <div>
-          <h3>
-            Stay connected wherever <span>you are, whenever you want.</span>
-          </h3>
-          <p class="small-padding">
-            Download our mobile app now from any of the app stores and stay
-            up-to-date with progress on your investments.
-          </p>
-          <div class="flex small-padding">
-            <img
-              src="~/static/img/summary/google-playstore.png"
-              class=" mr-2 lg:mr-5 w-3/6 lg:w-full"
-            />
-            <img
-              src="~/static/img/summary/apple-appstore.png"
-              class="w-3/6 lg:w-full"
-            />
-          </div>
-        </div>
-        <div>
-        </div>
-      </div>
     </div>
-
-    <div class="medium-padding big-side-padding">
-      <h3 class=" text-center">
-        A few nice things that our <span>customers</span> are saying
-        <span>about us.</span>
-      </h3>
-      <div class=" small-padding">
-        <div class=" grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-14">
-          <div class="gray-card pt-14 px-8 pb-1 rounded-2xl">
-            <p>
-              I invested in A poultry farm last year August. I was skeptical but
-              when I saw my returns, I was so happy that I have decided to
-              invest in 3 more farms and the diversified package. This is
-              awesome and I thank the team for their 24/7 customer support.
-            </p>
-            <hr />
-            <div class="flex p-2">
-              <img src="~/static/img/mgt-board/josh.jpg" class="avatar mr-4" />
-              <div>
-                <p>Jen Sokpoe</p>
-                <p class=" text-sm">Teacher</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gray-card pt-14 px-8 pb-1 rounded-2xl">
-            <p>
-              I invested in A poultry farm last year August. I was skeptical but
-              when I saw my returns, I was so happy that I have decided to
-              invest in 3 more farms and the diversified package. This is
-              awesome and I thank the team for their 24/7 customer support.
-            </p>
-            <hr />
-            <div class="flex p-2">
-              <img src="~/static/img/mgt-board/josh.jpg" class="avatar mr-4" />
-              <div>
-                <p>Noah Alorwu</p>
-                <p class=" text-sm">National Service Personnel</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gray-card pt-14 px-8 pb-1 rounded-2xl">
-            <p>
-              I invested in A poultry farm last year August. I was skeptical but
-              when I saw my returns, I was so happy that I have decided to
-              invest in 3 more farms and the diversified package. This is
-              awesome and I thank the team for their 24/7 customer support.
-            </p>
-            <hr />
-            <div class="flex p-2">
-              <img src="~/static/img/mgt-board/josh.jpg" class="avatar mr-4" />
-              <div>
-                <p>Fiifi Manaf</p>
-                <p class=" text-sm">University student</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="big-side-padding medium-padding">
-      <div
-        class="deep-green-card px-4 lg:px-28 xl:px-56 py-10 lg:py-14 xl:py-20 text-center relative"
-      >
-        <img
-          src="~/static/img/summary/newsletter-illustration.png"
-          class="newsletter-bg"
-        />
-        <h4 class=" text-white">Sign up for our promotions and newsletters.</h4>
-
-        <p class=" py-12 text-white">
-          We may not give out a plot of land for free. But once in a while, we
-          will be giving out discount offers and tips and tricks you don’t want
-          to miss.
-        </p>
-        <form class="w-full lg:flex" @submit.prevent="NewsLetterSubscribe">
-          <input
-            class="app-input w-full lg:auto mr-4"
-            required
-            placeholder="Enter your email here…"
-            type="email"
-            v-model="email"
-          />
-
-          <div class=" pt-5 lg:pt-0">
-            <button class="app-button w-full" type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -429,17 +311,26 @@ export default {
         {
           id:1,
           name : "Pepper farm",
-          img : '/img/farm/pepper-farm.png'
+          img : '/img/farm/pepper-farm.png',
+          price:"Price available",
+          returns : '80% return on investment',
+          months : '5 months'
         },
         {
           id:2,
           name : 'Cassava farm',
-          img : '/img/farm/cassava-farm.jpg'
+          img : '/img/farm/cassava-farm.jpg',
+          price : '300ghs per plot',
+          returns : "80% return on investement",
+          months : '3 months'
         },
         {
           id:3,
           name : 'Chilli farm',
-          img : '/img/farm/chilli-farm.jpg'
+          img : '/img/farm/chilli-farm.jpg',
+          price:"500ghs per pig",
+          returns : "80% return on investement",
+          months : "17 months"
         }
       ]
     }
@@ -448,38 +339,4 @@ export default {
 </script>
 
 <style>
-.brown-card {
-  background: #ffe3d5 0% 0% no-repeat padding-box;
-  border-radius: 15px;
-  opacity: 1;
-}
-
-.voilet-card {
-  background: #ffc9ee 0% 0% no-repeat padding-box;
-  border-radius: 15px;
-  opacity: 1;
-}
-
-.green-card {
-  background: #f4fff0 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
-
-.deep-green-card {
-  background: transparent linear-gradient(269deg, #55893f 0%, #206e00 100%) 0%
-    0% no-repeat padding-box;
-  opacity: 1;
-  border-radius: 15px;
-}
-
-.read-more {
-  color: #206e00;
-  font-weight: 700;
-}
-
-.newsletter-bg {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
 </style>
