@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="integrityicon" transform="translate(-1343 -1711)">
+    <rect id="Rectangle_1760" data-name="Rectangle 1760" width="36" height="36" rx="13" transform="translate(1343 1711)" fill="#eaeaea"/>
+    <g id="scan-barcode" transform="translate(1349 1717)">
+      <path id="Path_897" data-name="Path 897" d="M2,9V6.5A4.494,4.494,0,0,1,6.5,2H9" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_898" data-name="Path 898" d="M15,2h2.5A4.494,4.494,0,0,1,22,6.5V9" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_899" data-name="Path 899" d="M22,16v1.5A4.494,4.494,0,0,1,17.5,22H16" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_900" data-name="Path 900" d="M9,22H6.5A4.494,4.494,0,0,1,2,17.5V15" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_901" data-name="Path 901" d="M10.5,7V9A1.326,1.326,0,0,1,9,10.5H7A1.326,1.326,0,0,1,5.5,9V7A1.326,1.326,0,0,1,7,5.5H9A1.326,1.326,0,0,1,10.5,7Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_902" data-name="Path 902" d="M18.5,7V9A1.326,1.326,0,0,1,17,10.5H15A1.326,1.326,0,0,1,13.5,9V7A1.326,1.326,0,0,1,15,5.5h2A1.326,1.326,0,0,1,18.5,7Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_903" data-name="Path 903" d="M10.5,15v2A1.326,1.326,0,0,1,9,18.5H7A1.326,1.326,0,0,1,5.5,17V15A1.326,1.326,0,0,1,7,13.5H9A1.326,1.326,0,0,1,10.5,15Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_904" data-name="Path 904" d="M18.5,15v2A1.326,1.326,0,0,1,17,18.5H15A1.326,1.326,0,0,1,13.5,17V15A1.326,1.326,0,0,1,15,13.5h2A1.326,1.326,0,0,1,18.5,15Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

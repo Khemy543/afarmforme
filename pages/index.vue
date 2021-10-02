@@ -25,7 +25,7 @@
 
         <div class=" flex space-x-5 mt-12">
           <div
-            class=" bg-gray-400 h-12 w-12 rounded-md"
+            class=" bg-gray-50 h-12 w-12 rounded-md"
             v-for="n in 5"
             :key="n"
           ></div>
@@ -37,7 +37,7 @@
       >
         <img
           class=" h-screen w-full object-cover"
-          src="~static/img/home-one/main-banner-edited.png"
+          src="~static/img/Home/hero-img.png"
           alt="image"
         />
       </div>
@@ -60,29 +60,29 @@
       </div>
 
       <div class=" mt-12 w-full flex justify-center">
-        <div class=" flex space-x-10 w-full">
-          <div class=" w-1/3 rounded-xl h-96 bg-gray-300 relative">
+        <div class=" flex space-x-14 w-full">
+          <div class=" w-1/3 rounded-xl bg-technology relative" style="height:450px">
             <div class=" absolute bottom-0 left-0 right-0 p-6">
-              <div class=" text-sm font-bold">Technology</div>
-              <div class=" mt-1 text-xs font-normal">
+              <div class=" text-sm font-bold text-white">Technology</div>
+              <div class=" mt-1 text-xs font-normal text-white">
                 Taking maximum advantage of technology to sponsor farms and earn
                 very cool returns without a physical involvement.
               </div>
             </div>
           </div>
-          <div class=" w-1/3 rounded-xl h-96 bg-gray-300 relative">
+          <div class=" w-1/3 rounded-xl bg-partnership relative" style="height:450px">
             <div class=" absolute bottom-0 left-0 right-0 p-6">
-              <div class=" text-sm font-bold">Partnerships</div>
-              <div class=" mt-1 text-xs font-normal">
+              <div class=" text-sm font-bold text-white">Partnerships</div>
+              <div class=" mt-1 text-xs font-normal text-white">
                 Fostering partnerships with farmers and necessary stakeholder we
                 trust to run activities on our farms.
               </div>
             </div>
           </div>
-          <div class=" w-1/3 rounded-xl h-96 bg-gray-300 relative">
+          <div class=" w-1/3 rounded-xl bg-analytics relative" style="height:450px">
             <div class=" absolute bottom-0 left-0 right-0 p-6">
-              <div class=" text-sm font-bold">Analytics</div>
-              <div class=" mt-1 text-xs font-normal">
+              <div class=" text-sm font-bold text-white">Analytics</div>
+              <div class=" mt-1 text-xs font-normal text-white">
                 Researching, analysing and gathering industry data helps drive
                 higher returns on your investments.
               </div>
@@ -98,13 +98,13 @@
             All farms are automatically insured.
           </p>
 
-          <div class=" flex space-x-10 mt-12">
+          <div class=" flex space-x-14 mt-12">
             <ProductCard v-for="n in products" :key="n.id" :product="n" class=" w-1/3" />
           </div>
 
           <div class=" mt-10  flex justify-center w-full">
             <button
-              class=" app-button rounded-xl text-black border border-gray-300 bg-white"
+              class=" app-button rounded-xl text-black border border-gray-50"
             >
               Browse Farms
             </button>
@@ -230,23 +230,26 @@
       </div>
     </div>
 
-    <div class=" bg-blue-500">
-      <div class=" max-w-6xl mx-auto px-4 flex space-x-0 py-72 ">
+    <div class=" bg-blue-200">
+      <div class=" max-w-6xl mx-auto px-4 flex space-x-0 items-center">
         <div class=" w-1/2">
             <div class=" text-base font-bold text-white mb-5">Become A Partner</div>
             <p class=" text-xs font-normal text-white mb-5">
               A Farm For Me offers its clients a variety of well-tailored and pre-prepared farm sponsorship packages, so you can choose the option that best meets your investment needs. We offer a number of different packages to suit the needs of individuals, organisations, families, students, groups etc.
             </p>
 
-            <button class=" app-button rounded-xl text-black border border-gray-300 bg-white">
+            <button class=" app-button rounded-xl text-black border border-gray-200 bg-white">
               Learn More
             </button>
+        </div>
+        <div class="w-1/2">
+            <img src="~/static/img/Home/become-a-partner.png" alt="become a partner" class=" -mb-20 pt-10">
         </div>
       </div>
     </div>
 
 
-    <div class=" py-28 max-w-6xl px-4 mx-auto">
+    <div class=" py-28 max-w-6xl px-4 mx-auto mt-60">
       <div class=" w-full flex justify-center">
         <div class=" w-1/2 font-bold text-base text-center">
             We are excited helping achieve the sustainable development goals.
@@ -264,7 +267,7 @@
     </div>
     <div class="max-w-6xl mx-auto px-4 pb-48">
 
-    <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-500 rounded-lg items-center ">
+    <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
       <div class=" w-1/2 pr-10">
         <div class="text-lg font-bold text-white">
           Begin your journey of becoming a Agripreneur.
@@ -277,7 +280,7 @@
           We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
         </div>
         
-        <button class=" app-button bg-white border border-gray-300 rounded-xl mt-6">Start Farming</button>
+        <button class=" app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
       </div>
 
       <div class=" w-1/2">

@@ -99,7 +99,7 @@ export default {
 </script>
 <style scoped>
 .nuxt-link-exact-active span{
-  @apply border-b-4 border-indigo-400
+  @apply border-b-4 border-blue-200
 }
 
 .fade-down {

@@ -4,7 +4,7 @@
             <div>
                 <h4 class=" text-xs font-bold">Discover</h4>
 
-                <ul>
+                <ul class=" text-gray-400">
                     <li class=" text-xs font-normal py-2">
                         <nuxt-link to="/our-fees">Our fees</nuxt-link>
                     </li>
@@ -25,7 +25,7 @@
             <div>
                 <h4 class=" text-xs font-bold">Learn more</h4>
 
-                <ul>
+                <ul class=" text-gray-400">
                     <li class=" text-xs font-normal py-2">
                         Blog
                     </li>
@@ -40,7 +40,7 @@
             <div>
                 <h4 class=" text-xs font-bold">Customer helplines</h4>
 
-                <ul>
+                <ul class=" text-gray-400">
                     <li class=" text-xs font-normal py-2">
                         +233 0000000
                     </li>
@@ -55,7 +55,7 @@
             <div>
                 <h4 class=" text-xs font-bold">Get connected</h4>
 
-                <ul>
+                <ul class=" text-gray-400">
                     <li class=" text-xs font-normal py-2">
                         Facebook
                     </li>
@@ -71,7 +71,7 @@
         </div>
         <div class=" w-full flex justify-center">   
             <div class=" mt-8 py-2 w-1/2 text-center">
-                <div class="text-xs font-normal text-gray-600">
+                <div class="text-xs font-normal text-gray-300">
                     Past performance is no guarantee of future results. Any historical returns, expected returns, or probability projections may not reflect actual future performance.
                 </div> 
             

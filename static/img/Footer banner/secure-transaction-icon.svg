@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.671" height="18.079" viewBox="0 0 21.671 18.079">
+  <g id="secure-transaction-icon" transform="translate(-1.533 -3.033)">
+    <g id="Scan" transform="translate(1.5 3)">
+      <path id="Path_33950" d="M19.176,5.821V4.762A3.97,3.97,0,0,0,15.2.783h-.764" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+      <path id="Path_33951" d="M2.6,5.821V4.762A3.97,3.97,0,0,1,6.567.783h.8" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+      <path id="Path_33952" d="M19.176,9.864v3.518A3.97,3.97,0,0,1,15.2,17.362h-.764" fill="none" stroke="#200e32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+      <path id="Path_33953" d="M2.6,9.864v3.518a3.97,3.97,0,0,0,3.979,3.979h.792" fill="none" stroke="#200e32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+      <line id="Line_187" x1="20.171" transform="translate(0.783 9.864)" fill="none" stroke="#200e32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

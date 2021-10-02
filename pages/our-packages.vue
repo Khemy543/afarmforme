@@ -10,7 +10,7 @@
                     <li class="p-0 mb-0">
                         <div 
                         class="rounded-xl text-sm inline-block px-14 cursor-pointer font-bold" 
-                        :class="activeTab == 1 ? 'bg-blue-400 text-white':'bg-white text-black'"
+                        :class="activeTab == 1 ? 'bg-blue-200 text-white':'bg-white text-black'"
                         id="1"
                         @click="changeTab(1)"
                         >
@@ -20,7 +20,7 @@
                     <li class="p-0 mb-0">
                         <div
                             class="text-sm inline-block px-14 rounded-xl cursor-pointer font-bold" 
-                            :class="activeTab == 2 ? 'bg-blue-400 text-white':'bg-white text-black'"
+                            :class="activeTab == 2 ? 'bg-blue-200 text-white':'bg-white text-black'"
                             id="2"
                             @click="changeTab(2)"
                             >Group
@@ -29,7 +29,7 @@
                     <li class="p-0 mb-0">
                         <div
                             class="text-sm inline-block px-14 rounded-xl cursor-pointer font-bold" 
-                            :class="activeTab == 3 ? 'bg-blue-400 text-white':'bg-white text-black'"
+                            :class="activeTab == 3 ? 'bg-blue-200 text-white':'bg-white text-black'"
                             id="3"
                             @click="changeTab(3)">
                             Organizations
@@ -54,19 +54,19 @@
                                             </th>
                                             <th scope="col" class="px-6 py-3 w-1/5 text-center">
                                                 <div class=" text-sm font-bold">Asetena Pa</div>
-                                                <p class="text-xxs font-normal text-gray-600">Designed for persons with short-term investment needs.</p>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-600">Designed for persons with short-term investment needs.</p>
                                             </th>
                                             <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
                                              <div class=" text-sm font-bold">Akwantuo</div>
-                                                <p class="text-xxs font-normal text-gray-600">For persons living abroad with specific investment needs. We understand the needs to save home for such persons.</p>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-600">For persons living abroad with specific investment needs. We understand the needs to save home for such persons.</p>
                                             </th>
                                             <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
                                              <div class=" text-sm font-bold">Daakye Asem</div>
-                                                <p class="text-xxs font-normal text-gray-600">For children under the age of 18 years. This package gives hope to children and prepare them towards a brighter future.</p>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-600">For children under the age of 18 years. This package gives hope to children and prepare them towards a brighter future.</p>
                                             </th>
                                             <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
                                              <div class=" text-sm font-bold">Aban Adwumafuo</div>
-                                                <p class="text-xxs font-normal text-gray-600">For public and civil servants. This package helps this group of persons build up funds for future needs.</p>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-600">For public and civil servants. This package helps this group of persons build up funds for future needs.</p>
                                             </th>
                                         </tr>
                                     </thead>
@@ -92,16 +92,16 @@
                                             <td class="px-6 py-4 text-left text-xsm  relative">
                                                 Units
                                             </td>
-                                            <td class="px-6 text-xsm text-center py-4 ">
+                                            <td class="px-6 text-xsm text-center tracking-normal py-4 ">
                                                 2 unit of maize <br>farm 2 units of ginger farm <br/>1 unit of piggery
                                             </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
+                                            <td class="px-6 py-4 text-xsm text-center tracking-normal ">
                                                 4 units of chilli <br/>4 units of maize 3 <br/>units of pineapple <br/>2 units of piggery
                                             </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
+                                            <td class="px-6 py-4 text-xsm text-center tracking-normal ">
                                                 3 units of chilli <br/>2 units of maize <br/>2 units of piggery
                                             </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
+                                            <td class="px-6 py-4 text-xsm text-center tracking-normal ">
                                                 2 units of maize <br/>2 units of chilli
                                             </td>
                                         </tr>

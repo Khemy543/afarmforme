@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="sustainability-icon" transform="translate(-278 -1711)">
+    <rect id="Rectangle_1751" data-name="Rectangle 1751" width="36" height="36" rx="13" transform="translate(278 1711)" fill="#eaeaea"/>
+    <g id="tree" transform="translate(283.994 1717.027)">
+      <path id="Path_891" data-name="Path 891" d="M16.17,10.06H7.83c-1.18,0-1.59-.79-.9-1.75L11.1,2.47a1.025,1.025,0,0,1,1.79,0l4.17,5.84C17.76,9.27,17.35,10.06,16.17,10.06Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_892" data-name="Path 892" d="M17.59,18H6.42c-1.58,0-2.12-1.05-1.19-2.33l3.99-5.61h5.57l3.99,5.61C19.71,16.95,19.17,18,17.59,18Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_893" data-name="Path 893" d="M12,22V18" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

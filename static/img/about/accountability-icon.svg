@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="accountability-icon" transform="translate(-988 -1460)">
+    <rect id="Rectangle_1757" data-name="Rectangle 1757" width="36" height="36" rx="13" transform="translate(988 1460)" fill="#eaeaea"/>
+    <g id="scroll" transform="translate(994 1466)">
+      <path id="Path_905" data-name="Path 905" d="M9,22h6c5,0,7-2,7-7V9c0-5-2-7-7-7H9C4,2,2,4,2,9v6C2,20,4,22,9,22Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_906" data-name="Path 906" d="M9.6,8.97,7.11,11.46a.767.767,0,0,0,0,1.07L9.6,15.02" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_907" data-name="Path 907" d="M14.4,8.97l2.49,2.49a.767.767,0,0,1,0,1.07L14.4,15.02" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

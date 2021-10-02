@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class=" pt-48 max-w-5xl mx-auto px-4">
+        <div class=" pt-48 max-w-7xl mx-auto px-4">
             <div class=" text-xl font-bold text-center">About Us.</div>
             <div class=" flex space-x-5 mt-8">
-                <div class=" w-1/2">
+                <div class=" w-1/2 pl-16">
                    <p class="text-xs font-normal">A Farm For Me is an investment system of smart farming designed for persons who have interest in agriculture and want to own farms but do not have the time, lands, resources, technical knowledge etc. It is also designed for persons or individuals who are looking for investment opportunities to earn returns, which will serve as an extra source of income.
                     <br/><br/>
                     A Farm for me give individuals the opportunity to invest or sponsor our crop and animal farm units and be able to monitor farm activities through our web and mobile applications right on their smart devices at the comfort of their homes, offices or wherever they find themselves provided they have access to internet connection.
@@ -45,19 +45,18 @@
 
                 </div>
                 <div class=" w-1/2">
-                    <div class=" w-full h-96 bg-gray-100 rounded-lg">
-
-                    </div>
+                    <img src="~/static/img/about/team.png" alt="team" class=" w-full "/>
                 </div>
             </div>
         </div>
 
-        <div class=" max-w-6xl mx-auto px-4 mt-16">
-            <div class="bg-blue-300 py-10 px-28 rounded-xl">
+        <div class=" max-w-7xl mx-auto px-4 mt-16">
+            <div class="bg-teal-500 py-10 px-16 rounded-xl">
                 <div class=" text-base font-bold text-white">Our core values</div>
 
                 <div class=" mt-8 grid grid-cols-4 gap-5">
                     <div v-for="value in core_values" :key="value.id">
+                        <img :src="value.icon" :alt="value.head">
                         <div class=" text-sm font-bold text-white">{{value.head}}</div>
                         <p class=" text-xs font-normal text-white">{{value.text}}</p>
                     </div>
@@ -94,13 +93,18 @@
             </div>
 
             <div class=" mt-5 grid grid-cols-4 gap-4">
-                <div class=" bg-gray-100 rounded-lg h-48" v-for="n in 11" :key="n">
-
+                <div class=" rounded-lg h-48 overflow-hidden relative" v-for="value in management" :key="value.id">
+                    <img :src="value.image" :alt="value.name"/>
+                    <div class="absolute w-full bottom-0 inset-x-0 px-2 text-white text-xxs font-bold tracking-normal">
+                        {{value.name}}<br/>
+                        <span class=" text-small text-white font-normal">{{value.title}}</span>
+                    </div>
+                    
                 </div>
             </div>
         </div>
         <div class=" max-w-6xl mx-auto px-4">
-        <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-500 rounded-lg items-center ">
+        <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
             <div class=" w-1/2 pr-10">
                 <div class="text-lg font-bold text-white">
                 Begin your journey of becoming a Agripreneur.
@@ -138,41 +142,49 @@ export default {
             core_values : [
                 {
                     id : 1,
+                    icon : '/img/about/corporate-responsibility-icon.svg',
                     head : 'Corporate responsibility',
                     text : 'We serve and improve the communities in which we live in by supporting company sponsored community projects. We ensure the conduct of the business is a credit to the community.'
                 },
                 {
                     id : 2,
+                    icon:"/img/about/teamwork-icon.svg",
                     head : 'Teamwork',
                     text : 'We are one company, one team. We are committed to a teamwork environment where every person is a valued member, treated with respect, encouraged to contribute, recognized, and rewarded for his or her efforts.'
                 },
                 {
                     id : 3,
+                    icon:"/img/about/accountability-icon.svg",
                     head : 'Accountability',
                     text : 'We accept our individual and team responsibilities and we meet our commitments. We take responsibility for our performance in all of our decisions and actions.'
                 },
                 {
                     id : 4,
+                    icon:"/img/about/partnerships-icon.svg",
                     head : 'Partnership & collaboration',
                     text : 'We pursue productive and beneficial partnerships and strategic alliance with clearly defined roles, responsibilities, governance and supportive mechanisms so as to ensure effective collaboration and synergies that have a direct bearing to the company’s mission.'
                 },
                 {
                     id : 5,
+                    icon:"/img/about/sustainability-icon.svg",
                     head : 'Sustainability',
                     text : 'Our commitment to sustainability refers to our mindfulness of the effects of some farm practices on the environment. We therefore are committed to practicing and supporting sustainable ways of producing food.'
                 },
                 {
                     id : 6,
+                    icon :"/img/about/customer-excellence-icon.svg",
                     head : 'Customer excellence',
                     text : 'We strive for excellence in all areas of delivery, going above and beyond to exceed our clients’ expectations. We aim to “surprise and delight” in all customer dealings and never let our customers down. We are committed to being the best we can be and go the extra mile to get the job done and give 100% in all that we do and approach everything with a “can do” spirit.'
                 },
                 {
                     id : 7,
+                    icon:"/img/about/innovation-icon.svg",
                     head : 'Innovation',
                     text : 'We apply the creative ingenuity necessary to make us better faster first. We recognize the need for new or modified approaches and champion them, and generate ideas that go beyond the status quo.'
                 },
                 {
                     id : 8,
+                    icon:"/img/about/integrityicon.svg",
                     head : 'Integrity',
                     text : 'We strive to do what is right always and we do what we say we will do.'
                 },
@@ -180,39 +192,93 @@ export default {
             management : [
                 {
                     id:1,
-                    name: 'Nana Kofi Frimpong Kyeremanteng',
-                    title : 'Founder and CEO',
+                    name: 'Sandra Pinto',
+                    title : 'Sales',
                     linkedin :'',
-                    twitter : ''
+                    twitter : '',
+                    image :"/img/about/sandra.png"
                 },
                 {
                     id:2,
-                    name: 'Molly Dadzie',
-                    title : 'Co founder and business development (UK)',
+                    name: 'Martin Dwamena',
+                    title : 'Marketing',
                     linkedin :'',
-                    twitter : ''
+                    twitter : '',
+                    image :"/img/about/martin.png"
                 },
                 {
                     id:3,
-                    name: 'Francis Osei Kyeremanteng',
-                    title : 'Chief Operations Officer',
+                    name: 'Michaela Ama Wekem',
+                    title : 'Innovations',
                     linkedin :'',
-                    twitter : ''
+                    twitter : '',
+                    image :"/img/about/michaela.png"
                 },
                 {
                     id:4,
-                    name: 'Michaela Ama Wekem',
-                    title : 'Director of Innovations',
+                    name: 'Winston Papoe',
+                    title : 'Marketing',
                     linkedin :'',
-                    twitter : ''
+                    twitter : '',
+                    image :"/img/about/winston.png"
                 },
                 {
                     id:5,
-                    name: 'Yvette Nuerkie Nartey',
-                    title : 'Project Manager',
+                    name: 'Grace Afua',
+                    title : 'Research & Development',
                     linkedin :'',
-                    twitter : ''
-                }
+                    twitter : '',
+                    image :"/img/about/grace.png"
+                },
+                {
+                    id:6,
+                    name:"Josh",
+                    title:"Chief Technology Officer",
+                    linkedin :'',
+                    twitter : '',
+                    image :"/img/about/josh.png"
+
+                },
+                {
+                    id:7,
+                    name: 'Nana Kofi Frimpong Kyeremanteng',
+                    title : 'Founder + CEO',
+                    linkedin :'',
+                    twitter : '',
+                    image :"/img/about/nana kofi.png"
+                },
+                {
+                    id:8,
+                    name: 'Nana Akwesi Sarpong Kumankumah',
+                    title : 'Sales',
+                    linkedin :'',
+                    twitter : '',
+                    image :"/img/about/sarpong.png"
+                },
+                {
+                    id:9,
+                    name: 'Yaw Gyamfi Prempeh',
+                    title : 'Business Development',
+                    linkedin :'',
+                    twitter : '',
+                    image :"/img/about/yaw gyamfi.png"
+                },
+                {
+                    id:10,
+                    name: 'Molly Dadzie',
+                    title : 'Co-Founder + Business Development',
+                    linkedin :'',
+                    twitter : '',
+                    image :"/img/about/molly.png"
+                },
+                {
+                    id:11,
+                    name: 'Kekeli Klutse',
+                    title : 'Digital lead',
+                    linkedin :'',
+                    twitter : '',
+                    image :"/img/about/kekeli.png"
+                },
             ],
             fixed : false,
             phone_fixed :false,

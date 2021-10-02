@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="innovation-icon" transform="translate(-988 -1711)">
+    <rect id="Rectangle_1759" data-name="Rectangle 1759" width="36" height="36" rx="13" transform="translate(988 1711)" fill="#eaeaea"/>
+    <g id="story" transform="translate(994 1717)">
+      <path id="Path_922" data-name="Path 922" d="M16.42,7.95a6.251,6.251,0,1,1-8.84,0A6.253,6.253,0,0,1,16.42,7.95Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_923" data-name="Path 923" d="M8.25,21.64A9.95,9.95,0,0,1,2.09,11.13" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_924" data-name="Path 924" d="M5.85,4.48a9.952,9.952,0,0,1,12.19-.07" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_925" data-name="Path 925" d="M15.75,21.64a9.95,9.95,0,0,0,6.16-10.51" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
