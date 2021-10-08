@@ -73,10 +73,50 @@
 
                 <div class=" mt-8 grid grid-cols-4 gap-5">
                     <div v-for="value in features" :key="value.id">
-                        <img :src="value.icon" :alt="value.head">
+                       <!--  <img :src="value.icon" :alt="value.head"> -->
                         <div class=" text-sm font-bold text-white">{{value.head}}</div>
                         <p class=" text-xs font-normal text-white">{{value.text}}</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" max-w-3xl mx-auto px-4 my-40 flex">
+            <div class=" w-1/2">
+
+            </div>
+            <div class=" w-1/2">
+                <div class=" text-base font-bold tracking-normal">
+                    “To safeguard your investments, all of our farms have been insured against natural disasters such as flooding, pests, bush fire and other unforeseen setbacks.”
+                </div>
+                <div class=" text-xs tracking-normal mt-5">Frances Amoah • Institutional Investor</div>
+            </div>
+        </div>
+
+        <div class=" max-w-6xl mx-auto px-4 mb-40">
+            <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
+                <div class=" w-1/2 pr-10">
+                    <div class="text-lg font-bold text-white">
+                    Begin your journey of becoming a Agripreneur.
+                    </div>
+                </div>
+                <div class=" flex space-x-4 w-1/2">
+                    <div class="w-1/2">
+                    <div class=" text-sm font-bold text-white">Simple Pricing</div>
+                    <div class=" mt-4 text-xs font-normal text-white">
+                    We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+                    </div>
+                    
+                    <button class=" app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
+                </div>
+
+                <div class=" w-1/2">
+                    <div class=" text-sm font-bold text-white">Simple Pricing</div>
+                    <div class=" mt-4 text-xs font-normal text-white">
+                    We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+                    </div>
+                    
+                </div>
                 </div>
             </div>
         </div>

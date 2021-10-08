@@ -98,7 +98,7 @@ export default {
 }
 </script>
 <style scoped>
-.nuxt-link-exact-active span{
+.nuxt-link-active span{
   @apply border-b-4 border-blue-200
 }
 

@@ -92,12 +92,14 @@
                 </p>
             </div>
 
-            <div class=" mt-5 grid grid-cols-4 gap-4">
-                <div class=" rounded-lg h-48 overflow-hidden relative" v-for="value in management" :key="value.id">
-                    <img :src="value.image" :alt="value.name"/>
-                    <div class="absolute w-full bottom-0 inset-x-0 px-2 text-white text-xxs font-bold tracking-normal">
-                        {{value.name}}<br/>
-                        <span class=" text-small text-white font-normal">{{value.title}}</span>
+            <div class=" mt-5 grid grid-cols-4 gap-6">
+                <div class=" rounded-lg h-60 overflow-hidden  relative" v-for="value in management" :key="value.id">
+                    <img :src="value.image" :alt="value.name" class=" w-full h-full object-cover" />
+                    <div class=" h-1/2 bg-gradient-to-t from-black absolute w-full bottom-0">
+                        <div class="absolute w-full bottom-0 inset-x-0 px-2 text-white ">
+                            <div class="text-xxs font-bold tracking-normal -mb-2">{{value.name}}</div>
+                            <div class=" text-small text-white font-normal">{{value.title}}</div>
+                        </div>
                     </div>
                     
                 </div>
