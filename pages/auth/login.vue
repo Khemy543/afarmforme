@@ -8,48 +8,49 @@
                     </div>
                     <p class=" px-5 text-white">Login</p>
                 </div>
-                <div class="medium-padding">
+                <div class=" space-y-4 mt-12">
                     <input placeholder="Email" type="email" class="auth-input" required v-model="form.email" />
-                </div>
-                <div class="small-padding">
                     <input placeholder="Password" type="password" class="auth-input" required v-model="form.password" />
-                </div>
-                <div class="small-padding">
-                    <button class="auth-button" type="submit">Login</button>
-                </div>
-                <div class="small-padding text-center">
-                    <p class=" text-white text-center cursor-pointer" style="font-size:16px;" @click="() => open_reset_password_modal = true">
+                
+               </div>     
+               
+               <button class="app-button bg-black text-white rounded-full w-full mt-7" type="submit">Login</button>
+                
+                <div class=" mt-7 text-center space-y-3">
+                    <div class=" text-white text-center cursor-pointer text-xs" @click="() => open_reset_password_modal = true">
                         Forgot password? Click here to reset it.
-                    </p>
-                    <nuxt-link to="/auth/register" class=" text-white text-center">Don’t have an account? Click here to sign up.</nuxt-link>
+                    </div>
+                    <div>
+                        <nuxt-link to="/auth/register" class=" text-white text-center">Don’t have an account? Click here to sign up.</nuxt-link>
+                    </div>
                 </div>
             </form>
         </div>
 
-        <!-- forgot password -->
-        <div class="app-modal" v-if="open_reset_password_modal">
-            <form class=" bg-white w-full lg:w-3/12 p-5 rounded-xl text-center relative" @submit.prevent="SubmitResetPasswordEmail">
-                <h4>Forgot password</h4>
-                <p class=" small-padding">
-                    Enter your email address and we will send your password to you.
-                </p>
-                <div class="small-padding">
-                    <input class="app-input w-full" placeholder="Enter email" required v-model="reset_password_email" />
-                </div>
-                <div class=" small-padding">
-                    <button class="auth-button">Send</button>
-                </div>
+        <modal :close="() => open_reset_password_modal=false" :showClose="true" v-if="open_reset_password_modal">
+            <template v-slot:header>
+                <div class=" tex-md font-bold text-center px-6">Forgot password</div>
+            </template>
+            <template v-slot:body>
+                <form class=" bg-white w-full space-y-4 px-6" @submit.prevent="SubmitResetPasswordEmail">
+                    <div class=" text-center font-xs ">Enter your email address and we will send your password to you.</div>
+                    
+                    <input class="gray-input w-full" placeholder="Enter email" required v-model="reset_password_email" />
+                    
+                    <button type="submit" class="app-button bg-black text-white rounded-full w-full">Send</button>
+                </form>
+            </template>
+        </modal>
 
-                <button type="submit" class="absolute outline-none rounded-full px-4 focus:outline-none hover:bg-gray-100" style="top:15px; left:15px; font-size:30px;" @click="open_reset_password_modal = false">
-                    &times
-                </button>
-            </form>
-        </div>
     </div>
 </template>
 <script>
+import Modal from '../../components/Modal.vue'
 export default {
     layout : 'auth',
+    components: {
+        Modal : () => import('~/components/Modal.vue')
+    },
     data(){
         return{
             open_reset_password_modal : false,
@@ -63,12 +64,12 @@ export default {
 
     methods : {
         handleLogin(){
-
+            this.$router.push('/user')
         },
 
         SubmitResetPasswordEmail(){
 
-        }
+        },
     }   
 }
 </script>

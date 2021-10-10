@@ -54,19 +54,19 @@
                                             </th>
                                             <th scope="col" class="px-6 py-3 w-1/5 text-center">
                                                 <div class=" text-sm font-bold">Asetena Pa</div>
-                                                <p class="text-xxs font-normal tracking-normal text-gray-600">Designed for persons with short-term investment needs.</p>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-300">Designed for persons with short-term investment needs.</p>
                                             </th>
                                             <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
                                              <div class=" text-sm font-bold">Akwantuo</div>
-                                                <p class="text-xxs font-normal tracking-normal text-gray-600">For persons living abroad with specific investment needs. We understand the needs to save home for such persons.</p>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-300">For persons living abroad with specific investment needs. We understand the needs to save home for such persons.</p>
                                             </th>
                                             <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
                                              <div class=" text-sm font-bold">Daakye Asem</div>
-                                                <p class="text-xxs font-normal tracking-normal text-gray-600">For children under the age of 18 years. This package gives hope to children and prepare them towards a brighter future.</p>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-300">For children under the age of 18 years. This package gives hope to children and prepare them towards a brighter future.</p>
                                             </th>
                                             <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
                                              <div class=" text-sm font-bold">Aban Adwumafuo</div>
-                                                <p class="text-xxs font-normal tracking-normal text-gray-600">For public and civil servants. This package helps this group of persons build up funds for future needs.</p>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-300">For public and civil servants. This package helps this group of persons build up funds for future needs.</p>
                                             </th>
                                         </tr>
                                     </thead>
@@ -215,7 +215,6 @@
                 </div>
             </div>
 
-
             <div class=" mt-16 rounded-xl flex justify-between px-9 py-11 bg-indigo-500">
                 <div class=" text-base font-bold text-white">
                     Ready to get started?
@@ -224,14 +223,20 @@
                     Get Started
                 </button>
             </div>
+        </div>
+
+        <div class=" max-w-2xl mx-auto px-4">
 
             <div class=" mt-52">
-                <div class=" text-xl font-bold text-center">Packages FAQs.</div>
+                <div class=" text-lg font-bold text-center">Packages FAQs.</div>
+
+                <div class=" w-full mt-10">
+                    <Accordion v-for="faq in faqs" :faq="faq" :key="faq.id" />
+                </div>
             </div>
 
             <div class=" mt-24 mb-44">
-                <div class=" text-base font-bold text-center">Still got more questions?</div>
-
+                <div class=" font-bold text-base text-center">Still got more questions?</div>
                 <div class=" w-full flex justify-center mt-7">
                     <div class=" flex space-x-8">
                         <button class=" app-button rounded-xl bg-primary text-white">View all FAQs</button>
@@ -245,8 +250,7 @@
 <script>
 export default {
     components: {
-        Label : () => import('~/components/Label.vue'),
-        ProductCard : () => import('~/components/ProductCard.vue')
+        Accordion : () => import('~/components/Accordion.vue')
     },
     data(){
         return {
@@ -266,6 +270,28 @@ export default {
                     id:3,
                     name : 'Chilli farm',
                     img : '/img/farm/chilli-farm.jpg'
+                }
+            ],
+            faqs : [
+                {
+                    id:1,
+                    head:"Is there a limited number of units I can sponsor?",
+                    text:"Our online platforms provide you with a dashboard that gets you to monitor the progress of your farms by means of drone video feeds, pictures, analytics, text messages etc. Your farm manager will also be calling you regularly to give you updates on your farms."
+                },
+                {
+                    id:2,
+                    head:"How do I know the progress of my farm?",
+                    text:"Our online platforms provide you with a dashboard that gets you to monitor the progress of your farms by means of drone video feeds, pictures, analytics, text messages etc. Your farm manager will also be calling you regularly to give you updates on your farms."
+                },
+                {
+                    id:3,
+                    head:"Is there any form of protection for the farms?",
+                    text:"Our online platforms provide you with a dashboard that gets you to monitor the progress of your farms by means of drone video feeds, pictures, analytics, text messages etc. Your farm manager will also be calling you regularly to give you updates on your farms."
+                },
+                {
+                    id:4,
+                    head:"What does my insurance cover?",
+                    text:"Our online platforms provide you with a dashboard that gets you to monitor the progress of your farms by means of drone video feeds, pictures, analytics, text messages etc. Your farm manager will also be calling you regularly to give you updates on your farms."
                 }
             ]
         }
