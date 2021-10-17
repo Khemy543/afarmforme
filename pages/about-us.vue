@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class=" max-w-6xl mx-auto px-4">
-        <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
+        <div class=" mt-16 mb-40 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
             <div class=" w-1/2 pr-10">
                 <div class="text-lg font-bold text-white">
                 Begin your journey of becoming a Agripreneur.

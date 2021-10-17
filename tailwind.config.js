@@ -36,6 +36,9 @@ module.exports = {
       },
       green:{
         "500" : '#1E5F04'
+      },
+      red:{
+        "500":'#B50000'
       }
     },
     fontFamily : {

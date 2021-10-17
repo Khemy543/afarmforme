@@ -1,6 +1,6 @@
 <template>
    <div class=" w-full">
-        <div class=" max-w-3xl mx-auto px-4 pt-48">
+        <div class=" max-w-4xl mx-auto px-4 pt-48">
             <div class=" text-xl font-bold text-center">Partners.</div>
 
             <div class=" mt-6 text-center text-xs tracking-normal">We believe in global partnerships.</div>
@@ -17,7 +17,7 @@
                 </div>
             </div>
 
-            <div class=" text-xs max-w-xl mx-auto">
+            <div class=" text-xs max-w-xl mt- mx-auto">
                  <b>A Farm For Me</b> is the ideal partner to achieve social impact through agriculture. We therefore pool the strengths of different stakeholders thus Government organizations, private companies, social entrepreneurs, civil societies etc. through our innovative collaboration models.
                 <br/> <br/>
                 We believe in long-term relationships that bring value to both parties hence we create win-win partnerships that seek to respond effectively to challenges when it comes to the agriculture value chain.
@@ -27,7 +27,7 @@
                 Here are a few ways you can partner us:
             </div>
 
-            <div class=" flex mt-28 space-x-10">
+            <div class=" flex mt-28 space-x-14">
                 <div class=" w-5/12">
                     <div class=" text-base font-bold">Supplier</div>
                     <div class=" mt-4">
@@ -36,22 +36,19 @@
                     <div class=" mt-4">If you can supply us with:</div>
                     <div class=" space-y-2 mt-4"> 
                         <div v-for="n in supplier" :key="n.id">
-                            <label :for="n.id">
-                                <input type="checkbox" checked :name="n.id" :id="n.id"/>
-                                {{ n.text }}
-                            </label>
+                            <Checkbox :checked="true" :name="n.text" :id="n.id"/>
                         </div>
                     </div>
                     <button class=" app-button rounded-xl bg-primary text-white mt-4">
                         Join As A Supplier
                     </button>
                 </div>
-                <div class=" w-7/12 bg-gray-200 rounded-md h-96">
+                <div class=" w-7/12 bg-gray-200 rounded-md" style="height:620px;">
 
                 </div>
             </div>
-            <div class=" flex mt-28 space-x-10">
-                <div class=" w-7/12 bg-gray-200 rounded-md h-96">
+            <div class=" flex mt-28 space-x-14">
+                <div class=" w-7/12 bg-gray-200 rounded-md" style="height:620px;">
 
                 </div>
                 <div class=" w-5/12">
@@ -62,10 +59,7 @@
                     <div class=" mt-4">If you are a/an:</div>
                     <div class=" space-y-2 mt-4"> 
                         <div v-for="n in off_traker" :key="n.id">
-                            <label :for="n.id">
-                                <input type="checkbox" checked :name="n.id" :id="n.id"/>
-                                {{ n.text }}
-                            </label>
+                            <Checkbox :checked="true" :name="n.text" :id="n.id"/>
                         </div>
                     </div>
                     <button class=" app-button rounded-xl bg-primary text-white mt-4">
@@ -73,7 +67,7 @@
                     </button>
                 </div>
             </div>
-            <div class=" flex mt-28 space-x-10">
+            <div class=" flex mt-28 space-x-14">
                 <div class=" w-5/12">
                     <div class=" text-base font-bold">Individual/Corporate Partner</div>
                     <div class=" mt-4">
@@ -82,10 +76,7 @@
                     <div class=" mt-4">If you can provide:</div>
                     <div class=" space-y-2 mt-4"> 
                         <div v-for="n in individual" :key="n.id">
-                            <label :for="n.id">
-                                <input type="checkbox" checked :name="n.id" :id="n.id"/>
-                                {{ n.text }}
-                            </label>
+                            <Checkbox :checked="true" :name="n.text" :id="n.id"/>
                         </div>
                     </div>
                     <div class=" flex space-x-5 mt-4">
@@ -97,7 +88,7 @@
                         </nuxt-link>
                     </div>
                 </div>
-                <div class=" w-7/12 bg-gray-200 rounded-md h-96">
+                <div class=" w-7/12 bg-gray-200 rounded-md" style="height:620px;">
 
                 </div>
             </div>
@@ -134,6 +125,9 @@
 
 <script>
 export default {
+    components:{
+        Checkbox : () => import('~/components/Checkbox.vue')
+    },
     data(){
         return{
             supplier : [

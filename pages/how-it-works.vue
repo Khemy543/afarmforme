@@ -1,6 +1,6 @@
 <template>
     <div class=" w-full">
-        <div class=" max-w-3xl mx-auto px-4 pt-48">
+        <div class=" max-w-4xl mx-auto px-4 pt-48">
             <div class=" text-xl font-bold text-center">How It Works.</div>
 
             <div class=" mt-6 text-center text-xs tracking-normal">Farming made easy for you.</div>
@@ -24,15 +24,15 @@
                     <p class=" mt-4 text-xs font-normal">After a successful signing up, select your preferred choice of crop subject to availability and number of units you wish to sponsor.</p>
                 </div>
                 <div class=" bg-gray-600 h-72 rounded-xl w-2/3 relative overflow-hidden">
-                    <div class=" bg-gray-700 w-5/6 h-5/6 absolute bottom-0 right-0 rounded-tl-xl border-t-2 border-l-2 border-gray-400">
+                    <div class=" bg-gray-700 w-11/12 h-4/6 absolute bottom-0 right-0 rounded-tl-xl border-t-2 border-l-2 border-gray-400">
 
                     </div>
                 </div>
             </div>
 
             <div class=" flex space-x-10 items-center mt-20 w-full">
-                <div class=" bg-gray-600 h-72 rounded-xl w-2/3 relative overflow-hidden">
-                    <div class=" bg-gray-700 w-5/6 h-5/6 absolute left-0 inset-y-auto rounded-r-xl border-r-2 border-t-2 border-b-2 border-gray-400">
+                <div class=" bg-gray-600 h-72 rounded-xl w-2/3 flex items-center overflow-hidden">
+                    <div class=" bg-gray-700 w-4/6 h-5/6 rounded-r-xl border-r-2 border-t-2 border-b-2 border-gray-400">
 
                     </div>
                 </div>

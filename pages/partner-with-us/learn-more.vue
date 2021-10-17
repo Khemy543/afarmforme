@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div class=" max-w-6xl mx-auto px-4 flex ">
-        <div class=" w-1/2">
+    <div class=" max-w-6xl mx-auto px-4 flex min-h-screen items-center">
+        <div class=" w-full flex space-x-32 pt-24">
+        <div class=" w-7/12">
             <div class=" text-xl font-bold">Start Your Own Company By Selling Our Commodities.</div>
             <div class=" text-xs mt-5">
                 Have you always wanted to be your own boss, but do not know which venture to go in? Our distributor partnership allows you to sell our high quality agricultural commodities to retailers and make up to 35% profit margins.
@@ -19,12 +20,13 @@
                 </button>
             </div>
         </div>
-        <div class=" w-1/2">
-
+        <div class=" w-5/12">
+            <img src="~/static/img/Home/become-a-partner.png" alt="become a partner" class=" -mb-20 pt-10">
+        </div>  
         </div>
     </div>
 
-    <div class=" max-w-3xl mx-auto px-4 mt-40">
+    <div class=" max-w-3xl mx-auto px-4 mt-60">
         <div class=" text-base font-bold">Why Partner With Us</div>
         <div class="mt-5 text-xs">
             By choosing to collaborate with A FARM FOR ME, you can be reassured that your customers will receive the highest quality goods on time. We guarantee express delivery times for ordered commodities. We offer help at every stage. In addition, you will receive from us tools to support sales and promotion.
@@ -35,10 +37,7 @@
         </div>
         <div class="space-y-2 mt-4">
             <div v-for="n in partners" :key="n.id">
-                <label :for="n.id" class=" font-normal text-xs"> 
-                    <input type="checkbox" checked :id="n.id" :name="n.id" class=" mr-2"/>
-                        {{ n.text }}
-                </label>
+                <Checkbox :checked="true" :id="n.id" :name="n.text"/>
             </div>
         </div>
 
@@ -52,41 +51,100 @@
         </div>
 
         <div class=" mt-40 max-w-xl mx-auto">
-            <div class=" text-base text-center font-bold">Our Capital Requirement Calculator</div>
-            <div class=" text-xs text-center">
+            <div class=" flex space-x-5">
+                <button class=" bg-red-500 rounded-2xl px-4 text-white font-bold text-xs">New</button>
+                <div class=" text-base text-center font-bold">Our Capital Requirement Calculator</div>
+            </div>
+            <div class=" text-xs text-center mt-5">
                 Take the hassle out of pricing your commodities with our free commodity-pricing calculator. Our trusted pricing formula will help you find a fair price for your commodities and also help you decide which how much you need to start your distribution business.
+            </div>
+
+            <div class=" space-y-8 w-full py-10 px-20 border border-gray-50 rounded-lg mt-5">
+                <div class=" w-full">
+                    <label class=" text-xs font-normal mb-2" for="package">Package</label>
+                    <div>
+                        <select name="package" id="package" class=" select-input">
+                            <option value="">Select a package</option>
+                        </select>
+                    </div>
+                </div>
+                <div class=" w-full">
+                    <label class=" text-xs font-normal mb-2" for="comodity">Commodity</label>
+                    <div>
+                        <select name="comodity" id="comodity" class=" select-input">
+                            <option value="">Select a commodity</option>
+                        </select>
+                    </div>
+                </div>
+                <div class=" w-full">
+                    <label class=" text-xs font-normal mb-2" for="quantity">Quantity(sacks)</label>
+                    <div>
+                        <select name="quantity" id="quantity" class=" select-input">
+                            <option value="">Select a package</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class=" flex justify-between">
+                    <div class=" text-xs font-normal">Price per sack (in GHC)</div>
+                    <div class=" text-xs font-bold">32</div>
+                </div>
+                
+                <div class=" flex justify-between">
+                    <div class=" text-xs font-normal">Total Price (in GHC)</div>
+                    <div class=" text-xs font-bold">4325</div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class=" max-w-7xl mx-auto px-4">
+    <div class=" max-w-7xl mx-auto px-4 mt-32">
         <div class=" text-base text-center font-bold max-w-xl mx-auto">Get Started Now. Select A Package, And We Will Supply!</div>
-        <div class=" flex space-x-5 w-full">
-        <div class=" px-5 py-10 bg-gray-100 w-1/4 rounded-xl">
-            <div class=" font-bold text-sm">Individual Investor</div>
+        <div class=" flex space-x-4 w-full mt-10">
+        <div class=" px-5 py-10 w-1/4 rounded-2xl" :class="pack.id % 2 === 0 ? 'bg-white shadow-lg border border-gray-100' : 'bg-gray-100'" v-for="pack in packages" :key="pack.id">
+            <div class=" font-bold text-sm">{{pack.title}}</div>
 
             <div class=" mt-6">
-                <ul class=" space-y-1">
-                <li class=" flex space-x-4 items-center">
-                    <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
-                </li>
-                <li class=" flex space-x-4 items-center">
-                    <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 1 unit.</label>
-                </li>
-                <li class=" flex space-x-4 items-center">
-                    <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
-                </li>
-                <li class=" flex space-x-4 items-center">
-                    <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal">Minimum of 1 unit</label>
-                </li>
+                <ul class=" space-y-2">
+                    <li class=" flex space-x-4 items-center" v-for="opt in pack.options" :key="opt.id">
+                        <Checkbox :name="opt.name" :id="opt.id" :checked="true" />
+                    </li>
                 </ul>
             </div>
 
-            <div class=" mt-8 text-sm font-bold">
-                Get Started 
+            <div class=" mt-8 text-xsm font-semibold">
+                Select package 
             </div>
         </div>
     </div>
+    </div>
+
+    <div class=" max-w-6xl mx-auto px-4 mb-40 mt-60">
+        <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
+            <div class=" w-1/2 pr-10">
+                <div class="text-lg font-bold text-white">
+                Begin your journey of becoming a Agripreneur.
+                </div>
+            </div>
+            <div class=" flex space-x-4 w-1/2">
+                <div class="w-1/2">
+                <div class=" text-sm font-bold text-white">Simple Pricing</div>
+                <div class=" mt-4 text-xs font-normal text-white">
+                We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+                </div>
+                
+                <button class=" app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
+            </div>
+
+            <div class=" w-1/2">
+                <div class=" text-sm font-bold text-white">Simple Pricing</div>
+                <div class=" mt-4 text-xs font-normal text-white">
+                We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+                </div>
+                
+            </div>
+            </div>
+        </div>
     </div>
 
   </div>
@@ -94,6 +152,9 @@
 
 <script>
 export default {
+    components:{
+        Checkbox : () => import('~/components/Checkbox.vue')
+    },
     data(){
         return{
             partners : [
@@ -124,6 +185,128 @@ export default {
                 {
                     id:7,
                     text:"Top quality service."
+                }
+            ],
+            packages : [
+                {
+                    id:1,
+                    title:"Basic",
+                    options : [
+                        {
+                            id:1,
+                            name:"100-200 bags of commodity"
+                        },
+                        {
+                            id:2,
+                            name:'<b>A Farm For Me</b> branding pack'
+                        },
+                        {
+                            id:3,
+                            name:'Dedicated business support manager'
+                        },
+                        {
+                            id:4,
+                            name:'Startup support tools'
+                        },
+                        {
+                            id:5,
+                            name:"Commodity trading training"
+                        },
+                        {
+                            id:6,
+                            name:"20% off transportation charges"
+                        }
+                    ]
+                },
+                {
+                    id:2,
+                    title:"Standard",
+                    options : [
+                        {
+                            id:1,
+                            name:"250-350 bags of commodity"
+                        },
+                        {
+                            id:2,
+                            name:'<b>A Farm For Me</b> branding pack'
+                        },
+                        {
+                            id:3,
+                            name:'Dedicated business support manager'
+                        },
+                        {
+                            id:4,
+                            name:'Startup support tools'
+                        },
+                        {
+                            id:5,
+                            name:"Commodity trading training"
+                        },
+                        {
+                            id:6,
+                            name:"30% off transportation charges"
+                        }
+                    ]
+                },
+                {
+                    id:3,
+                    title:"Super",
+                    options:[
+                        {
+                            id:1,
+                            name:"400-500 bags of commodity"
+                        },
+                        {
+                            id:2,
+                            name:'<b>A Farm For Me</b> branding pack'
+                        },
+                        {
+                            id:3,
+                            name:'Dedicated business support manager'
+                        },
+                        {
+                            id:4,
+                            name:'Startup support tools'
+                        },
+                        {
+                            id:5,
+                            name:"Commodity trading training"
+                        },
+                        {
+                            id:6,
+                            name:"40% off transportation charges"
+                        }
+                    ]
+                },
+                {
+                    id:4,
+                    title:"Ultra",
+                    options:[
+                        {
+                            id:1,
+                            name:"250-350 bags of commodity"
+                        },
+                        {
+                            id:2,
+                            name:'<b>A Farm For Me</b> branding pack'
+                        },
+                        {
+                            id:3,
+                            name:'Dedicated business support manager'
+                        },
+                        {
+                            id:4,
+                            name:'Startup support tools'
+                        },
+                        {
+                            id:5,
+                            name:"Commodity trading training"
+                        },
+                        {
+                            id:6,
+                            name:"50% off transportation charges"
+                        }
+                    ]
                 }
             ]
         }

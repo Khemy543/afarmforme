@@ -134,92 +134,23 @@
       </div>
 
       <div class=" flex justify-center w-full mt-12">
-        <div class=" md:flex w-full space-x-5 hidden " >
-          <div class=" px-6 py-12 bg-gray-100 w-1/3 rounded-xl">
-              <div class=" font-bold text-sm">Individual Investor</div>
+        <div class=" md:flex w-full space-x-5 hidden ">
+          <div class=" px-6 py-12 w-1/3 rounded-xl" :class="pack.id===2? 'bg-white shadow-lg border border-gray-200' : 'bg-gray-100'" v-for="pack in packages" :key="pack.id">
+              <div class=" font-bold text-sm">{{pack.title}}</div>
               <div class="text-xs font-normal mt-5">
-                Appropriate for individuals/new investors looking to enlarge their range of investments with a tangible asset.
+                {{pack.description}}
               </div>
 
               <div class=" mt-6">
                 <ul class=" space-y-1">
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 1 unit.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal">Minimum of 1 unit</label>
+                  <li class=" flex space-x-4 items-center" v-for="opt in pack.options" :key="opt.id">
+                      <Checkbox :name="opt.name" :id="opt.id" :checked="true" />
                   </li>
                 </ul>
               </div>
-
+ 
               <div class=" mt-5 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
-              <div class=" mt-2 text-base font-bold">GHS 2,000</div>
-
-              <div class=" mt-8 text-sm font-bold">
-                Get Started 
-              </div>
-          </div>
-          <div class=" shadow-lg rounded-xl px-6 py-12 bg-white border border-gray-200  w-1/3">
-              <div class=" font-bold text-sm">Institutional Investor</div>
-              <div class="text-xs font-normal mt-5">
-                Appropriate for institutions and high capacity investors looking to enlarge their range of investments with a tangible asset.
-              </div>
-
-              <div class=" mt-6">
-                <ul class=" space-y-1">
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""  class="text-xs font-normal"> Purchase of crop/animal farm.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for=""  class="text-xs font-normal"> Minimum of 20 units.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 20 units.</label>
-                  </li>
-                </ul>
-              </div>
-
-              <div class=" mt-5 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
-              <div class=" mt-2 text-base font-bold">GHS 22,000</div>
-
-              <div class=" mt-8 text-sm font-bold">
-                Get Started 
-              </div>
-          </div>
-          <div class=" px-6 py-12 bg-gray-100 w-1/3 rounded-xl">
-              <div class=" font-bold text-sm">Institutional Investor</div>
-              <div class="text-xs font-normal mt-5">
-                Appropriate for institutions and high capacity investors looking to enlarge their range of investments with a tangible asset.
-              </div>
-
-              <div class=" mt-6">
-                <ul class=" space-y-1">
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 20 units.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Purchase of crop/animal farm.</label>
-                  </li>
-                  <li class=" flex space-x-4 items-center">
-                      <input type="checkbox" name="" id="" checked> <label for="" class="text-xs font-normal"> Minimum of 20 units.</label>
-                  </li>
-                </ul>
-              </div>
-
-              <div class=" mt-6 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
-              <div class=" mt-2 text-base font-bold">GHS 50,000</div>
+              <div class=" mt-2 text-base font-bold">GHS {{pack.amount}}</div>
 
               <div class=" mt-8 text-sm font-bold">
                 Get Started 
@@ -299,7 +230,8 @@
 <script>
 export default {
   components: {
-    ProductCard: () => import("~/components/ProductCard.vue")
+    ProductCard: () => import("~/components/ProductCard.vue"),
+    Checkbox : () => import('~/components/Checkbox.vue')
   },
 
   methods: {
@@ -334,6 +266,80 @@ export default {
           price:"500ghs per pig",
           returns : "80% return on investement",
           months : "17 months"
+        }
+      ],
+      packages:[
+        {
+          id:1,
+          title:"Individual Investor",
+          description : "Appropriate for individuals/new investors looking to enlarge their range of investments with a tangible asset.",
+          amount:"2,000",
+          options : [
+            {
+              id:1,
+              name : 'Purchase of crop/animal farm.'
+            },
+            {
+              id:2,
+              name:"Minimum of 1 unit."
+            },
+            {
+              id:3,
+              name :"Purchase of crop/animal farm."
+            },
+            {
+              id:4,
+              name :"Minimum of 1 unit"
+            }
+          ]
+        },
+        {
+          id : 2,
+          title:"Institutional Investor",
+          description:"Appropriate for institutions and high capacity investors looking to enlarge their range of investments with a tangible asset.",
+          amount:"22,000",
+          options : [
+            {
+              id:1,
+              name : 'Purchase of crop/animal farm.'
+            },
+            {
+              id:2,
+              name : 'Minimum of 20 units.'
+            },
+            {
+              id:3,
+              name : 'Purchase of crop/animal farm.'
+            },
+            {
+              id:4,
+              name : 'Minimum of 20 units.'
+            }
+          ]
+        },
+        {
+          id:4,
+          title:"Family/Group Investor",
+          description:"Appropriate for group of persons and families looking to enlarge their range of investments with a tangible asset.",
+          amount:"50,000",
+          options : [
+            {
+              id:1,
+              name : 'Purchase of crop/animal farm'
+            },
+            {
+              id:2,
+              name:"Minimum of 5 units"
+            },
+            {
+              id:3,
+              name:"Purchase of crop/animal farm"
+            },
+            {
+              id:4,
+              name:"Minimum of 5 units"
+            }
+          ]
         }
       ]
     }
