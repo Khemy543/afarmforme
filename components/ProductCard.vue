@@ -1,5 +1,5 @@
 <template>
-    <div class=" rounded-lg overflow-hidden border border-gray-200">
+    <div class=" w-full rounded-lg overflow-hidden border border-gray-200">
         <img :src="product.img" class=" h-48 w-full object-cover"/>
         <div class="content p-6">
             <h4 class=" text-sm font-bold">{{product.name}}</h4>

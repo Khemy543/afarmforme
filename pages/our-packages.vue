@@ -9,7 +9,7 @@
                 <ul class="list-reset flex p-1">
                     <li class="p-0 mb-0">
                         <div 
-                        class="rounded-xl text-sm inline-block px-14 cursor-pointer font-bold" 
+                        class="rounded-xl text-sm inline-block px-5 lg:px-14 cursor-pointer font-bold" 
                         :class="activeTab == 1 ? 'bg-blue-200 text-white':'bg-white text-black'"
                         id="1"
                         @click="changeTab(1)"
@@ -19,7 +19,7 @@
                     </li>
                     <li class="p-0 mb-0">
                         <div
-                            class="text-sm inline-block px-14 rounded-xl cursor-pointer font-bold" 
+                            class="text-sm inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold" 
                             :class="activeTab == 2 ? 'bg-blue-200 text-white':'bg-white text-black'"
                             id="2"
                             @click="changeTab(2)"
@@ -28,7 +28,7 @@
                     </li>
                     <li class="p-0 mb-0">
                         <div
-                            class="text-sm inline-block px-14 rounded-xl cursor-pointer font-bold" 
+                            class="text-sm inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold" 
                             :class="activeTab == 3 ? 'bg-blue-200 text-white':'bg-white text-black'"
                             id="3"
                             @click="changeTab(3)">
@@ -215,7 +215,7 @@
                 </div>
             </div>
 
-            <div class=" mt-16 rounded-xl flex justify-between px-9 py-11 bg-indigo-500">
+            <div class=" mt-16 rounded-xl lg:flex lg:justify-between space-y-5 lg:space-y-0 px-5 lg:px-9 py-11 bg-indigo-500">
                 <div class=" text-base font-bold text-white">
                     Ready to get started?
                 </div>

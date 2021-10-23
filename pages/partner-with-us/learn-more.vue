@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class=" max-w-6xl mx-auto px-4 flex min-h-screen items-center">
-        <div class=" w-full flex space-x-32 pt-24">
-        <div class=" w-7/12">
-            <div class=" text-xl font-bold">Start Your Own Company By Selling Our Commodities.</div>
+        <div class=" w-full flex lg:space-x-32 pt-24">
+        <div class=" w-full lg:w-7/12">
+            <div class=" text-lg lg:text-xl font-bold">Start Your Own Company By Selling Our Commodities.</div>
             <div class=" text-xs mt-5">
                 Have you always wanted to be your own boss, but do not know which venture to go in? Our distributor partnership allows you to sell our high quality agricultural commodities to retailers and make up to 35% profit margins.
                 <br/> <br/>
                 We are always looking for new partners / distributors who have the ambition to grow and scale their business selling our top quality commodities. Once you join our network of distributors even as a starter, we can transform your company from a small company agency into a grand player.
             </div>
-            <div class="lg:flex mt-6 space-x-5 items-center">
+            <div class="flex mt-6 space-x-5 items-center">
                 <button class=" app-button rounded-xl bg-primary text-white">
                     Get Started Now
                 </button>
@@ -20,7 +20,7 @@
                 </button>
             </div>
         </div>
-        <div class=" w-5/12">
+        <div class=" hidden lg:block w-5/12">
             <img src="~/static/img/Home/become-a-partner.png" alt="become a partner" class=" -mb-20 pt-10">
         </div>  
         </div>
@@ -43,7 +43,7 @@
 
         <div class=" mt-40">
             <div class=" text-base text-center font-bold">Our Commodities You Can Distribute</div>
-            <div class=" grid grid-cols-4 gap-5 mt-5">
+            <div class=" grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
                 <div class=" rounded-lg p-5 bg-gray-200 h-44 relative" v-for="n in 8" :key="n">
                     <div class=" absolute bottom-0 text-xs inset-x-0 w-full p-5">White maize</div>
                 </div>
@@ -59,7 +59,7 @@
                 Take the hassle out of pricing your commodities with our free commodity-pricing calculator. Our trusted pricing formula will help you find a fair price for your commodities and also help you decide which how much you need to start your distribution business.
             </div>
 
-            <div class=" space-y-8 w-full py-10 px-20 border border-gray-50 rounded-lg mt-5">
+            <div class=" space-y-8 w-full py-10 px-5 lg:px-20 border border-gray-50 rounded-lg mt-5">
                 <div class=" w-full">
                     <label class=" text-xs font-normal mb-2" for="package">Package</label>
                     <div>
@@ -100,8 +100,8 @@
 
     <div class=" max-w-7xl mx-auto px-4 mt-32">
         <div class=" text-base text-center font-bold max-w-xl mx-auto">Get Started Now. Select A Package, And We Will Supply!</div>
-        <div class=" flex space-x-4 w-full mt-10">
-        <div class=" px-5 py-10 w-1/4 rounded-2xl" :class="pack.id % 2 === 0 ? 'bg-white shadow-lg border border-gray-100' : 'bg-gray-100'" v-for="pack in packages" :key="pack.id">
+        <div class=" lg:flex lg:space-x-4 w-full space-y-5 lg:space-y-0 mt-10">
+        <div class=" px-5 py-10 w-full lg:w-1/4 rounded-2xl" :class="pack.id % 2 === 0 ? 'bg-white shadow-lg border border-gray-100' : 'bg-gray-100'" v-for="pack in packages" :key="pack.id">
             <div class=" font-bold text-sm">{{pack.title}}</div>
 
             <div class=" mt-6">
@@ -120,14 +120,14 @@
     </div>
 
     <div class=" max-w-6xl mx-auto px-4 mb-40 mt-60">
-        <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
-            <div class=" w-1/2 pr-10">
+        <div class=" my-16 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-blue-200 rounded-lg items-center ">
+            <div class=" w-full lg:w-1/2 lg:pr-10">
                 <div class="text-lg font-bold text-white">
                 Begin your journey of becoming a Agripreneur.
                 </div>
             </div>
-            <div class=" flex space-x-4 w-1/2">
-                <div class="w-1/2">
+            <div class=" lg:flex lg:space-x-4 w-full lg:w-1/2">
+                <div class=" w-full lg:w-1/2">
                 <div class=" text-sm font-bold text-white">Simple Pricing</div>
                 <div class=" mt-4 text-xs font-normal text-white">
                 We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
@@ -136,7 +136,7 @@
                 <button class=" app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
             </div>
 
-            <div class=" w-1/2">
+            <div class=" w-full lg:w-1/2">
                 <div class=" text-sm font-bold text-white">Simple Pricing</div>
                 <div class=" mt-4 text-xs font-normal text-white">
                 We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.

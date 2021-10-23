@@ -70,7 +70,7 @@
 
         </div>
         <div class=" w-full flex justify-center">   
-            <div class=" mt-8 py-2 w-1/2 text-center">
+            <div class=" mt-8 py-2 w-full lg:w-1/2 text-center">
                 <div class="text-xs font-normal text-gray-300">
                     Past performance is no guarantee of future results. Any historical returns, expected returns, or probability projections may not reflect actual future performance.
                 </div> 

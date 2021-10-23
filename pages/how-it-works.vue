@@ -5,7 +5,7 @@
 
             <div class=" mt-6 text-center text-xs tracking-normal">Farming made easy for you.</div>
             
-            <div class=" mt-60 rounded-2xl bg-teal-900 w-full px-32 py-10 text-white">
+            <div class=" mt-60 rounded-2xl bg-teal-900 w-full px-8 lg:px-32 py-10 text-white">
                 <div class=" text-base font-bold text-center">Sign Up</div>
 
                 <div class=" text-center text-xs tracking-normal mt-5">Get set up to sponsor a farm unit by providing us with required information. This will help us furnish you with your login details, which will grant you access to our platform.</div>
@@ -18,49 +18,49 @@
                 </div>
             </div>
             
-            <div class=" flex space-x-10 items-center mt-32 w-full">
-                <div class=" w-1/3">
+            <div class=" lg:flex lg:space-x-10 space-y-5 lg:space-y-0 items-center mt-32 w-full">
+                <div class=" w-full lg:w-1/3">
                     <div class=" text-base font-bold">Crop Selection</div>
                     <p class=" mt-4 text-xs font-normal">After a successful signing up, select your preferred choice of crop subject to availability and number of units you wish to sponsor.</p>
                 </div>
-                <div class=" bg-gray-600 h-72 rounded-xl w-2/3 relative overflow-hidden">
+                <div class=" bg-gray-600 h-72 rounded-xl w-full lg:w-2/3 relative overflow-hidden">
                     <div class=" bg-gray-700 w-11/12 h-4/6 absolute bottom-0 right-0 rounded-tl-xl border-t-2 border-l-2 border-gray-400">
 
                     </div>
                 </div>
             </div>
 
-            <div class=" flex space-x-10 items-center mt-20 w-full">
-                <div class=" bg-gray-600 h-72 rounded-xl w-2/3 flex items-center overflow-hidden">
+            <div class=" lg:flex lg:space-x-10 items-center mt-20 w-full space-y-5 lg:space-y-0">
+                <div class=" bg-gray-600 h-72 rounded-xl w-full lg:w-2/3 flex items-center overflow-hidden">
                     <div class=" bg-gray-700 w-4/6 h-5/6 rounded-r-xl border-r-2 border-t-2 border-b-2 border-gray-400">
 
                     </div>
                 </div>
-                <div class=" w-1/3">
+                <div class="w-full lg:w-1/3">
                     <div class=" text-base font-bold">Payment</div>
                     <p class=" mt-4 text-xs font-normal">Use invoice details to make payment via bank deposits or by using your debit/credit cards directly on our platform and also through mobile money options, with your name and invoice number as reference.</p>
                 </div>
             </div>
 
-            <div class=" flex space-x-10 items-center mt-20 w-full">
-                <div class=" w-1/3">
+            <div class=" lg:flex lg:space-x-10 space-y-5 lg:space-y-0 items-center mt-20 w-full">
+                <div class="w-full lg:w-1/3">
                     <div class=" text-base font-bold">Monitor</div>
                     <p class=" mt-4 text-xs font-normal">Once payment is confirmed, your dashboard becomes fully functional. You can monitor your farm regularly by way of video feeds, pictures, as well as email updates. You will also be updated on external factors having effect on the agricultural markets such as consumer demand, weather, trade policies.</p>
                 </div>
-                <div class=" bg-gray-600 h-72 rounded-xl w-2/3 relative overflow-hidden p-10">
+                <div class=" bg-gray-600 h-72 rounded-xl w-full lg:w-2/3 relative overflow-hidden p-10">
                     <div class=" bg-gray-700 bottom-0 w-full h-full right-0 rounded-xl border-2 border-gray-400">
 
                     </div>
                 </div>
             </div>
 
-            <div class=" flex space-x-10 items-center mt-20 w-full">
-                <div class=" bg-gray-600 h-72 rounded-xl w-2/3 relative overflow-hidden p-10">
+            <div class=" lg:flex lg:space-x-10 space-y-5 lg:space-y-0 items-center mt-20 w-full">
+                <div class=" bg-gray-600 h-72 rounded-xl w-full lg:w-2/3 relative overflow-hidden p-10">
                     <div class=" bg-gray-700 bottom-0 w-full h-full right-0 rounded-xl border-2 border-gray-400">
 
                     </div>
                 </div>
-                <div class=" w-1/3">
+                <div class=" w-full lg:w-1/3">
                     <div class=" text-base font-bold">Receive Your Returns</div>
                     <p class=" mt-4 text-xs font-normal">When your farm asset reaches the end of their production cycle, they are transported and sold to our off-takers and proceeds (thus initial deposit and return on investment) are credited to your preferred account.</p>
                 </div>
@@ -68,10 +68,10 @@
         </div>
 
         <div class=" max-w-7xl mx-auto px-4 mt-16">
-            <div class="bg-teal-500 py-10 px-16 rounded-xl">
+            <div class="bg-teal-500 py-10 px-5 lg:px-16 rounded-xl">
                 <div class=" text-base font-bold text-white">Our special features</div>
 
-                <div class=" mt-8 grid grid-cols-4 gap-5">
+                <div class=" mt-8 grid grid-cols-2 lg:grid-cols-4 gap-5">
                     <div v-for="value in features" :key="value.id">
                        <!--  <img :src="value.icon" :alt="value.head"> -->
                         <div class=" text-sm font-bold text-white">{{value.head}}</div>
@@ -81,11 +81,11 @@
             </div>
         </div>
 
-        <div class=" max-w-3xl mx-auto px-4 my-40 flex">
-            <div class=" w-1/2">
+        <div class=" max-w-3xl mx-auto px-4 my-40 lg:flex">
+            <div class=" w-full lg:w-1/2">
 
             </div>
-            <div class=" w-1/2">
+            <div class=" w-full lg:w-1/2">
                 <div class=" text-base font-bold tracking-normal">
                     “To safeguard your investments, all of our farms have been insured against natural disasters such as flooding, pests, bush fire and other unforeseen setbacks.”
                 </div>

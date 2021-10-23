@@ -3,8 +3,8 @@
       <div class=" max-w-6xl mx-auto px-4 pt-48">
             <div class=" text-xl font-bold text-center">Contact Us.</div>
 
-            <div class=" mt-10 flex space-x-5 border-t-2 border-gray-200 pt-10">
-                <div class=" w-2/5">
+            <div class=" mt-10 lg:flex lg:space-x-5 space-y-5 lg:space-y-0 border-t-2 border-gray-200 pt-10">
+                <div class=" w-full lg:w-2/5">
                     <div class=" font-bold text-sm">Head Office Location</div>
                     <div class=" text-xs font-normal">F-393/4 Otswe Street, Osu Ako-Adjei<br/>Accra - Ghana<br/>00233</div>
                 
@@ -41,21 +41,21 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-3/5">
-                    <div class=" bg-gray-200 rounded-lg h-96 w-2/3 mx-auto">
+                <div class=" w-full lg:w-3/5">
+                    <div class=" bg-gray-200 rounded-lg h-96 w-fll lg:w-2/3 mx-auto">
 
                     </div>
                 </div>
             </div>
 
-            <div class=" mt-16 mb-32 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
-                <div class=" w-1/2 pr-10">
+            <div class=" mt-16 mb-32 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-blue-200 rounded-lg items-center ">
+                <div class=" w-full lg:w-1/2 lg:pr-10">
                     <div class="text-lg font-bold text-white">
                     Begin your journey of becoming a Agripreneur.
                     </div>
                 </div>
-                <div class=" flex space-x-4 w-1/2">
-                    <div class="w-1/2">
+                <div class=" lg:flex space-x-4 w-full lg:w-1/2">
+                    <div class=" w-full lg:w-1/2">
                     <div class=" text-sm font-bold text-white">Simple Pricing</div>
                     <div class=" mt-4 text-xs font-normal text-white">
                     We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.

@@ -5,7 +5,7 @@
       class="h-screen xl:overflow-x-hidden flex justify-center xl:justify-between items-center max-w-6xl px-4 mx-auto"
     >
       <div class="w-full xl:w-7/12">
-        <h1 class=" text-xl text-left font-bold">
+        <h1 class=" text-lg lg:text-xl text-left font-bold">
           The<br />
           future of <br />investment.
         </h1>
@@ -60,8 +60,8 @@
       </div>
 
       <div class=" mt-12 w-full flex justify-center">
-        <div class=" flex space-x-14 w-full">
-          <div class=" w-1/3 rounded-xl bg-technology relative" style="height:450px">
+        <div class=" lg:flex lg:space-x-14 space-y-5 lg:space-y-0 w-full">
+          <div class=" w-full lg:w-1/3 rounded-xl bg-technology relative" style="height:450px">
             <div class=" absolute bottom-0 left-0 right-0 p-6">
               <div class=" text-sm font-bold text-white">Technology</div>
               <div class=" mt-1 text-xs font-normal text-white">
@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-          <div class=" w-1/3 rounded-xl bg-partnership relative" style="height:450px">
+          <div class="w-full lg:w-1/3 rounded-xl bg-partnership relative" style="height:450px">
             <div class=" absolute bottom-0 left-0 right-0 p-6">
               <div class=" text-sm font-bold text-white">Partnerships</div>
               <div class=" mt-1 text-xs font-normal text-white">
@@ -79,7 +79,7 @@
               </div>
             </div>
           </div>
-          <div class=" w-1/3 rounded-xl bg-analytics relative" style="height:450px">
+          <div class=" w-full lg:w-1/3 rounded-xl bg-analytics relative" style="height:450px">
             <div class=" absolute bottom-0 left-0 right-0 p-6">
               <div class=" text-sm font-bold text-white">Analytics</div>
               <div class=" mt-1 text-xs font-normal text-white">
@@ -98,7 +98,7 @@
             All farms are automatically insured.
           </p>
 
-          <div class=" flex space-x-14 mt-12">
+          <div class=" lg:flex space-y-5 lg:space-y-0 lg:space-x-14 mt-12">
             <ProductCard v-for="n in products" :key="n.id" :product="n" class=" w-1/3" />
           </div>
 
@@ -162,8 +162,8 @@
     </div>
 
     <div class=" bg-blue-200">
-      <div class=" max-w-6xl mx-auto px-4 flex space-x-0 items-center">
-        <div class=" w-1/2">
+      <div class=" max-w-6xl mx-auto px-4 lg:flex space-x-0 items-center">
+        <div class=" w-full lg:w-1/2">
             <div class=" text-base font-bold text-white mb-5">Become A Partner</div>
             <p class=" text-xs font-normal text-white mb-5">
               A Farm For Me offers its clients a variety of well-tailored and pre-prepared farm sponsorship packages, so you can choose the option that best meets your investment needs. We offer a number of different packages to suit the needs of individuals, organisations, families, students, groups etc.
@@ -173,7 +173,7 @@
               Learn More
             </button>
         </div>
-        <div class="w-1/2">
+        <div class=" w-full lg:w-1/2">
             <img src="~/static/img/Home/become-a-partner.png" alt="become a partner" class=" -mb-20 pt-10">
         </div>
       </div>
@@ -182,12 +182,12 @@
 
     <div class=" py-28 max-w-6xl px-4 mx-auto mt-60">
       <div class=" w-full flex justify-center">
-        <div class=" w-1/2 font-bold text-base text-center">
+        <div class="w-full lg:w-1/2 font-bold text-base text-center">
             We are excited helping achieve the sustainable development goals.
         </div>
       </div>
 
-      <div class=" grid grid-cols-6 gap-4 w-full mt-8">
+      <div class=" grid grid-cols-3 lg:grid-cols-6 gap-4 w-full mt-8">
         <img src="~/static/img/farm/SDG-goal-01.png" class=" w-full h-auto object-cover" />
         <img src="~/static/img/farm/SDG-goal-02.png" class=" w-full h-auto object-cover"/>
         <img src="~/static/img/farm/SDG-goal-05.png" class=" w-full h-auto object-cover" />
@@ -198,29 +198,29 @@
     </div>
     <div class="max-w-6xl mx-auto px-4 pb-48">
 
-    <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
-      <div class=" w-1/2 pr-10">
+    <div class=" my-16 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-blue-200 rounded-lg items-center ">
+      <div class="w-full lg:w-1/2 lg:pr-10">
         <div class="text-lg font-bold text-white">
           Begin your journey of becoming a Agripreneur.
         </div>
       </div>
-      <div class=" flex space-x-4 w-1/2">
-        <div class="w-1/2">
-        <div class=" text-sm font-bold text-white">Simple Pricing</div>
-        <div class=" mt-4 text-xs font-normal text-white">
-          We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+      <div class=" lg:flex lg:space-x-4 w-full lg:w-1/2">
+        <div class=" w-full lg:w-1/2">
+          <div class=" text-sm font-bold text-white">Simple Pricing</div>
+          <div class=" mt-4 text-xs font-normal text-white">
+            We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+          </div>
+          
+          <button class=" hidden lg:block app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
         </div>
-        
-        <button class=" app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
-      </div>
 
-      <div class=" w-1/2">
-        <div class=" text-sm font-bold text-white">Simple Pricing</div>
-        <div class=" mt-4 text-xs font-normal text-white">
-          We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+        <div class=" w-full lg:w-1/2">
+          <div class=" text-sm font-bold text-white">Simple Pricing</div>
+          <div class=" mt-4 text-xs font-normal text-white">
+            We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
+          </div>
+          
         </div>
-        
-      </div>
       </div>
     </div>
     </div>

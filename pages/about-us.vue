@@ -2,8 +2,8 @@
     <div>
         <div class=" pt-48 max-w-7xl mx-auto px-4">
             <div class=" text-xl font-bold text-center">About Us.</div>
-            <div class=" flex space-x-5 mt-8">
-                <div class=" w-1/2 pl-16">
+            <div class=" lg:flex lg:space-x-5 space-y-5 lg:space-y-0 mt-8">
+                <div class=" w-full lg:w-1/2 lg:pl-16">
                    <p class="text-xs font-normal">A Farm For Me is an investment system of smart farming designed for persons who have interest in agriculture and want to own farms but do not have the time, lands, resources, technical knowledge etc. It is also designed for persons or individuals who are looking for investment opportunities to earn returns, which will serve as an extra source of income.
                     <br/><br/>
                     A Farm for me give individuals the opportunity to invest or sponsor our crop and animal farm units and be able to monitor farm activities through our web and mobile applications right on their smart devices at the comfort of their homes, offices or wherever they find themselves provided they have access to internet connection.
@@ -44,17 +44,17 @@
                     </p>
 
                 </div>
-                <div class=" w-1/2">
+                <div class=" w-full lg:w-1/2">
                     <img src="~/static/img/about/team.png" alt="team" class=" w-full "/>
                 </div>
             </div>
         </div>
 
         <div class=" max-w-7xl mx-auto px-4 mt-16">
-            <div class="bg-teal-500 py-10 px-16 rounded-xl">
+            <div class="bg-teal-500 py-10 px-5 lg:px-16 rounded-xl">
                 <div class=" text-base font-bold text-white">Our core values</div>
 
-                <div class=" mt-8 grid grid-cols-4 gap-5">
+                <div class=" mt-8 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
                     <div v-for="value in core_values" :key="value.id">
                         <img :src="value.icon" :alt="value.head">
                         <div class=" text-sm font-bold text-white">{{value.head}}</div>
@@ -69,7 +69,7 @@
                 <div class=" text-base font-bold text-center">Advisory & Board of directors</div>
                 <p class=" text-xs font-normal text-center">Our advisory board and board of directors consist of innovative high-level personalities who support our company with their experience, their contacts and their wealth of ideas. They are executives from leading companies who offer strategic guidance and expertise on the latest advances and demands in in their industry. Our board plays an integral role in defining and directing our operations and investments strategy. They allow us to leverage opportunities and provide direct access to key decision makers within their respective markets. The strength of our board is a testament to our strong network and commitment to delivering excellence.</p>
 
-                <div class=" mt-10 grid grid-cols-3 gap-8">
+                <div class=" mt-10 grid grid-cols-2 lg:grid-cols-3 gap-8">
                     <div v-for="n in 9" :key="n">
                         <div class=" rounded-lg bg-gray-100 h-48">
 
@@ -92,7 +92,7 @@
                 </p>
             </div>
 
-            <div class=" mt-5 grid grid-cols-4 gap-6">
+            <div class=" mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
                 <div class=" rounded-lg h-60 overflow-hidden  relative" v-for="value in management" :key="value.id">
                     <img :src="value.image" :alt="value.name" class=" w-full h-full object-cover" />
                     <div class=" h-1/2 bg-gradient-to-t from-black absolute w-full bottom-0">
@@ -106,14 +106,14 @@
             </div>
         </div>
         <div class=" max-w-6xl mx-auto px-4">
-        <div class=" mt-16 mb-40 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
-            <div class=" w-1/2 pr-10">
+        <div class=" mt-16 mb-40 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-blue-200 rounded-lg items-center ">
+            <div class=" w-full lg:w-1/2 lg:pr-10">
                 <div class="text-lg font-bold text-white">
                 Begin your journey of becoming a Agripreneur.
                 </div>
             </div>
-            <div class=" flex space-x-4 w-1/2">
-                <div class="w-1/2">
+            <div class=" lg:flex space-x-4 w-full lg:w-1/2">
+                <div class="w-full lg:w-1/2">
                 <div class=" text-sm font-bold text-white">Simple Pricing</div>
                 <div class=" mt-4 text-xs font-normal text-white">
                 We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
@@ -122,7 +122,7 @@
                 <button class=" app-button bg-white border border-gray-300 rounded-xl mt-6">Start Farming</button>
             </div>
 
-            <div class=" w-1/2">
+            <div class="w-full lg:w-1/2">
                 <div class=" text-sm font-bold text-white">Simple Pricing</div>
                 <div class=" mt-4 text-xs font-normal text-white">
                 We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.

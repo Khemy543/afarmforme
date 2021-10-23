@@ -43,7 +43,7 @@
         </ul>
       </div>
       
-      <div class="lg:flex lg:flex-grow h-screen lg:h-auto">
+      <div class="hidden lg:flex lg:flex-grow h-screen lg:h-auto">
         <ul class="flex flex-col lg:flex-row list-none ml-auto items-center">
           <li class="nav-item">
             <nuxt-link to="/auth/login" class="mx-4 py-5 lg:py-2 flex items-center text-sm hover:opacity-75" >
