@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class=" max-w-6xl mx-auto px-4 pt-48 ">
-            <div class=" text-xl font-bold text-center">Corporate Social Responsibility.</div>
+            <div class="text-lg lg:text-xl font-bold text-center">Corporate Social Responsibility.</div>
         </div>
         <div class=" max-w-3xl mx-auto px-4">
             <div class=" text-base font-bold text-center px-24 mt-32">

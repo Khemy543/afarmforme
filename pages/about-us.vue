@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class=" pt-48 max-w-7xl mx-auto px-4">
-            <div class=" text-xl font-bold text-center">About Us.</div>
+            <div class="text-lg lg:text-xl font-bold text-center">About Us.</div>
             <div class=" lg:flex lg:space-x-5 space-y-5 lg:space-y-0 mt-8">
                 <div class=" w-full lg:w-1/2 lg:pl-16">
                    <p class="text-xs font-normal">A Farm For Me is an investment system of smart farming designed for persons who have interest in agriculture and want to own farms but do not have the time, lands, resources, technical knowledge etc. It is also designed for persons or individuals who are looking for investment opportunities to earn returns, which will serve as an extra source of income.
@@ -54,7 +54,7 @@
             <div class="bg-teal-500 py-10 px-5 lg:px-16 rounded-xl">
                 <div class=" text-base font-bold text-white">Our core values</div>
 
-                <div class=" mt-8 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
+                <div class=" mt-8 grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-5">
                     <div v-for="value in core_values" :key="value.id">
                         <img :src="value.icon" :alt="value.head">
                         <div class=" text-sm font-bold text-white">{{value.head}}</div>

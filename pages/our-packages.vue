@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class=" max-w-6xl mx-auto px-4 pt-48 ">
-            <div class=" text-xl font-bold text-center">Our Packages.</div>
+            <div class=" text-lg lg:text-xl font-bold text-center">Our Packages.</div>
 
             <div class=" w-full flex justify-center">
                 

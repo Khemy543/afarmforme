@@ -99,7 +99,7 @@
           </p>
 
           <div class=" lg:flex space-y-5 lg:space-y-0 lg:space-x-14 mt-12">
-            <ProductCard v-for="n in products" :key="n.id" :product="n" class=" w-1/3" />
+            <ProductCard v-for="n in products" :key="n.id" :product="n" class=" w-1/3 mt-6 lg:mt-0" />
           </div>
 
           <div class=" mt-10  flex justify-center w-full">
@@ -167,8 +167,8 @@
     </div>
 
     <div class=" bg-become-a-partner bg-blue-300 bg-contain">
-      <div class=" max-w-6xl mx-auto px-4 lg:flex space-x-0 items-center">
-        <div class=" w-full lg:w-1/2">
+      <div class=" max-w-6xl mx-auto px-4 flex flex-col-reverse lg:flex-row space-x-0 items-center">
+        <div class=" w-full lg:w-1/2 mt-24 pb-10 lg:pb-10">
             <div class=" text-base font-bold text-white mb-5">Become A Partner</div>
             <p class=" text-xs font-normal text-white mb-5">
               A Farm For Me offers its clients a variety of well-tailored and pre-prepared farm sponsorship packages, so you can choose the option that best meets your investment needs. We offer a number of different packages to suit the needs of individuals, organisations, families, students, groups etc.

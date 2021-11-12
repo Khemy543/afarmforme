@@ -1,7 +1,7 @@
 <template>
   <div>
       <div class=" max-w-6xl mx-auto px-4 pt-48">
-            <div class=" text-xl font-bold text-center">Contact Us.</div>
+            <div class=" text-lg lg:text-xl font-bold text-center">Contact Us.</div>
 
             <div class=" mt-10 lg:flex lg:space-x-5 space-y-5 lg:space-y-0 border-t-2 border-gray-200 pt-10">
                 <div class=" w-full lg:w-2/5">

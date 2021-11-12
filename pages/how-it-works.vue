@@ -1,7 +1,7 @@
 <template>
     <div class=" w-full">
         <div class=" max-w-4xl mx-auto px-4 pt-48">
-            <div class=" text-xl font-bold text-center">How It Works.</div>
+            <div class=" text-lg lg:text-xl font-bold text-center">How It Works.</div>
 
             <div class=" mt-6 text-center text-xs tracking-normal">Farming made easy for you.</div>
             
@@ -71,9 +71,9 @@
             <div class="bg-teal-500 py-10 px-5 lg:px-16 rounded-xl">
                 <div class=" text-base font-bold text-white">Our special features</div>
 
-                <div class=" mt-8 grid grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class=" mt-8 grid grid-cols-1 lg:grid-cols-4 gap-5">
                     <div v-for="value in features" :key="value.id">
-                       <!--  <img :src="value.icon" :alt="value.head"> -->
+                        <img src="~/static/img/about/teamwork-icon.svg" alt="valuehead">
                         <div class=" text-sm font-bold text-white">{{value.head}}</div>
                         <p class=" text-xs font-normal text-white">{{value.text}}</p>
                     </div>

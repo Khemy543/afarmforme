@@ -1,7 +1,7 @@
 <template>
    <div class=" w-full">
         <div class=" max-w-4xl mx-auto px-4 pt-48">
-            <div class=" text-xl font-bold text-center">Partners.</div>
+            <div class=" text-lg lg:text-xl font-bold text-center">Partners.</div>
 
             <div class=" mt-6 text-center text-xs tracking-normal">We believe in global partnerships.</div>
 
@@ -47,8 +47,8 @@
 
                 </div>
             </div>
-            <div class=" lg:flex mt-28 lg:space-x-14 space-y-5 lg:space-y-0">
-                <div class=" w-full lg:w-7/12 bg-gray-200 rounded-md" style="height:620px;">
+            <div class="flex flex-col-reverse lg:flex-row mt-28 lg:space-x-14 lg:space-y-0">
+                <div class=" w-full lg:w-7/12 bg-gray-200 mt-5 lg:mt-0 rounded-md" style="height:620px;">
 
                 </div>
                 <div class="w-full lg:w-5/12">

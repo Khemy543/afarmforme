@@ -1,6 +1,6 @@
 <template>
     <div class=" max-w-3xl mx-auto px-4">
-        <div class=" text-xl font-bold text-center pt-48">Frequently Asked Questions.</div>
+        <div class=" text-lg lg:text-xl font-bold text-center pt-48">Frequently Asked Questions.</div>
 
         <input type="search" class=" search-input mt-16 mb-4" placeholder="Search..."/>
 
