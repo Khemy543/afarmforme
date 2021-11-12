@@ -51,7 +51,7 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/auth/register" class="mx-4 rounded-full bg-primary text-white lg:my-auto flex items-center app-button" style="width:auto">
+            <nuxt-link to="/auth/register" class="mx-4 rounded-full bg-primary hover:bg-opacity-70 text-white lg:my-auto flex items-center app-button" style="width:auto">
              <span >Start farming</span>
             </nuxt-link>
           </li>

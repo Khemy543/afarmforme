@@ -10,11 +10,11 @@
                 We are always looking for new partners / distributors who have the ambition to grow and scale their business selling our top quality commodities. Once you join our network of distributors even as a starter, we can transform your company from a small company agency into a grand player.
             </div>
             <div class="flex mt-6 space-x-5 items-center">
-                <button class=" app-button rounded-xl bg-primary text-white">
+                <button class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white">
                     Get Started Now
                 </button>
                 <button
-                    class="app-button bg-white text-black border border-gray-400 rounded-xl"
+                    class="app-button bg-white text-black border border-gray-50 hover:border-black rounded-xl"
                 >
                     Read more
                 </button>
@@ -112,39 +112,16 @@
                 </ul>
             </div>
 
-            <div class=" mt-8 text-xsm font-semibold">
+            <div class=" mt-8 text-xsm font-semibold flex">
                 Select package 
+                <span class=" flex items-center pl-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
+                    <path id="chevron-right" d="M9,13.578l3.789-3.789L9,6" transform="translate(-7.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+                </span>
             </div>
         </div>
     </div>
-    </div>
-
-    <div class=" max-w-6xl mx-auto px-4 mb-40 mt-60">
-        <div class=" my-16 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-blue-200 rounded-lg items-center ">
-            <div class=" w-full lg:w-1/2 lg:pr-10">
-                <div class="text-lg font-bold text-white">
-                Begin your journey of becoming a Agripreneur.
-                </div>
-            </div>
-            <div class=" lg:flex lg:space-x-4 w-full lg:w-1/2">
-                <div class=" w-full lg:w-1/2">
-                <div class=" text-sm font-bold text-white">Simple Pricing</div>
-                <div class=" mt-4 text-xs font-normal text-white">
-                We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-                </div>
-                
-                <button class=" app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
-            </div>
-
-            <div class=" w-full lg:w-1/2">
-                <div class=" text-sm font-bold text-white">Simple Pricing</div>
-                <div class=" mt-4 text-xs font-normal text-white">
-                We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-                </div>
-                
-            </div>
-            </div>
-        </div>
     </div>
 
   </div>

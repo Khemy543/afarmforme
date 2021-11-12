@@ -10,7 +10,7 @@
 
                 <div class=" text-center text-xs tracking-normal mt-5">Get set up to sponsor a farm unit by providing us with required information. This will help us furnish you with your login details, which will grant you access to our platform.</div>
                 <div class=" mt-7 flex justify-center w-full">
-                    <button class=" app-button rounded-lg bg-primary text-white">Get Started Now</button>
+                    <button class=" app-button rounded-lg bg-primary hover:bg-opacity-70 text-white">Get Started Now</button>
                 </div>
 
                 <div class=" bg-gray-700 rounded-t-2xl h-52 w-full mt-14 -mb-10">
@@ -90,34 +90,6 @@
                     “To safeguard your investments, all of our farms have been insured against natural disasters such as flooding, pests, bush fire and other unforeseen setbacks.”
                 </div>
                 <div class=" text-xs tracking-normal mt-5">Frances Amoah • Institutional Investor</div>
-            </div>
-        </div>
-
-        <div class=" max-w-6xl mx-auto px-4 mb-40">
-            <div class=" my-16 py-11 px-16 flex space-x-0 bg-blue-200 rounded-lg items-center ">
-                <div class=" w-1/2 pr-10">
-                    <div class="text-lg font-bold text-white">
-                    Begin your journey of becoming a Agripreneur.
-                    </div>
-                </div>
-                <div class=" flex space-x-4 w-1/2">
-                    <div class="w-1/2">
-                    <div class=" text-sm font-bold text-white">Simple Pricing</div>
-                    <div class=" mt-4 text-xs font-normal text-white">
-                    We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-                    </div>
-                    
-                    <button class=" app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
-                </div>
-
-                <div class=" w-1/2">
-                    <div class=" text-sm font-bold text-white">Simple Pricing</div>
-                    <div class=" mt-4 text-xs font-normal text-white">
-                    We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-                    </div>
-                    
-                </div>
-                </div>
             </div>
         </div>
     </div>

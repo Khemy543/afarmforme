@@ -105,33 +105,6 @@
                 </div>
             </div>
         </div>
-        <div class=" max-w-6xl mx-auto px-4">
-        <div class=" mt-16 mb-40 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-blue-200 rounded-lg items-center ">
-            <div class=" w-full lg:w-1/2 lg:pr-10">
-                <div class="text-lg font-bold text-white">
-                Begin your journey of becoming a Agripreneur.
-                </div>
-            </div>
-            <div class=" lg:flex space-x-4 w-full lg:w-1/2">
-                <div class="w-full lg:w-1/2">
-                <div class=" text-sm font-bold text-white">Simple Pricing</div>
-                <div class=" mt-4 text-xs font-normal text-white">
-                We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-                </div>
-                
-                <button class=" app-button bg-white border border-gray-300 rounded-xl mt-6">Start Farming</button>
-            </div>
-
-            <div class="w-full lg:w-1/2">
-                <div class=" text-sm font-bold text-white">Simple Pricing</div>
-                <div class=" mt-4 text-xs font-normal text-white">
-                We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-                </div>
-                
-            </div>
-            </div>
-        </div>
-        </div>
     </div>
 </template>
 <script>

@@ -8,9 +8,14 @@
           :name="`faq-${faq.id}`"
         />
         <label
-          class="inline-block w-full p-5 rounded-lg text-xs leading-normal cursor-pointer shadow-sm mb-2 border border-gray-100"
+          class=" w-full flex p-5  relative rounded-lg text-xs leading-normal cursor-pointer shadow-sm mb-2 border border-gray-100"
           :for="`faq-${faq.id}`">
             {{faq.head}}
+            <span class="absolute right-0 inset-y-0 flex items-center pr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
+                <path id="chevron-right" d="M9,13.578l3.789-3.789L9,6" transform="translate(-7.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              </svg>
+            </span>
         </label>
         <div
           class="tab-content overflow-hidden">

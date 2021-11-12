@@ -39,7 +39,7 @@
                             <Checkbox :checked="true" :name="n.text" :id="n.id"/>
                         </div>
                     </div>
-                    <button class=" app-button rounded-xl bg-primary text-white mt-4">
+                    <button class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white mt-4">
                         Join As A Supplier
                     </button>
                 </div>
@@ -62,7 +62,7 @@
                             <Checkbox :checked="true" :name="n.text" :id="n.id"/>
                         </div>
                     </div>
-                    <button class=" app-button rounded-xl bg-primary text-white mt-4">
+                    <button class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white mt-4">
                         Join As An Off-Taker
                     </button>
                 </div>
@@ -80,43 +80,16 @@
                         </div>
                     </div>
                     <div class=" flex space-x-5 mt-4">
-                        <button class=" app-button rounded-xl bg-primary text-white">
+                        <button class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white">
                             Join Us
                         </button>
-                        <nuxt-link to="/partner-with-us/learn-more" class="app-button bg-white text-black border border-gray-400 rounded-xl">
+                        <nuxt-link to="/partner-with-us/learn-more" class="app-button bg-white text-black border border-gray-50 hover:border-black rounded-xl">
                             Learn more
                         </nuxt-link>
                     </div>
                 </div>
                 <div class="w-full lg:w-7/12 bg-gray-200 rounded-md" style="height:620px;">
 
-                </div>
-            </div>
-        </div>
-        <div class=" max-w-6xl mx-auto px-4 mb-40">
-            <div class=" my-16 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-blue-200 rounded-lg items-center ">
-                <div class=" w-full lg:w-1/2 lg:pr-10">
-                    <div class="text-lg font-bold text-white">
-                    Begin your journey of becoming a Agripreneur.
-                    </div>
-                </div>
-                <div class=" lg:flex lg:space-x-4 w-full lg:w-1/2">
-                    <div class="w-full lg:w-1/2">
-                    <div class=" text-sm font-bold text-white">Simple Pricing</div>
-                    <div class=" mt-4 text-xs font-normal text-white">
-                    We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-                    </div>
-                    
-                    <button class=" app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
-                </div>
-
-                <div class=" w-full lg:w-1/2">
-                    <div class=" text-sm font-bold text-white">Simple Pricing</div>
-                    <div class=" mt-4 text-xs font-normal text-white">
-                    We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-                    </div>
-                    
-                </div>
                 </div>
             </div>
         </div>

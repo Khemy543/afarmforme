@@ -13,11 +13,11 @@
           Sit home, watch us dirty our hands, enjoy your profits.
         </p>
         <div class="lg:flex mt-6 space-x-5 items-center">
-          <button class=" app-button rounded-xl bg-primary text-white">
+          <button class=" app-button rounded-xl bg-primary text-white hover:bg-opacity-70 transition-all">
             Start Farming
           </button>
           <button
-            class="app-button bg-white text-black border border-gray-400 rounded-xl"
+            class="app-button bg-white text-black border border-gray-50 hover:border-black rounded-xl"
           >
             Learn more
           </button>
@@ -104,7 +104,7 @@
 
           <div class=" mt-10  flex justify-center w-full">
             <button
-              class=" app-button rounded-xl text-black border border-gray-50"
+              class=" app-button rounded-xl text-black border border-gray-50 hover:border-black hover:bg-white"
             >
               Browse Farms
             </button>
@@ -152,8 +152,13 @@
               <div class=" mt-5 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
               <div class=" mt-2 text-base font-bold">GHS {{pack.amount}}</div>
 
-              <div class=" mt-8 text-sm font-bold">
+              <div class=" mt-8 text-sm font-bold flex">
                 Get Started 
+                <span class=" flex items-center pl-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
+                    <path id="chevron-right" d="M9,13.578l3.789-3.789L9,6" transform="translate(-7.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+                </span>
               </div>
           </div>
       </div>
@@ -161,7 +166,7 @@
       </div>
     </div>
 
-    <div class=" bg-blue-200">
+    <div class=" bg-become-a-partner bg-blue-300 bg-contain">
       <div class=" max-w-6xl mx-auto px-4 lg:flex space-x-0 items-center">
         <div class=" w-full lg:w-1/2">
             <div class=" text-base font-bold text-white mb-5">Become A Partner</div>
@@ -169,7 +174,7 @@
               A Farm For Me offers its clients a variety of well-tailored and pre-prepared farm sponsorship packages, so you can choose the option that best meets your investment needs. We offer a number of different packages to suit the needs of individuals, organisations, families, students, groups etc.
             </p>
 
-            <button class=" app-button rounded-xl text-black border border-gray-200 bg-white">
+            <button class=" app-button rounded-xl text-black border border-gray-50 hover:border-black bg-white">
               Learn More
             </button>
         </div>
@@ -195,34 +200,6 @@
         <img src="~/static/img/farm/SDG-goal-09.png" class=" w-full h-auto object-cover"/>
         <img src="~/static/img/farm/SDG-goal-15.png" class=" w-full h-auto object-cover"/>
       </div>
-    </div>
-    <div class="max-w-6xl mx-auto px-4 pb-48">
-
-    <div class=" my-16 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-blue-200 rounded-lg items-center ">
-      <div class="w-full lg:w-1/2 lg:pr-10">
-        <div class="text-lg font-bold text-white">
-          Begin your journey of becoming a Agripreneur.
-        </div>
-      </div>
-      <div class=" lg:flex lg:space-x-4 w-full lg:w-1/2">
-        <div class=" w-full lg:w-1/2">
-          <div class=" text-sm font-bold text-white">Simple Pricing</div>
-          <div class=" mt-4 text-xs font-normal text-white">
-            We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-          </div>
-          
-          <button class=" hidden lg:block app-button bg-white border border-gray-200 rounded-xl mt-6">Start Farming</button>
-        </div>
-
-        <div class=" w-full lg:w-1/2">
-          <div class=" text-sm font-bold text-white">Simple Pricing</div>
-          <div class=" mt-4 text-xs font-normal text-white">
-            We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-          </div>
-          
-        </div>
-      </div>
-    </div>
     </div>
   </div>
 </template>

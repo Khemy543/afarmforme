@@ -17,7 +17,8 @@ module.exports = {
       white : colors.white,
       blue : {
         '100':'',
-        '200' : '#7C7CFF'
+        '200' : '#7C7CFF',
+        '300':'#656CE0'
       },
       teal :{
         '500':'#4D747D',
@@ -35,7 +36,8 @@ module.exports = {
         '700' : '#BFBFBF'
       },
       green:{
-        "500" : '#1E5F04'
+        "500" : '#1E5F04',
+        "600":'#206E00'
       },
       red:{
         "500":'#B50000'
@@ -60,7 +62,10 @@ module.exports = {
       backgroundImage: {
        'technology': "url('~/static/img/Home/technology-card.png')",
        'partnership': "url('~/static/img/Home/partnerships-card.png')",
-       'analytics' : "url('~/static/img/Home/analytics-card.png')"
+       'analytics' : "url('~/static/img/Home/analytics-card.png')",
+       'become-a-partner' : "url('~/static/img/Home/become-a-partner-bg.svg')",
+       'footer-banner': "url('~/static/img/Footer/footer-banner-bg.svg')",
+       'get-started' : "url('~/static/img/Packages/ready-to-get-started-bg.svg')"
       }
     }
   },

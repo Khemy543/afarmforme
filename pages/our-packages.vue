@@ -215,11 +215,11 @@
                 </div>
             </div>
 
-            <div class=" mt-16 rounded-xl lg:flex lg:justify-between space-y-5 lg:space-y-0 px-5 lg:px-9 py-11 bg-indigo-500">
+            <div class=" mt-16 rounded-xl lg:flex lg:justify-between space-y-5 lg:space-y-0 px-5 lg:px-9 py-11 bg-get-started bg-blue-200">
                 <div class=" text-base font-bold text-white">
                     Ready to get started?
                 </div>
-                <button class=" app-button rounded-xl text-black bg-white border border-gray-300">
+                <button class=" app-button rounded-xl text-black bg-white border border-gray-50 hover:border-black">
                     Get Started
                 </button>
             </div>
@@ -239,8 +239,8 @@
                 <div class=" font-bold text-base text-center">Still got more questions?</div>
                 <div class=" w-full flex justify-center mt-7">
                     <div class=" flex space-x-8">
-                        <button class=" app-button rounded-xl bg-primary text-white">View all FAQs</button>
-                        <button class=" app-button rounded-xl bg-gray-200 text-black">Contact Us</button>
+                        <button class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white">View all FAQs</button>
+                        <button class=" app-button rounded-xl bg-gray-200 hover:bg-white border border-gray-200 hover:border-black text-black">Contact Us</button>
                     </div>
                 </div>
             </div>
@@ -307,5 +307,8 @@ export default {
 <style scoped>
 .selected{
     @apply text-primary border-b-2 border-primary;
+}
+.getStarted{
+    background: linear-gradient(#e66465, #9198e5);
 }
 </style>
