@@ -52,159 +52,76 @@
                                             <th scope="col" class="px-6 py-3 w-1/5 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             
                                             </th>
-                                            <th scope="col" class="px-6 py-3 w-1/5 text-center">
-                                                <div class=" text-sm font-bold">Asetena Pa</div>
-                                                <p class="text-xxs font-normal tracking-normal text-gray-300">Designed for persons with short-term investment needs.</p>
-                                            </th>
-                                            <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
-                                             <div class=" text-sm font-bold">Akwantuo</div>
-                                                <p class="text-xxs font-normal tracking-normal text-gray-300">For persons living abroad with specific investment needs. We understand the needs to save home for such persons.</p>
-                                            </th>
-                                            <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
-                                             <div class=" text-sm font-bold">Daakye Asem</div>
-                                                <p class="text-xxs font-normal tracking-normal text-gray-300">For children under the age of 18 years. This package gives hope to children and prepare them towards a brighter future.</p>
-                                            </th>
-                                            <th scope="col" class="px-6 py-3 w-1/5 text-center tracking-wider">
-                                             <div class=" text-sm font-bold">Aban Adwumafuo</div>
-                                                <p class="text-xxs font-normal tracking-normal text-gray-300">For public and civil servants. This package helps this group of persons build up funds for future needs.</p>
+                                            <th v-for="item in selectedPackage" :key="item.id" scope="col" class="px-6 py-3 w-1/5 text-center">
+                                                <div class=" text-sm font-bold">{{ item.name }}</div>
+                                                <p class="text-xxs font-normal tracking-normal text-gray-300">{{ item.description }}</p>
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody class=" divide-y divide-gray-200">
+                                        
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left text-xsm  relative">
                                                 Minimum Investment
                                             </td>
-                                            <td class="px-6 text-xsm text-center py-4 ">
-                                                GHS 6,000
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                GHS 10,000
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                GHS 6,000
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                GHS 2,000
+                                            <td v-for="item in selectedPackage" :key="item.id" class="px-6 text-xsm text-center py-4 ">
+                                                GHS {{ item.minInvestment }}
                                             </td>
                                         </tr>
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left text-xsm  relative">
                                                 Units
                                             </td>
-                                            <td class="px-6 text-xsm text-center tracking-normal py-4 ">
-                                                2 unit of maize <br>farm 2 units of ginger farm <br/>1 unit of piggery
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center tracking-normal ">
-                                                4 units of chilli <br/>4 units of maize 3 <br/>units of pineapple <br/>2 units of piggery
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center tracking-normal ">
-                                                3 units of chilli <br/>2 units of maize <br/>2 units of piggery
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center tracking-normal ">
-                                                2 units of maize <br/>2 units of chilli
+                                            <td v-for="item in selectedPackage" :key="item.id" v-html="item.units" class="px-6 text-xsm text-center tracking-normal py-4 ">
+                                                
                                             </td>
                                         </tr>
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left  relative">
                                                 Duration Of Cycle
                                             </td>
-                                            <td class="px-6 text-xsm text-center py-4 ">
-                                                1
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                3
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                1 (Subject to rollover)
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                1
+                                            <td v-for="item in selectedPackage" :key="item.id" class="px-6 text-xsm text-center py-4 ">
+                                                {{ item.durationOfCycle }}
                                             </td>
                                         </tr>
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left  relative">
                                                Insurance
                                             </td>
-                                            <td class="px-6 text-xsm text-center py-4 ">
-                                                Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
+                                            <td v-for="item in selectedPackage" :key="item.id" class="px-6 text-xsm text-center py-4 ">
+                                                {{ item.insurance }}
                                             </td>
                                         </tr>
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left  relative">
                                                 Certificate Of Investment
                                             </td>
-                                            <td class="px-6 text-xsm text-center py-4 ">
-                                                Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
+                                            <td v-for="item in selectedPackage" :key="item.id" class="px-6 text-xsm text-center py-4 ">
+                                                {{ item.certificateOfInvestment }}
                                             </td>
                                         </tr>
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left  relative">
                                                 Return On Investment
                                             </td>
-                                            <td class="px-6 text-xsm text-center py-4 ">
-                                                20%
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                25%
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                10%
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                20%
+                                            <td v-for="item in selectedPackage" :key="item.id" class="px-6 text-xsm text-center py-4 ">
+                                                {{ item.returnOnInvestment }}
                                             </td>
                                         </tr>
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left  relative">
                                                 Track Farm Progress Via Web And Mobile App
                                             </td>
-                                            <td class="px-6 text-xsm text-center py-4 ">
-                                               Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                               Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
+                                            <td v-for="item in selectedPackage" :key="item.id" class="px-6 text-xsm text-center py-4 ">
+                                               {{ item.trackProgress }}
                                             </td>
                                         </tr>
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left text-xsm  relative">
                                                 Dedicated Relationship Manager
                                             </td>
-                                            <td class="px-6 text-xsm text-center py-4 ">
-                                                No
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                Yes
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                No
-                                            </td>
-                                            <td class="px-6 py-4 text-xsm text-center ">
-                                                No
+                                            <td v-for="item in selectedPackage" :key="item.id" class="px-6 text-xsm text-center py-4 ">
+                                                {{ item.dedicatedRelationshipManager }}
                                             </td>
                                         </tr>
                                     </tbody>
@@ -252,9 +169,152 @@ export default {
     components: {
         Accordion : () => import('~/components/Accordion.vue')
     },
+    computed:{
+        selectedPackage(){
+            const selectedPackage = this.ourPackages.find(item => item.id === this.activeTab);
+            return selectedPackage.packages
+        }
+    },
     data(){
         return {
             activeTab : 1,
+            ourPackages : [
+                {
+                    id:1,
+                    type:"individual",
+                    packages : [
+                        {
+                            id:1,
+                            name:"Asetena Pa",
+                            description:"Designed for persons with short-term investment needs.",
+                            minInvestment : "6,000",
+                            units:"2 unit of maize <br/> farm 2 units of ginger farm <br/> 1 unit of piggery",
+                            durationOfCycle:"1",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"20%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"No"
+                        },
+                        {
+                            id:2,
+                            name:"Akwantuo",
+                            description:"For persons living abroad with specific investment needs. We understand the needs to save home for such persons.",
+                            minInvestment : "10,000",
+                            units:"4 units of chilli <br/> 4 units of maize 3 <br/> units of pineapple <br/> 2 units of piggery",
+                            durationOfCycle:"3",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"25%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"Yes"
+                        },
+                        {
+                            id:3,
+                            name:"Daakye Asem",
+                            description:"For children under the age of 18 years. This package gives hope to children and prepare them towards a brighter future.",
+                            minInvestment : "6,000",
+                            units:"3 units of chilli <br/> 2 units of maize <br/> 2 units of piggery",
+                            durationOfCycle:"1 (Subject to rollover)",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"10%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"No"
+                        },
+                        {
+                            id:4,
+                            name:"Aban Adwumafuo",
+                            description:"For public and civil servants. This package helps this group of persons build up funds for future needs.",
+                            minInvestment : "2,000",
+                            units:"2 units of maize <br/> 2 units of chilli",
+                            durationOfCycle:"1",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"20%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"No"
+                        }
+                    ]
+                },
+                {
+                    id:2,
+                    type:"Group",
+                    packages : [
+                        {
+                            id:1,
+                            name:"Family Package",
+                            description:"Designed for families. We consider the need of families investing to prepare towards future occurrences.",
+                            minInvestment : "10,000",
+                            units:"5 units of maize <br/> 3 units of chilli <br/> 2 units of pineapple",
+                            durationOfCycle:"1",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"25%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"Yes"
+                        },
+                        {
+                            id:2,
+                            name:"Smart Friends Package",
+                            description:"Smart friend’s package is specially designed for little groups of friends in the university.",
+                            minInvestment : "2,000",
+                            units:"2 units of maize <br/> 2 units of chilli <br/> 1 unit of piggery",
+                            durationOfCycle:"2 (Subjected to rollover)",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"10%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"Yes"
+                        },
+                        {
+                            id:3,
+                            name:"Workers Union Package",
+                            description:"Designed for workers union such as senior stuff and junior stuff workers within organizations.",
+                            minInvestment : "20,000",
+                            units:"units of ginger <br/> 7 units of chilli <br/> 10 units of piggery",
+                            durationOfCycle:"1",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"30%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"No"
+                        },
+                    ]
+                },
+                {
+                    id:3,
+                    type:"Organizations",
+                    packages : [
+                        {
+                            id:1,
+                            name:"Church Package",
+                            description:"Designed for churches who are looking for other source of income to finance church projects.",
+                            minInvestment : "30,000",
+                            units:"15 units of maize <br/> 10 units of piggery",
+                            durationOfCycle:"1",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"30%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"Yes"
+                        },
+                        {
+                            id:2,
+                            name:"Institutional Package",
+                            description:"Designed for companies and other institutions looking for a safe haven to make some extra source of income to finance projects, or future purchases.",
+                            minInvestment : "50,000",
+                            units:"10 units of maize <br/> 10 units of pineapple <br/> 7 units of piggery <br/> 5 units of chilli",
+                            durationOfCycle:"1",
+                            insurance:"Yes",
+                            certificateOfInvestment:"Yes",
+                            returnOnInvestment :"30%",
+                            trackProgress :"Yes",
+                            dedicatedRelationshipManager :"Yes"
+                        }
+                    ]
+                }
+            ],
             products : [
                 {
                     id:1,
@@ -276,7 +336,7 @@ export default {
                 {
                     id:1,
                     head:"Is there a limited number of units I can sponsor?",
-                    text:"Our online platforms provide you with a dashboard that gets you to monitor the progress of your farms by means of drone video feeds, pictures, analytics, text messages etc. Your farm manager will also be calling you regularly to give you updates on your farms."
+                    text:"No, you can sponsor as many farm units as you want. We will only advise you diversify your investments."
                 },
                 {
                     id:2,
@@ -286,12 +346,12 @@ export default {
                 {
                     id:3,
                     head:"Is there any form of protection for the farms?",
-                    text:"Our online platforms provide you with a dashboard that gets you to monitor the progress of your farms by means of drone video feeds, pictures, analytics, text messages etc. Your farm manager will also be calling you regularly to give you updates on your farms."
+                    text:"Yes there is. All of our farms have been insured against natural disasters such as drought, bush fire, earthquake etc. there is an insurance package for your crop during your account setup."
                 },
                 {
                     id:4,
                     head:"What does my insurance cover?",
-                    text:"Our online platforms provide you with a dashboard that gets you to monitor the progress of your farms by means of drone video feeds, pictures, analytics, text messages etc. Your farm manager will also be calling you regularly to give you updates on your farms."
+                    text:"We provided insurance cover for all existing farm units, so that in the event of natural disasters, the sponsor’s capital can be refunded. The insurance covers only the initial sponsorship capital; it does not cover the return after harvest."
                 }
             ]
         }
