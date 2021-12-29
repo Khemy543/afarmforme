@@ -6,23 +6,23 @@
 
 
             <div class=" flex space-x-16 border-b border-gray-50 my-10">
-                <div class=" text-xs font-bold border-b-2 border-black">General</div>
-                <div class=" text-xs">Packages</div>
-                <div class=" text-xs">Pricing</div>  
+                <nuxt-link to="#general" class=" text-xs">General</nuxt-link>
+                <nuxt-link to="#packages" class=" text-xs">Packages</nuxt-link>
+                <nuxt-link to="#pricing" class=" text-xs">Pricing</nuxt-link>  
             </div>
         </div>
 
-        <div>
-            <div class=" text-base font-bold mb-7">General</div>
+        <div id="general">
+            <div class=" text-base font-bold mb-7" >General</div>
             <Accordion v-for="faq in general" :faq="faq" :key="faq.id" />
         </div>
 
-        <div class=" mt-24">
+        <div class=" mt-24" id="packages">
             <div class=" text-base font-bold mb-7">Packages</div>
             <Accordion v-for="faq in general" :faq="faq" :key="faq.id" />
         </div>
 
-        <div class=" mt-24">
+        <div class=" mt-24" id="pricing">
             <div class=" text-base font-bold mb-7">Pricing</div>
             <Accordion v-for="faq in general" :faq="faq" :key="faq.id" />
         </div>
@@ -80,3 +80,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+.nuxt-link-active{
+  @apply font-bold border-b-2 border-black;
+}
+</style>

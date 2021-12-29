@@ -79,14 +79,14 @@
                 </ul>
             </div>
 
-            <a href="#calculator" class=" mt-8 text-xsm font-semibold flex">
+            <nuxt-link :to="`?id=${pack.id}#calculator`" class=" mt-8 text-xsm font-semibold flex">
                 Select package 
                 <span class=" flex items-center pl-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
                     <path id="chevron-right" d="M9,13.578l3.789-3.789L9,6" transform="translate(-7.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
                   </svg>
                 </span>
-            </a>
+            </nuxt-link>
         </div>
     </div>
     </div>
@@ -105,7 +105,7 @@
                 <div class=" w-full">
                     <label class=" text-xs font-normal mb-2" for="package">Package</label>
                     <div>
-                        <select name="package" id="package" class=" select-input">
+                        <select name="package" id="package" class=" select-input" v-model="selectedPackage">
                             <option value="">Select a package</option>
                             <option :value="pack.id" v-for="pack in packages" :key="pack.id">{{ pack.title }}</option>
                         </select>
@@ -150,6 +150,7 @@ export default {
     },
     data(){
         return{
+            selectedPackage: "",
             partners : [
                 {
                     id:1,
@@ -303,9 +304,19 @@ export default {
                 }
             ]
         }
+    },
+
+    watch:{
+        $route(newRoute){
+            if(newRoute){
+                const { id } = newRoute.query
+                this.selectedPackage = id ? id : ""
+            }
+        }
     }
 }
 </script>
 
 <style scoped>
+
 </style>

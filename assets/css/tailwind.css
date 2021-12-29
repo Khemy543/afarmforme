@@ -46,7 +46,7 @@
 
 *{
     font-family: Proxima Nova !important;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 .app-button {
