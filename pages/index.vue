@@ -60,33 +60,15 @@
       </div>
 
       <div class=" mt-12 w-full flex justify-center">
-        <div class=" lg:flex lg:space-x-14 space-y-5 lg:space-y-0 w-full">
-          <div class=" w-full lg:w-1/3 rounded-xl bg-technology relative" style="height:450px">
-            <div class=" absolute bottom-0 left-0 right-0 p-6">
-              <div class=" text-sm font-bold text-white">Technology</div>
-              <div class=" mt-1 text-xs font-normal text-white">
-                Taking maximum advantage of technology to sponsor farms and earn
-                very cool returns without a physical involvement.
+        <div class=" lg:flex lg:space-x-10 space-y-5 lg:space-y-0 w-full">
+          <div class=" w-full lg:w-1/3 rounded-xl overflow-hidden  relative" v-for="value in opportunities" :key="value.id" style="height:450px">
+              <img :src="value.image" :alt="value.name" class=" w-full h-full object-cover" />
+              <div class=" h-1/2 bg-gradient-to-t from-black absolute w-full bottom-0">
+                  <div class="absolute w-full bottom-0 inset-x-0 px-7 pb-7 text-white ">
+                      <div class="text-sm font-bold text-white">{{value.name}}</div>
+                      <div class=" mt-1 text-xs font-normal text-white">{{value.description}}</div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-1/3 rounded-xl bg-partnership relative" style="height:450px">
-            <div class=" absolute bottom-0 left-0 right-0 p-6">
-              <div class=" text-sm font-bold text-white">Partnerships</div>
-              <div class=" mt-1 text-xs font-normal text-white">
-                Fostering partnerships with farmers and necessary stakeholder we
-                trust to run activities on our farms.
-              </div>
-            </div>
-          </div>
-          <div class=" w-full lg:w-1/3 rounded-xl bg-analytics relative" style="height:450px">
-            <div class=" absolute bottom-0 left-0 right-0 p-6">
-              <div class=" text-sm font-bold text-white">Analytics</div>
-              <div class=" mt-1 text-xs font-normal text-white">
-                Researching, analysing and gathering industry data helps drive
-                higher returns on your investments.
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -144,7 +126,16 @@
               <div class=" mt-6">
                 <ul class=" space-y-1">
                   <li class=" flex space-x-4 items-center" v-for="opt in pack.options" :key="opt.id">
-                      <Checkbox :name="opt.name" :id="opt.id" :checked="true" />
+                      <!-- <Checkbox :name="opt.name" :id="opt.id" :checked="true" /> -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class=" flex-grow-0 flex-shrink-0" width="20" height="20" viewBox="0 0 20 20">
+                        <g id="bullet-icon" transform="translate(-957 -2161)">
+                          <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="20" rx="10" transform="translate(957 2161)" fill="#e8e9fb"/>
+                          <path id="Path_1" data-name="Path 1" d="M2052.855,1088.814l2.927,2.5,4.336-5.6" transform="translate(-1090.026 1082.523)" fill="none" stroke="#656ce0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                        </g>
+                      </svg>
+                      <span>
+                        {{ opt.name }}
+                      </span>
                   </li>
                 </ul>
               </div>
@@ -166,9 +157,9 @@
       </div>
     </div>
 
-    <div class=" bg-become-a-partner bg-blue-300 bg-contain">
-      <div class=" max-w-6xl mx-auto px-4 flex flex-col-reverse lg:flex-row space-x-0 items-center">
-        <div class=" w-full lg:w-1/2 mt-24 pb-10 lg:pb-10">
+    <div class=" bg-become-a-partner bg-blue-300 bg-contain h-screen">
+      <div class=" max-w-6xl mx-auto px-4 flex flex-col-reverse lg:flex-row h-full space-x-0 items-center">
+        <div class=" w-full lg:w-2/5 mt-24 pb-10 lg:pb-10">
             <div class=" text-base font-bold text-white mb-5">Become A Partner</div>
             <p class=" text-xs font-normal text-white mb-5">
               A Farm For Me offers its clients a variety of well-tailored and pre-prepared farm sponsorship packages, so you can choose the option that best meets your investment needs. We offer a number of different packages to suit the needs of individuals, organisations, families, students, groups etc.
@@ -178,8 +169,8 @@
               Learn More
             </button>
         </div>
-        <div class=" w-full lg:w-1/2">
-            <img src="~/static/img/Home/become-a-partner.png" alt="become a partner" class=" -mb-20 pt-10">
+        <div class=" w-full lg:w-3/5 h-full relative">
+            <img src="~/static/img/Home/become-a-partner.png" alt="become a partner" class=" absolute z-10 top-20 w-full object-cover">
         </div>
       </div>
     </div>
@@ -207,8 +198,7 @@
 <script>
 export default {
   components: {
-    ProductCard: () => import("~/components/ProductCard.vue"),
-    Checkbox : () => import('~/components/Checkbox.vue')
+    ProductCard: () => import("~/components/ProductCard.vue")
   },
 
   methods: {
@@ -317,6 +307,26 @@ export default {
               name:"Minimum of 5 units"
             }
           ]
+        }
+      ],
+      opportunities: [
+        {
+          id:1,
+          name :"Technology",
+          description:"Taking maximum advantage of technology to sponsor farms and earn very cool returns without a physical involvement.",
+          image:"/img/Home/technology-card.png"
+        },
+        {
+          id:2,
+          name :"Partnerships",
+          description:"Fostering partnerships with farmers and necessary stakeholder we trust to run activities on our farms.",
+          image:"/img/Home/partnerships-card.png"
+        },
+        {
+          id:3,
+          name:"Analytics",
+          description:"Researching, analysing and gathering industry data helps drive higher returns on your investments.",
+          image :"/img/Home/analytics-card.png"
         }
       ]
     }

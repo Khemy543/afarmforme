@@ -101,7 +101,6 @@
                             <div class=" text-small text-white font-normal">{{value.title}}</div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>

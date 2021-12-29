@@ -239,7 +239,7 @@
                 <div class=" font-bold text-base text-center">Still got more questions?</div>
                 <div class=" w-full flex justify-center mt-7">
                     <div class=" flex space-x-8">
-                        <button class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white">View all FAQs</button>
+                        <nuxt-link to="/faqs" class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white">View all FAQs</nuxt-link>
                         <button class=" app-button rounded-xl bg-gray-200 hover:bg-white border border-gray-200 hover:border-black text-black">Contact Us</button>
                     </div>
                 </div>

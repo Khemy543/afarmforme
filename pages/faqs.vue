@@ -1,14 +1,15 @@
 <template>
     <div class=" max-w-3xl mx-auto px-4">
         <div class=" text-lg lg:text-xl font-bold text-center pt-48">Frequently Asked Questions.</div>
+        <div class=" sticky top-4 bg-white z-10">
+            <input type="search" class=" search-input mt-16 mb-4" placeholder="Search..."/>
 
-        <input type="search" class=" search-input mt-16 mb-4" placeholder="Search..."/>
 
-
-        <div class=" flex space-x-16 border-b border-gray-50 my-10">
-            <div class=" text-xs font-bold border-b-2 border-black">General</div>
-            <div class=" text-xs">Packages</div>
-            <div class=" text-xs">Pricing</div>  
+            <div class=" flex space-x-16 border-b border-gray-50 my-10">
+                <div class=" text-xs font-bold border-b-2 border-black">General</div>
+                <div class=" text-xs">Packages</div>
+                <div class=" text-xs">Pricing</div>  
+            </div>
         </div>
 
         <div>
@@ -29,9 +30,8 @@
         <div class=" mt-24 mb-44">
             <div class=" font-bold text-base text-center">Still got more questions?</div>
             <div class=" w-full flex justify-center mt-7">
-                <div class=" flex space-x-8">
-                    <button class=" app-button rounded-xl bg-primary text-white">View all FAQs</button>
-                    <button class=" app-button rounded-xl bg-gray-200 text-black">Contact Us</button>
+                <div>
+                    <nuxt-link to="/contact-us" class=" app-button rounded-xl bg-gray-200 text-black">Contact Us</nuxt-link>
                 </div>
             </div>
         </div>

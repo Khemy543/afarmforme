@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="learn-more-wrapper">
     <div class=" max-w-6xl mx-auto px-4 flex min-h-screen items-center">
         <div class=" w-full flex lg:space-x-32 pt-24">
         <div class=" w-full lg:w-7/12">
@@ -36,8 +36,15 @@
             Becoming a Distributor for <b>A Farm for Me</b> means you will enjoy the business opportunities that our comprehensive range of products and recognised brand delivers. By joining the A Farm For Me network of distributors, you can benefit from the loyalty of the global strength of our brand name. Also, you gain access to:
         </div>
         <div class="space-y-2 mt-4">
-            <div v-for="n in partners" :key="n.id">
-                <Checkbox :checked="true" :id="n.id" :name="n.text"/>
+            <div class=" flex space-x-3" v-for="n in partners" :key="n.id">
+                <!-- <Checkbox :checked="true" :id="n.id" :name="n.text"/> -->
+                <svg xmlns="http://www.w3.org/2000/svg" class=" flex-grow-0 flex-shrink-0" width="20" height="20" viewBox="0 0 20 20">
+                    <g id="bullet-icon" transform="translate(-957 -2161)">
+                    <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="20" rx="10" transform="translate(957 2161)" fill="#e8e9fb"/>
+                    <path id="Path_1" data-name="Path 1" d="M2052.855,1088.814l2.927,2.5,4.336-5.6" transform="translate(-1090.026 1082.523)" fill="none" stroke="#656ce0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                    </g>
+                </svg>
+                <span>{{ n.text }}</span>
             </div>
         </div>
 
@@ -49,12 +56,45 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class=" mt-40 max-w-xl mx-auto">
-            <div class=" flex space-x-5">
-                <div class=" flex items-center">
-                    <button class=" bg-red-500 rounded-2xl px-4 py-2 text-white font-bold flex-grow-0 text-xs">New</button>
-                </div>
+    <div class=" max-w-7xl mx-auto px-4 mt-32">
+        <div class=" text-base text-center font-bold max-w-xl mx-auto">Get Started Now. Select A Package, And We Will Supply!</div>
+        <div class=" lg:flex lg:space-x-4 w-full space-y-5 lg:space-y-0 mt-10">
+        <div class=" px-5 py-10 w-full lg:w-1/4 rounded-2xl" :class="pack.id % 2 === 0 ? 'bg-white shadow-lg border border-gray-100' : 'bg-gray-100'" v-for="pack in packages" :key="pack.id">
+            <div class=" font-bold text-sm">{{pack.title}}</div>
+
+            <div class=" mt-6">
+                <ul class=" space-y-2">
+                    <li class=" flex space-x-4 items-center" v-for="opt in pack.options" :key="opt.id">
+                        <!-- <Checkbox :name="opt.name" :id="opt.id" :checked="true" /> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" flex-grow-0 flex-shrink-0" width="20" height="20" viewBox="0 0 20 20">
+                            <g id="bullet-icon" transform="translate(-957 -2161)">
+                            <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="20" rx="10" transform="translate(957 2161)" fill="#e8e9fb"/>
+                            <path id="Path_1" data-name="Path 1" d="M2052.855,1088.814l2.927,2.5,4.336-5.6" transform="translate(-1090.026 1082.523)" fill="none" stroke="#656ce0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                            </g>
+                        </svg>
+                        <span v-html="opt.name"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#calculator" class=" mt-8 text-xsm font-semibold flex">
+                Select package 
+                <span class=" flex items-center pl-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
+                    <path id="chevron-right" d="M9,13.578l3.789-3.789L9,6" transform="translate(-7.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div class=" mt-40 max-w-xl mx-auto" id="calculator">
+            <div class=" flex space-x-5 items-center">
+                <button class=" bg-red-500 rounded-2xl px-3 py-1 text-white font-bold flex-grow-0 flex-shrink-0 text-xs">New</button>
+            
                 <div class=" text-base text-center font-bold">Our Capital Requirement Calculator</div>
             </div>
             <div class=" text-xs text-center mt-5">
@@ -67,6 +107,7 @@
                     <div>
                         <select name="package" id="package" class=" select-input">
                             <option value="">Select a package</option>
+                            <option :value="pack.id" v-for="pack in packages" :key="pack.id">{{ pack.title }}</option>
                         </select>
                     </div>
                 </div>
@@ -98,33 +139,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class=" max-w-7xl mx-auto px-4 mt-32">
-        <div class=" text-base text-center font-bold max-w-xl mx-auto">Get Started Now. Select A Package, And We Will Supply!</div>
-        <div class=" lg:flex lg:space-x-4 w-full space-y-5 lg:space-y-0 mt-10">
-        <div class=" px-5 py-10 w-full lg:w-1/4 rounded-2xl" :class="pack.id % 2 === 0 ? 'bg-white shadow-lg border border-gray-100' : 'bg-gray-100'" v-for="pack in packages" :key="pack.id">
-            <div class=" font-bold text-sm">{{pack.title}}</div>
-
-            <div class=" mt-6">
-                <ul class=" space-y-2">
-                    <li class=" flex space-x-4 items-center" v-for="opt in pack.options" :key="opt.id">
-                        <Checkbox :name="opt.name" :id="opt.id" :checked="true" />
-                    </li>
-                </ul>
-            </div>
-
-            <div class=" mt-8 text-xsm font-semibold flex">
-                Select package 
-                <span class=" flex items-center pl-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
-                    <path id="chevron-right" d="M9,13.578l3.789-3.789L9,6" transform="translate(-7.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                  </svg>
-                </span>
-            </div>
-        </div>
-    </div>
-    </div>
 
   </div>
 </template>
@@ -293,6 +307,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>

@@ -42,13 +42,19 @@
 
                 <ul class=" text-gray-400">
                     <li class=" text-xs font-normal py-2">
-                        +233 0000000
+                        <div>
+                            +233 0000000
+                        </div>
                     </li>
                     <li class=" text-xs font-normal py-2">
-                        +233 0000000
+                        <div>
+                            +233 0000000
+                        </div>
                     </li>
                     <li class=" text-xs font-normal py-2">
-                        +233 0000000
+                        <div>
+                            +233 0000000
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -57,13 +63,19 @@
 
                 <ul class=" text-gray-400">
                     <li class=" text-xs font-normal py-2">
-                        Facebook
+                        <a target="_blank" href="https://www.facebook.com/afarmforme/">
+                            Facebook
+                        </a>
+                    </li>
+                    <li  class=" text-xs font-normal py-2">
+                        <a target="_blank" href="https://instagram.com/afarmforme?utm_medium=copy_link">
+                            Instagram
+                        </a>
                     </li>
                     <li class=" text-xs font-normal py-2">
-                        Twitter
-                    </li>
-                    <li class=" text-xs font-normal py-2">
-                        Email
+                        <a target="_blank" href="https://twitter.com/afarmforme?t=IEy8O0mCfT7_ZlY9e33bNQ&s=09">
+                            Twitter
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -86,4 +98,7 @@ export default {
 }
 </script>
 <style scoped>
+    li:hover a{
+        @apply text-gray-700;
+    }
 </style>

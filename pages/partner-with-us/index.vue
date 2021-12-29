@@ -35,8 +35,15 @@
                     </div>
                     <div class=" mt-4">If you can supply us with:</div>
                     <div class=" space-y-2 mt-4"> 
-                        <div v-for="n in supplier" :key="n.id">
-                            <Checkbox :checked="true" :name="n.text" :id="n.id"/>
+                        <div class=" flex space-x-3 items-center" v-for="n in supplier" :key="n.id">
+                            <!-- <Checkbox :checked="true" :name="n.text" :id="n.id"/> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" flex-grow-0 flex-shrink-0" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="bullet-icon" transform="translate(-957 -2161)">
+                                <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="20" rx="10" transform="translate(957 2161)" fill="#e8e9fb"/>
+                                <path id="Path_1" data-name="Path 1" d="M2052.855,1088.814l2.927,2.5,4.336-5.6" transform="translate(-1090.026 1082.523)" fill="none" stroke="#656ce0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>
+                            <span>{{ n.text }}</span>
                         </div>
                     </div>
                     <button class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white mt-4">
@@ -58,8 +65,15 @@
                     </div>
                     <div class=" mt-4">If you are a/an:</div>
                     <div class=" space-y-2 mt-4"> 
-                        <div v-for="n in off_traker" :key="n.id">
-                            <Checkbox :checked="true" :name="n.text" :id="n.id"/>
+                        <div class=" flex space-x-3 items-center" v-for="n in off_traker" :key="n.id">
+                            <!-- <Checkbox :checked="true" :name="n.text" :id="n.id"/> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" flex-grow-0 flex-shrink-0" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="bullet-icon" transform="translate(-957 -2161)">
+                                <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="20" rx="10" transform="translate(957 2161)" fill="#e8e9fb"/>
+                                <path id="Path_1" data-name="Path 1" d="M2052.855,1088.814l2.927,2.5,4.336-5.6" transform="translate(-1090.026 1082.523)" fill="none" stroke="#656ce0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>
+                            <span>{{n.text}}</span>
                         </div>
                     </div>
                     <button class=" app-button rounded-xl bg-primary hover:bg-opacity-70 text-white mt-4">
@@ -75,8 +89,15 @@
                     </div>
                     <div class=" mt-4">If you can provide:</div>
                     <div class=" space-y-2 mt-4"> 
-                        <div v-for="n in individual" :key="n.id">
-                            <Checkbox :checked="true" :name="n.text" :id="n.id"/>
+                        <div class=" flex items-center space-x-3" v-for="n in individual" :key="n.id">
+                            <!-- <Checkbox :checked="true" :name="n.text" :id="n.id"/> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" flex-grow-0 flex-shrink-0" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="bullet-icon" transform="translate(-957 -2161)">
+                                <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="20" rx="10" transform="translate(957 2161)" fill="#e8e9fb"/>
+                                <path id="Path_1" data-name="Path 1" d="M2052.855,1088.814l2.927,2.5,4.336-5.6" transform="translate(-1090.026 1082.523)" fill="none" stroke="#656ce0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>
+                            <span>{{ n.text }}</span>
                         </div>
                     </div>
                     <div class=" flex space-x-5 mt-4">
