@@ -10,7 +10,7 @@
                 
                     <div class=" font-bold text-sm">Contact Numbers</div>
                     <div class=" text-xs font-normal">
-                        Ghana:<br/><a href="tel:+233202822169">+233 202-822-169</a><br/><a href="tel:+233302906492">+233 302-906-492</a> <br/><br/>United Kingdom:<br/>+447393535139
+                        Ghana:<br/><a href="tel:+233559186521">+233 559 1865 21</a><br/><a href="tel:+233302906492">+233 302-906-492</a>
                     </div>
 
                     <div class=" font-bold text-sm">Email Address</div>
@@ -78,7 +78,7 @@ export default {
                     id:4,
                     name:"linkedin",
                     icon:"/img/contact/linkedin.svg",
-                    link:""
+                    link:"https://www.linkedin.com/company/afarmforme"
                 }
             ],
             form : {

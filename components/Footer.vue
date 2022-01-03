@@ -42,19 +42,10 @@
 
                 <ul class=" text-gray-400">
                     <li class=" text-xs font-normal py-2">
-                        <div>
-                            +233 0000000
-                        </div>
+                        <a href="tel:+233559186521">+233 559 1865 21</a>
                     </li>
                     <li class=" text-xs font-normal py-2">
-                        <div>
-                            +233 0000000
-                        </div>
-                    </li>
-                    <li class=" text-xs font-normal py-2">
-                        <div>
-                            +233 0000000
-                        </div>
+                        <a href="tel:+233302906492">+233 302-906-492</a>
                     </li>
                 </ul>
             </div>
