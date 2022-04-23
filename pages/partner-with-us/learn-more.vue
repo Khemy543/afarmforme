@@ -1,6 +1,6 @@
 <template>
   <div class="learn-more-wrapper">
-    <div class=" max-w-6xl mx-auto px-4 flex min-h-screen items-center">
+    <div class=" max-w-7xl mx-auto px-4 flex min-h-screen items-center">
         <div class=" w-full flex lg:space-x-32 pt-24">
         <div class=" w-full lg:w-7/12">
             <div class=" text-lg lg:text-xl font-bold">Start Your Own Company By Selling Our Commodities.</div>
@@ -22,7 +22,7 @@
         </div>
         <div class=" hidden lg:block w-5/12">
             <img src="~/static/img/Home/become-a-partner.png" alt="become a partner" class=" -mb-20 pt-10">
-        </div>  
+        </div>
         </div>
     </div>
 
@@ -80,7 +80,7 @@
             </div>
 
             <nuxt-link :to="`?id=${pack.id}#calculator`" class=" mt-8 text-xsm font-semibold flex">
-                Select package 
+                Select package
                 <span class=" flex items-center pl-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
                     <path id="chevron-right" d="M9,13.578l3.789-3.789L9,6" transform="translate(-7.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
@@ -94,7 +94,7 @@
     <div class=" mt-40 max-w-xl mx-auto" id="calculator">
             <div class=" flex space-x-5 items-center">
                 <button class=" bg-red-500 rounded-2xl px-3 py-1 text-white font-bold flex-grow-0 flex-shrink-0 text-xs">New</button>
-            
+
                 <div class=" text-base text-center font-bold">Our Capital Requirement Calculator</div>
             </div>
             <div class=" text-xs text-center mt-5">
@@ -132,7 +132,7 @@
                     <div class=" text-xs font-normal">Price per sack (in GHC)</div>
                     <div class=" text-xs font-bold">32</div>
                 </div>
-                
+
                 <div class=" flex justify-between">
                     <div class=" text-xs font-normal">Total Price (in GHC)</div>
                     <div class=" text-xs font-bold">4325</div>

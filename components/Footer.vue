@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-full max-w-6xl mx-auto px-4 border-t border-gray-300 py-10">
+    <div class=" w-full max-w-7xl mx-auto px-4 border-t border-gray-300 py-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
                 <h4 class=" text-xs font-bold">Discover</h4>
@@ -72,12 +72,12 @@
             </div>
 
         </div>
-        <div class=" w-full flex justify-center">   
+        <div class=" w-full flex justify-center">
             <div class=" mt-8 py-2 w-full lg:w-1/2 text-center">
                 <div class="text-xs font-normal text-gray-300">
                     Past performance is no guarantee of future results. Any historical returns, expected returns, or probability projections may not reflect actual future performance.
-                </div> 
-            
+                </div>
+
                 <div class=" text-xs font-normal mt-4">© 2020 A farm for me. All rights reserved. If you ate today thank a farmer.</div>
             </div>
         </div>
@@ -85,7 +85,7 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style scoped>

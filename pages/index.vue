@@ -2,38 +2,38 @@
   <div>
     <!-- main section -->
     <div
-      class="h-screen xl:overflow-x-hidden flex justify-center xl:justify-between items-center max-w-6xl px-4 mx-auto"
+      class="h-screen xl:overflow-x-hidden flex justify-center xl:justify-between items-center max-w-7xl px-4 mx-auto"
     >
-      <div class="w-full xl:w-7/12">
+      <div class="w-full xl:w-6/12">
         <h1 class=" text-lg lg:text-xl text-left font-bold">
-          The<br />
-          future of <br />investment.
+          The Future of <br />Investment.
         </h1>
         <p class=" mt-12 font-normal text-md">
-          Sit home, watch us dirty our hands, enjoy your profits.
+         Lease a piece of a full irrigated land in our farm estates, focus on your business and let us build your dream farm for you. Terms and conditions apply.
         </p>
-        <div class="lg:flex mt-6 space-x-5 items-center">
-          <button class=" app-button rounded-xl bg-primary text-white hover:bg-opacity-70 transition-all">
+        <div class="lg:flex mt-6 items-center">
+          <!-- <button class=" app-button rounded-xl bg-primary text-white hover:bg-opacity-70 transition-all">
             Start Farming
-          </button>
-          <button
-            class="app-button bg-white text-black border border-gray-50 hover:border-black rounded-xl"
+          </button> -->
+          <nuxt-link
+            to="/about-us"
+            class="app-button bg-primary text-white hover:opacity-70 rounded-xl transition-all"
           >
             Learn more
-          </button>
+          </nuxt-link>
         </div>
 
-        <div class=" flex space-x-5 mt-12">
+        <!-- <div class=" flex space-x-5 mt-12">
           <div
             class=" bg-gray-50 h-12 w-12 rounded-md"
             v-for="n in 5"
             :key="n"
           ></div>
-        </div>
+        </div> -->
       </div>
 
       <div
-        class=" hidden lg:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-10"
+        class=" hidden lg:block"
       >
         <img
           class=" h-screen w-full object-cover"
@@ -45,7 +45,7 @@
     <!-- end main section -->
 
     <div class=" bg-gray-100">
-    <div class=" py-24 mt-16 max-w-6xl px-4 mx-auto" id="new-opportunities">
+    <div class=" py-24 mt-16 max-w-7xl px-4 mx-auto" id="new-opportunities">
       <div class=" w-full flex justify-center">
         <div class=" w-full lg:w-1/2 text-center">
           <div class=" text-base font-bold mb-5">New opportunities</div>
@@ -97,7 +97,7 @@
     </div>
     </div>
 
-    <div class="py-28 max-w-6xl px-4 mx-auto">
+    <div class="py-28 max-w-7xl px-4 mx-auto">
       <div class=" bg-gray-100 rounded-lg w-full" style="height:706px"></div>
 
       <div class=" w-full flex justify-center mt-28">
@@ -139,12 +139,12 @@
                   </li>
                 </ul>
               </div>
- 
+
               <div class=" mt-5 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
               <div class=" mt-2 text-base font-bold">GHS {{pack.amount}}</div>
 
               <div class=" mt-8 text-sm font-bold flex">
-                Get Started 
+                Get Started
                 <span class=" flex items-center pl-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
                     <path id="chevron-right" d="M9,13.578l3.789-3.789L9,6" transform="translate(-7.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
@@ -158,7 +158,7 @@
     </div>
 
     <div class=" bg-become-a-partner bg-blue-300 bg-contain h-screen">
-      <div class=" max-w-6xl mx-auto px-4 flex flex-col-reverse lg:flex-row h-full space-x-0 items-center">
+      <div class=" max-w-7xl mx-auto px-4 flex flex-col-reverse lg:flex-row h-full space-x-0 items-center">
         <div class=" w-full lg:w-2/5 mt-24 pb-10 lg:pb-10">
             <div class=" text-base font-bold text-white mb-5">Become A Partner</div>
             <p class=" text-xs font-normal text-white mb-5">
@@ -176,7 +176,7 @@
     </div>
 
 
-    <div class=" py-28 max-w-6xl px-4 mx-auto mt-60">
+    <div class=" py-28 max-w-7xl px-4 mx-auto mt-60">
       <div class=" w-full flex justify-center">
         <div class="w-full lg:w-1/2 font-bold text-base text-center">
             We are excited helping achieve the sustainable development goals.

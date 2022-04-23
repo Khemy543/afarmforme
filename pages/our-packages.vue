@@ -1,15 +1,15 @@
 <template>
     <div>
-        <div class=" max-w-6xl mx-auto px-4 pt-48 ">
+        <div class=" max-w-7xl mx-auto px-4 pt-48 ">
             <div class=" text-lg lg:text-xl font-bold text-center">Our Packages.</div>
 
             <div class=" w-full flex justify-center">
-                
+
             <div class=" my-10 border rounded-2xl shadow-lg">
                 <ul class="list-reset flex p-1">
                     <li class="p-0 mb-0">
-                        <div 
-                        class="rounded-xl text-sm inline-block px-5 lg:px-14 cursor-pointer font-bold" 
+                        <div
+                        class="rounded-xl text-sm inline-block px-5 lg:px-14 cursor-pointer font-bold"
                         :class="activeTab == 1 ? 'bg-blue-200 text-white':'bg-white text-black'"
                         id="1"
                         @click="changeTab(1)"
@@ -19,7 +19,7 @@
                     </li>
                     <li class="p-0 mb-0">
                         <div
-                            class="text-sm inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold" 
+                            class="text-sm inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold"
                             :class="activeTab == 2 ? 'bg-blue-200 text-white':'bg-white text-black'"
                             id="2"
                             @click="changeTab(2)"
@@ -28,7 +28,7 @@
                     </li>
                     <li class="p-0 mb-0">
                         <div
-                            class="text-sm inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold" 
+                            class="text-sm inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold"
                             :class="activeTab == 3 ? 'bg-blue-200 text-white':'bg-white text-black'"
                             id="3"
                             @click="changeTab(3)">
@@ -50,7 +50,7 @@
                                     <thead>
                                         <tr class=" divide-x divide-gray-200">
                                             <th scope="col" class="px-6 py-3 w-1/5 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            
+
                                             </th>
                                             <th v-for="item in selectedPackage" :key="item.id" scope="col" class="px-6 py-3 w-1/5 text-center">
                                                 <div class=" text-sm font-bold">{{ item.name }}</div>
@@ -59,7 +59,7 @@
                                         </tr>
                                     </thead>
                                     <tbody class=" divide-y divide-gray-200">
-                                        
+
                                         <tr class=" divide-x divide-gray-200">
                                             <td class="px-6 py-4 text-left text-xsm  relative">
                                                 Minimum Investment
@@ -73,7 +73,7 @@
                                                 Units
                                             </td>
                                             <td v-for="item in selectedPackage" :key="item.id" v-html="item.units" class="px-6 text-xsm text-center tracking-normal py-4 ">
-                                                
+
                                             </td>
                                         </tr>
                                         <tr class=" divide-x divide-gray-200">

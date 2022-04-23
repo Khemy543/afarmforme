@@ -4,7 +4,7 @@
     <div class=" flex-1">
       <Nuxt />
     </div>
-    <div class="max-w-6xl mx-auto px-4 pb-48">
+    <div class="max-w-7xl mx-auto px-4 pb-48">
 
     <div class=" mt-28 py-11 px-5 lg:px-16 lg:flex space-x-0 bg-footer-banner bg-blue-200 rounded-lg items-center ">
       <div class="w-full lg:w-1/2 lg:pr-10">
@@ -19,7 +19,7 @@
           <div class=" text-sm font-bold text-white">Simple Pricing</div>
           <div class=" mt-4 text-xs font-normal text-white">
             We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
-          </div>   
+          </div>
         </div>
 
         <div class=" w-full lg:w-1/2 mt-4 lg:mt-0">

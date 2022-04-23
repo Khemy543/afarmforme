@@ -1,7 +1,7 @@
 <template>
 <div>
   <nav class="fixed inset-x-0 py-1 bg-white z-30">
-    <div class="container max-w-6xl px-4 mx-auto flex flex-wrap items-center justify-between">
+    <div class="container max-w-7xl px-4 mx-auto flex flex-wrap items-center justify-between">
 
       <div class="w-full relative flex items-center justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <nuxt-link to="/" class="text-base font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
@@ -49,7 +49,7 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="hidden lg:flex lg:flex-grow h-screen lg:h-auto">
         <ul class="flex flex-col lg:flex-row list-none ml-auto items-center">
           <li class="nav-item">

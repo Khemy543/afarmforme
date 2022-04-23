@@ -1,13 +1,13 @@
 <template>
   <div>
-      <div class=" max-w-6xl mx-auto px-4 pt-48">
+      <div class=" max-w-7xl mx-auto px-4 pt-48">
             <div class=" text-lg lg:text-xl font-bold text-center">Contact Us.</div>
 
             <div class=" mt-10 lg:flex lg:space-x-5 space-y-5 lg:space-y-0 border-t-2 border-gray-200 pt-10">
                 <div class=" w-full lg:w-2/5">
                     <div class=" font-bold text-sm">Head Office Location</div>
                     <div class=" text-xs font-normal">F-393/4 Otswe Street, Osu Ako-Adjei<br/>Accra - Ghana<br/>00233</div>
-                
+
                     <div class=" font-bold text-sm">Contact Numbers</div>
                     <div class=" text-xs font-normal">
                         Ghana:<br/><a href="tel:+233559186521">+233 559 1865 21</a><br/><a href="tel:+233302906492">+233 302-906-492</a>
@@ -18,7 +18,7 @@
 
                     <div class=" font-bold text-sm">Office Hours</div>
                     <div  class=" text-xs font-normal">Monday to Friday: 8am - 5pm Last Saturday of every month is for farm visits.</div>
-                
+
                     <div class=" w-full flex space-x-10 mt-8">
                         <a target="_blank" :href="social.link" class=" h-11 w-11 rounded-full cursor-pointer flex justify-center items-center bg-gray-200" v-for="social in socialLinks" :key="social.id">
                             <img :src="social.icon" :alt="social.name">
@@ -30,13 +30,13 @@
 
                         <form @submit.prevent="handleContactUs" class=" space-y-4 w-full">
                             <input type="text" placeholder="Full name" class=" gray-input" v-model="form.name"/>
-                            
+
                             <input type="email" placeholder="Email address" class=" gray-input" v-model="form.email"/>
-                            
+
                             <input type="text" placeholder="Message title" class=" gray-input" v-model="form.title"/>
 
                             <textarea name="" id="" class=" gray-input h-40" placeholder="Type your message..." v-model="form.message" ></textarea>
-                            
+
                             <button class=" app-button rounded-xl bg-primary text-white w-full">Send Message</button>
                         </form>
                     </div>
