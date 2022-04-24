@@ -15,7 +15,7 @@
                         Careers
                     </li>
                     <li class=" text-xs font-normal py-2">
-                        How it works
+                        <nuxt-link to="/how-it-works">How it works</nuxt-link>
                     </li>
                     <li class=" text-xs font-normal py-2">
                         <nuxt-link to='/csr'>Corporate Social Responsibility</nuxt-link>
@@ -30,7 +30,7 @@
                         Blog
                     </li>
                     <li class=" text-xs font-normal py-2">
-                        Our farms
+                        <nuxt-link to="/our-packages">Our farms</nuxt-link>
                     </li>
                     <li class=" text-xs font-normal py-2">
                         <nuxt-link to='/faqs'>Frequently Asked Questions</nuxt-link>
