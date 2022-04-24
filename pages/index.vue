@@ -2,14 +2,14 @@
   <div>
     <!-- main section -->
     <div
-      class="h-screen xl:overflow-x-hidden flex justify-center xl:justify-between items-center max-w-7xl px-4 mx-auto">
-      <div class="hidden lg:flex w-full h-full items-center overflow-x-hidden">
+      class="h-screen flex justify-center xl:justify-between items-center max-w-7xl px-4 mx-auto">
+      <div class="flex w-full h-full items-center overflow-x-hidden">
         <div class=" w-full h-3/5 mt-5">
           <div class="relative w-full h-full">
             <!-- first slide -->
             <div
               class="absolute inset-0 w-full h-full flex transition-all ease-in-out duration-1000 transform translate-x-0 slide">
-              <div class="w-1/2">
+              <div class="w-full lg:w-1/2">
                 <h1 class=" text-lg lg:text-xl text-left font-bold">
                   The Future of <br />Investment.
                 </h1>
@@ -25,7 +25,7 @@
                   </nuxt-link>
                 </div>
               </div>
-              <div class=" w-1/2 flex flex-col space-y-5">
+              <div class=" w-1/2 hidden lg:flex flex-col space-y-5">
                 <div class=" flex space-x-5 h-1/2">
                   <div class=" w-1/2 h-full bg-gray-200"></div>
                   <div class=" w-1/2 h-full bg-gray-200"></div>
@@ -38,7 +38,7 @@
             <!--  second slide -->
             <div
               class="absolute inset-0 w-full h-full flex transition-all ease-in-out duration-1000 transform translate-x-full slide">
-              <div class="w-1/2">
+              <div class="w-full lg:w-1/2">
                 <h1 class=" text-lg lg:text-xl text-left font-bold">
                   The Future of <br />Investment.
                 </h1>
@@ -52,7 +52,7 @@
                   </nuxt-link>
                 </div>
               </div>
-              <div class="w-1/2 h-full flex justify-end">
+              <div class="w-1/2 h-full hidden lg:flex justify-end">
                 <div class=" h-full carousel-width relative bg-gray-200">
                   <div class=" absolute h-3/4 w-3/4 -bottom-10 -left-10 z-10 grid grid-cols-2 gap-5">
                     <div class=" w-full bg-gray-400 h-full"></div>
@@ -66,7 +66,7 @@
             <!-- third slide -->
             <div
               class="absolute inset-0 w-full h-full flex transition-all ease-in-out duration-1000 transform translate-x-full slide">
-              <div class="w-1/2">
+              <div class="w-full lg:w-1/2">
                 <h1 class=" text-lg lg:text-xl text-left font-bold">
                   Start a community wealth creation project
                 </h1>
@@ -83,7 +83,7 @@
                   </nuxt-link>
                 </div>
               </div>
-              <div class="w-1/2 h-full flex justify-end">
+              <div class="w-1/2 h-full hidden lg:flex justify-end">
                 <div class=" h-full carousel-width relative bg-gray-200">
                   <div class=" absolute h-3/4 w-3/4 -bottom-10 -left-10 z-10 grid grid-cols-2 gap-5">
                     <div class=" w-full bg-gray-400 h-full"></div>
@@ -97,7 +97,7 @@
             <!-- fourth slide -->
             <div
               class="absolute inset-0 w-full h-full flex transition-all ease-in-out duration-1000 transform translate-x-full slide">
-              <div class="w-1/2">
+              <div class="w-full lg:w-1/2">
                 <h1 class=" text-lg lg:text-xl text-left font-bold">
                   A Farm For Me Estates
                 </h1>
@@ -112,7 +112,7 @@
                   </nuxt-link>
                 </div>
               </div>
-              <div class="w-1/2 h-full flex justify-end">
+              <div class="w-1/2 h-full hidden lg:flex justify-end">
                 <div class=" h-full carousel-width relative bg-gray-200">
                   <div class=" absolute h-3/4 w-3/4 -bottom-10 -left-10 z-10 grid grid-cols-2 gap-5">
                     <div class=" w-full bg-gray-400 h-full"></div>
