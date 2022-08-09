@@ -29,24 +29,24 @@
           class="lg:flex lg:flex-grow h-screen lg:h-auto">
           <ul class="flex flex-col lg:flex-row list-none ml-auto" @click="() => showMenu = false">
             <li class="nav-item">
-              <nuxt-link to="/about-us" class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75">
+              <nuxt-link to="/about-us" class="mx-4 py-5 lg:py-2 flex items-center text-sm mb-3 text-black hover:opacity-75">
                 <span>About us</span>
               </nuxt-link>
             </li>
             <li class="nav-item">
               <nuxt-link to="/our-packages"
-                class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75">
+                class="mx-4 py-5 lg:py-2 flex items-center text-sm mb-3 text-black hover:opacity-75">
                 <span>Products</span>
               </nuxt-link>
             </li>
             <li class="nav-item">
               <nuxt-link to="/how-it-works"
-                class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75">
+                class="mx-4 py-5 lg:py-2 flex items-center text-sm mb-3 text-black hover:opacity-75">
                 <span>How it works</span>
               </nuxt-link>
             </li>
             <li class="nav-item relative group">
-              <div class="mx-4 py-5 lg:py-2 flex items-center space-x-1 text-sm text-black hover:opacity-75 cursor-pointer" @mouseenter="partner=true" @mouseleave="partner=false">
+              <div class="mx-4 py-5 lg:py-2 flex items-center space-x-1 text-sm mb-3 text-black hover:opacity-75 cursor-pointer" @mouseenter="partner=true" @mouseleave="partner=false">
                 <span>Partners</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2">
@@ -71,7 +71,7 @@
             </li>
             <li class="nav-item">
               <nuxt-link to="/contact-us"
-                class="mx-4 py-5 lg:py-2 flex items-center text-sm text-black hover:opacity-75">
+                class="mx-4 py-5 lg:py-2 flex items-center text-sm mb-3 text-black hover:opacity-75">
                 <span>Contacts</span>
               </nuxt-link>
             </li>
@@ -81,7 +81,7 @@
         <div class="hidden lg:flex lg:flex-grow h-screen lg:h-auto">
           <ul class="flex flex-col lg:flex-row list-none ml-auto items-center">
             <li class="nav-item">
-              <nuxt-link to="/auth/login" class="mx-4 py-5 lg:py-2 flex items-center text-sm hover:opacity-75">
+              <nuxt-link to="/auth/login" class="mx-4 py-5 lg:py-2 flex items-center text-sm mb-3 hover:opacity-75">
                 <span>Login</span>
               </nuxt-link>
             </li>

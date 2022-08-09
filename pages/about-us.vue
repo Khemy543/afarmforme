@@ -12,7 +12,7 @@
                     <br/><br/>
                     </p> 
 
-                    <div class=" text-sm font-bold">Our Mission</div>
+                    <div class=" text-sm mb-3 font-bold">Our Mission</div>
 
                     <p class=" text-xs font-normal">
                         To promote innovations in sustainable agriculture.
@@ -21,23 +21,23 @@
                         <br/>
                         Provide employment in rural communities to minimise urban migration.
                     </p>
-                    <div class=" text-sm font-bold">Our Vision</div>
+                    <div class=" text-sm mb-3 font-bold">Our Vision</div>
 
                     <p class=" text-xs font-normal">
                         Farm for me is a community development driven organization, whose vision is to become one of the best agribusiness companies to improve livelihoods of rural communities through sustainable agricultural practices.
                     </p>
-                    <div class=" text-sm font-bold">Who We Are</div>
+                    <div class=" text-sm mb-3 font-bold">Who We Are</div>
 
                     <p class=" text-xs font-normal">
                         We are a team of innovative entrepreneurs, passionate about improving efficiencies in agriculture and achieving sustainable goal number 1.
                     </p>
-                    <div class=" text-sm font-bold">What We Do</div>
+                    <div class=" text-sm mb-3 font-bold">What We Do</div>
 
                     <p class=" text-xs font-normal">
                         We are providing a digital platform that will give individuals the opportunity to own farm units and earn returns without being physically involved in the day-to-day activities on the farm.
                     </p>
                     
-                    <div class=" text-sm font-bold">Why We Do It</div>
+                    <div class=" text-sm mb-3 font-bold">Why We Do It</div>
 
                     <p class=" text-xs font-normal">
                        We believe that improving agriculture means improving society by way of ending poverty, ending hunger and causing sustainable employments.
@@ -57,7 +57,7 @@
                 <div class=" mt-8 grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-5">
                     <div v-for="value in core_values" :key="value.id">
                         <img :src="value.icon" :alt="value.head">
-                        <div class=" text-sm font-bold text-white">{{value.head}}</div>
+                        <div class=" text-sm mb-3 font-bold text-white">{{value.head}}</div>
                         <p class=" text-xs font-normal text-white">{{value.text}}</p>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
 
                         </div>
                         <div class="mt-2 text-center">
-                            <div class=" text-sm font-bold">Name</div>
+                            <div class=" text-sm mb-3 font-bold">Name</div>
                             <div class=" text-xs font-normal">Name</div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                     <div class=" h-1/2 bg-gradient-to-t from-black absolute w-full bottom-0">
                         <div class="absolute w-full bottom-0 inset-x-0 px-2 text-white ">
                             <div class="text-xxs font-bold tracking-normal -mb-2">{{value.name}}</div>
-                            <div class=" text-small text-white font-normal">{{value.title}}</div>
+                            <div class=" text-sm mb-3all text-white font-normal">{{value.title}}</div>
                         </div>
                     </div>
                 </div>

@@ -16,7 +16,7 @@
       <div class=" lg:flex lg:space-x-4 w-full">
         <div class=" w-full lg:w-1/2 mt-4 lg:mt-0">
           <img src="~/static/img/Footer/simple-pricing-icon.svg" alt="simple pricing"/>
-          <div class=" text-sm font-bold text-white">Simple Pricing</div>
+          <div class=" text-sm mb-3 font-bold text-white">Simple Pricing</div>
           <div class=" mt-4 text-xs font-normal text-white">
             We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
           </div>
@@ -24,7 +24,7 @@
 
         <div class=" w-full lg:w-1/2 mt-4 lg:mt-0">
           <img src="~/static/img/Footer/secure-transaction-icon.svg" alt="secure transaction"/>
-          <div class=" text-sm font-bold text-white">Simple Pricing</div>
+          <div class=" text-sm mb-3 font-bold text-white">Simple Pricing</div>
           <div class=" mt-4 text-xs font-normal text-white">
             We know that every cent counts and budgets need to be clear. We will always be upfront with you about what our services will cost.
           </div>

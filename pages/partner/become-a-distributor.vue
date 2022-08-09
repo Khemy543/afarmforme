@@ -62,7 +62,7 @@
         <div class=" text-base text-center font-bold max-w-xl mx-auto">Get Started Now. Select A Package, And We Will Supply!</div>
         <div class=" lg:flex lg:space-x-4 w-full space-y-5 lg:space-y-0 mt-10">
         <div class=" px-5 py-10 w-full lg:w-1/4 rounded-2xl" :class="pack.id % 2 === 0 ? 'bg-white shadow-lg border border-gray-100' : 'bg-gray-100'" v-for="pack in packages" :key="pack.id">
-            <div class=" font-bold text-sm">{{pack.title}}</div>
+            <div class=" font-bold text-sm mb-3">{{pack.title}}</div>
 
             <div class=" mt-6">
                 <ul class=" space-y-2">

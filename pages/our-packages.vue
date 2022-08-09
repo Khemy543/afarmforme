@@ -23,19 +23,19 @@
         <div class=" my-10 border rounded-2xl shadow-lg">
           <ul class="list-reset flex p-1">
             <li class="p-0 mb-0">
-              <div class="rounded-xl text-sm inline-block px-5 lg:px-14 cursor-pointer font-bold"
+              <div class="rounded-xl text-sm mb-3 inline-block px-5 lg:px-14 cursor-pointer font-bold"
                 :class="activeTab == 1 ? 'bg-blue-200 text-white' : 'bg-white text-black'" id="1" @click="changeTab(1)">
                 Individual
               </div>
             </li>
             <li class="p-0 mb-0">
-              <div class="text-sm inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold"
+              <div class="text-sm mb-3 inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold"
                 :class="activeTab == 2 ? 'bg-blue-200 text-white' : 'bg-white text-black'" id="2" @click="changeTab(2)">
                 Group
               </div>
             </li>
             <li class="p-0 mb-0">
-              <div class="text-sm inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold"
+              <div class="text-sm mb-3 inline-block px-5 lg:px-14 rounded-xl cursor-pointer font-bold"
                 :class="activeTab == 3 ? 'bg-blue-200 text-white' : 'bg-white text-black'" id="3" @click="changeTab(3)">
                 Organizations
               </div>
@@ -60,7 +60,7 @@
                       </th>
                       <th v-for="item in selectedPackage" :key="item.id" scope="col"
                         class="px-6 py-3 w-1/5 text-center">
-                        <div class=" text-sm font-bold">{{ item.name }}</div>
+                        <div class=" text-sm mb-3 font-bold">{{ item.name }}</div>
                         <p class="text-xxs font-normal tracking-normal text-gray-300">{{ item.description }}</p>
                       </th>
                     </tr>

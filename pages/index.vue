@@ -171,7 +171,7 @@
               <img :src="value.image" :alt="value.name" class=" w-full h-full object-cover" />
               <div class=" h-1/2 bg-gradient-to-t from-black absolute w-full bottom-0">
                 <div class="absolute w-full bottom-0 inset-x-0 px-7 pb-7 text-white ">
-                  <div class="text-sm font-bold text-white">{{ value.name }}</div>
+                  <div class="text-sm mb-3 font-bold text-white">{{ value.name }}</div>
                   <div class=" mt-1 text-xs font-normal text-white">{{ value.description }}</div>
                 </div>
               </div>
@@ -182,7 +182,7 @@
         <div class=" mt-52 w-full flex justify-center">
           <div>
             <h3 class="text-center text-base font-bold mb-5">Our farms.</h3>
-            <p class="text-center text-sm font-normal">
+            <p class="text-center text-sm mb-3 font-normal">
               All farms are automatically insured.
             </p>
 
@@ -191,9 +191,9 @@
             </div>
 
             <div class=" mt-10  flex justify-center w-full">
-              <button class=" app-button rounded-xl text-black border border-gray-50 hover:border-black hover:bg-white">
+              <nuxt-link to="/our-packages" class=" app-button rounded-xl text-black border border-gray-50 hover:border-black hover:bg-white">
                 Browse Farms
-              </button>
+              </nuxt-link>
             </div>
           </div>
 
@@ -224,7 +224,7 @@
           <div class=" px-6 py-12 w-1/3 rounded-xl"
             :class="pack.id === 2 ? 'bg-white shadow-lg border border-gray-200' : 'bg-gray-100'"
             v-for="pack in packages" :key="pack.id">
-            <div class=" font-bold text-sm">{{ pack.title }}</div>
+            <div class=" font-bold text-sm mb-3">{{ pack.title }}</div>
             <div class="text-xs font-normal mt-5">
               {{ pack.description }}
             </div>
@@ -250,10 +250,10 @@
               </ul>
             </div>
 
-            <div class=" mt-5 text-small uppercase text-gray-500 font-bold">STARTING AT</div>
+            <div class=" mt-5 text-sm mb-3all uppercase text-gray-500 font-bold">STARTING AT</div>
             <div class=" mt-2 text-base font-bold">GHS {{ pack.amount }}</div>
 
-            <div class=" mt-8 text-sm font-bold flex">
+            <nuxt-link to="/auth/login" class=" mt-8 text-sm mb-3 font-bold flex">
               Get Started
               <span class=" flex items-center pl-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="5.6" height="9.699" viewBox="0 0 5.6 9.699">
@@ -261,7 +261,7 @@
                     fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
                 </svg>
               </span>
-            </div>
+            </nuxt-link>
           </div>
         </div>
 
@@ -271,7 +271,7 @@
     <div class=" bg-become-a-partner bg-blue-300 bg-contain h-screen">
       <div class=" max-w-7xl mx-auto px-4 flex flex-col-reverse lg:flex-row h-full space-x-0 items-center">
         <div class=" w-full lg:w-2/5 mt-24 pb-10 lg:pb-10">
-          <div class=" text-base font-bold text-white mb-5">Become A Partner</div>
+          <div class=" text-base font-bold text-white mb-5">Become A Distributor</div>
           <p class=" text-xs font-normal text-white mb-5">
             A Farm For Me offers its clients a variety of well-tailored and pre-prepared farm sponsorship packages, so
             you can choose the option that best meets your investment needs. We offer a number of different packages to
@@ -321,10 +321,10 @@ export default {
     },
     nextSlide() {
       let activeSlide = document.querySelector('.slide.translate-x-0');
-      if (activeSlide) {
+      let nextSlide = activeSlide.nextElementSibling;
+      if (activeSlide && nextSlide) {
         activeSlide.classList.remove('translate-x-0');
         activeSlide.classList.add('-translate-x-full');
-        let nextSlide = activeSlide.nextElementSibling;
         if (nextSlide) {
           nextSlide.classList.remove('translate-x-full');
           nextSlide.classList.add('translate-x-0');
@@ -334,10 +334,10 @@ export default {
 
     previousSlide() {
       let activeSlide = document.querySelector('.slide.translate-x-0');
-      if (activeSlide) {
+      let previousSlide = activeSlide.previousElementSibling;
+      if (activeSlide && previousSlide) {
         activeSlide.classList.remove('translate-x-0');
         activeSlide.classList.add('translate-x-full');
-        let previousSlide = activeSlide.previousElementSibling;
         if (previousSlide) {
           previousSlide.classList.remove('-translate-x-full');
           previousSlide.classList.add('translate-x-0');

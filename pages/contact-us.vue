@@ -5,18 +5,18 @@
 
             <div class=" mt-10 lg:flex lg:space-x-5 space-y-5 lg:space-y-0 border-t-2 border-gray-200 pt-10">
                 <div class=" w-full lg:w-2/5">
-                    <div class=" font-bold text-sm">Head Office Location</div>
+                    <div class=" font-bold text-sm mb-3">Head Office Location</div>
                     <div class=" text-xs font-normal">F-393/4 Otswe Street, Osu Ako-Adjei<br/>Accra - Ghana<br/>00233</div>
 
-                    <div class=" font-bold text-sm">Contact Numbers</div>
+                    <div class=" font-bold text-sm mb-3">Contact Numbers</div>
                     <div class=" text-xs font-normal">
                         Ghana:<br/><a href="tel:+233559186521">+233 559 1865 21</a><br/><a href="tel:+233302906492">+233 302-906-492</a>
                     </div>
 
-                    <div class=" font-bold text-sm">Email Address</div>
+                    <div class=" font-bold text-sm mb-3">Email Address</div>
                     <div class=" text-xs font-normal"><a href="mailto:inquiries@afarmforme.com">inquiries@afarmforme.com</a></div>
 
-                    <div class=" font-bold text-sm">Office Hours</div>
+                    <div class=" font-bold text-sm mb-3">Office Hours</div>
                     <div  class=" text-xs font-normal">Monday to Friday: 8am - 5pm Last Saturday of every month is for farm visits.</div>
 
                     <div class=" w-full flex space-x-10 mt-8">
@@ -26,7 +26,7 @@
                     </div>
 
                     <div class=" mt-28 w-full">
-                        <div class=" text-sm font-bold">Send Us A Message</div>
+                        <div class=" text-sm mb-3 font-bold">Send Us A Message</div>
 
                         <form @submit.prevent="handleContactUs" class=" space-y-4 w-full">
                             <input type="text" placeholder="Full name" class=" gray-input" v-model="form.name"/>

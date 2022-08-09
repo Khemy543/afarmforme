@@ -52,7 +52,7 @@ module.exports = {
         'xxs' : ['14px', '18px'],
         'xs' : ['15px', '22px'],
         'xsm': ['16px', '18px'],
-        'sm' : ['16px', '55px'],
+        'sm' : ['16px'],
         'sms':['16px', '42px'],
         'md' : ['20px','28px'],
         'base' : ['30px', '42px'],

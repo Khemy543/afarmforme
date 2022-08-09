@@ -74,7 +74,7 @@
                 <div class=" mt-8 grid grid-cols-1 lg:grid-cols-4 gap-5">
                     <div v-for="value in features" :key="value.id">
                         <img src="~/static/img/about/teamwork-icon.svg" alt="valuehead">
-                        <div class=" text-sm font-bold text-white">{{value.head}}</div>
+                        <div class=" text-sm mb-3 font-bold text-white">{{value.head}}</div>
                         <p class=" text-xs font-normal text-white">{{value.text}}</p>
                     </div>
                 </div>

@@ -42,7 +42,7 @@
                 <div class=" w-full grid grid-cols-2 gap-x-3 gap-y-4">
                     <div>
                         <div class=" w-full bg-gray-100 p-6 rounded-lg">
-                            <div class=" text-sm font-bold">The Environment</div>
+                            <div class=" text-sm mb-3 font-bold">The Environment</div>
                             <div class=" text-xxs">
                                 As a company, we are aware of the scale of impact our operations have on the environment. As such, we are committed to exploring ways of reducing the impact of what we do. Therefore, we will take a responsible attitude and lead the way in developing initiatives such as planting more trees, and using good farming methods to further improve our environment footprint.
                             </div>
@@ -51,7 +51,7 @@
                     </div>
                     <div>
                         <div class=" w-full bg-gray-100 p-6 rounded-lg">
-                            <div class=" text-sm font-bold">Quality Services And Produce</div>
+                            <div class=" text-sm mb-3 font-bold">Quality Services And Produce</div>
                             <div class=" text-xxs">
                                 We are committed to establishing mutually beneficial relations with our clients. We honour and enforce the terms of contract to which we commit. All of our employees share a responsibility for ensuring that the relationship we have with our clients are conducted with high standards of honesty, integrity, openness and professionalism. The needs of our clients remain our first consideration, and understanding these requirements ensure that we are able to develop and deliver solutions which are built around our clients’ specific needs.
                             </div>
@@ -60,7 +60,7 @@
                     </div>
                     <div class=" -mt-14">
                         <div class=" w-full bg-gray-100 p-6 rounded-lg">
-                            <div class=" text-sm font-bold">Communities</div>
+                            <div class=" text-sm mb-3 font-bold">Communities</div>
                             <div class=" text-xxs">
                                 Our company wants to make realistic and lasting differences in the communities in which we operate. Our community based initiatives matter to us because we employ the local people and serve local businesses and individuals. We want to create lasting social and economic benefits for these communities and engage with them to earn their respect and trust. We have chosen to focus on putting up infrastructure such as libraries, skills acquisition and development centres, community warehouses etc. We have collaborated with other NGO’s to provide health, and educational services to the communities in which we operate.
                             </div>
@@ -69,7 +69,7 @@
                     </div>
                     <div>
                         <div class=" w-full bg-gray-100 p-6 rounded-lg">
-                            <div class=" text-sm font-bold">The Workplace</div>
+                            <div class=" text-sm mb-3 font-bold">The Workplace</div>
                             <div class=" text-xxs">
                                 We expect all of our employees to use their best endeavours to deliver our company’s goals. On that note, we aim to create, develop and lead highly motivated teams who have up to date competencies and skills and believe in our company’s values. We recruit, employ, promote and reward based on an individual’s ability to do the job and we are committed to develop and enhance each employee’s skills and capabilities to our mutual benefits.
                            </div>
