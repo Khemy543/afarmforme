@@ -68,12 +68,14 @@
         </div>
 
         <div class=" max-w-7xl mx-auto px-4 mt-16">
-            <div class="bg-teal-500 py-10 px-5 lg:px-16 rounded-xl">
+            <div class="bg-green-700 py-10 px-5 lg:px-16 rounded-xl">
                 <div class=" text-base font-bold text-white">Our special features</div>
 
                 <div class=" mt-8 grid grid-cols-1 lg:grid-cols-4 gap-5">
                     <div v-for="value in features" :key="value.id">
-                        <img src="~/static/img/about/teamwork-icon.svg" alt="valuehead">
+                        <button class="p-2 rounded-xl bg-gray-normal">
+                            <img :src="value.icon" :alt="value.head" class="w-5 h-5">
+                        </button>
                         <div class=" text-sm mb-3 font-bold text-white">{{value.head}}</div>
                         <p class=" text-xs font-normal text-white">{{value.text}}</p>
                     </div>
@@ -104,43 +106,43 @@ export default {
             features : [
                 {
                     id:1,
-                    icon:"",
+                    icon:"/img/how-it-works/buliding.png",
                     head:"Farm Insurance",
                     text:"To safeguard your investments, all of our farms have been insured against natural disasters such as flooding, pests, bush fire and other unforeseen setbacks."
                 },
                 {
                     id:2,
-                    icon:"",
+                    icon:"/img/how-it-works/convert.png",
                     head :"Excellent Farm Management Practices",
                     text:"Our farmers and field managers have over 20 years of experience in growing crops and rearing animals. They come from diverse backgrounds and use innovative means to bring out the best produce you can think of."
                 },
                 {
                     id:3,
-                    icon:"",
+                    icon:"/img/how-it-works/scroll.png",
                     head:"Ready Market",
                     text:"We have on standby ready off-takers who will purchase our farm produce once they are ready for cultivation. We serve as out growers for many producing and manufacturing companies."
                 },
                 {
                     id:4,
-                    icon:"",
+                    icon:"/img/how-it-works/note-2.png",
                     head:"Mechanised Farming",
                     text:"To increase production and increase efficiency, we employ the use of technology and farm machineries such as tractors, ploughing machines, harvesters etc. on all of our farms."
                 },
                 {
                     id:5,
-                    icon:"/img/how-it-works/dashboard-graph-analytics-report-svgrepo-com.svg",
+                    icon:"/img/how-it-works/tree.png",
                     head:"Responsive Dashboard",
                     text:"Our dashboard gives you the opportunity to monitor your farm wherever you find yourself at any point in time. We update our clients weekly by way of drone feeds, text messages, videos, and pictures. Clients are also able to message their assigned customer care personnel’s through the dashboard."
                 },
                 {
                     id:6,
-                    icon:"",
+                    icon:"/img/how-it-works/messages.png",
                     head:"IoT Smart Farming",
                     text:"We have installed Internet of things sensors on our farms, which makes it easy to monitor our farms. Thus remote crop and soil monitoring, stats on livestock feeding and produce, drone monitoring, climate monitoring and forecasting, predictive analytics for crops and livestock, smart pest management, smart logistics and warehousing."
                 },
                 {
                     id:7,
-                    icon:"",
+                    icon:"/img/how-it-works/story.png",
                     head:"Sustianable And Eco-Friendly Farming Practices",
                     text:"Because we care about the environments, in which we work in, we involve the use of alternative energy sources such as hydropower, solar panel or wind farms which are eco-friendly. Our farmers decrease the chance of plant and vegetable diseases through crop diversification on the surface of the lands and through crop rotation techniques se also practice agroforestry."
                 }

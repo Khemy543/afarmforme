@@ -5,9 +5,9 @@
 
             <div class=" mt-6 text-center text-xs tracking-normal">We believe in global partnerships.</div>
 
-            <div class="my-40 lg:flex">
+            <div class="my-40 lg:flex items-center">
                 <div class=" w-full lg:w-1/2">
-
+                    <img src="~/static/img/partners/hero-logo.png" alt="hero">
                 </div>
                 <div class=" w-full lg:w-1/2">
                     <div class=" text-base font-bold tracking-normal">
@@ -50,14 +50,11 @@
                         Join As A Supplier
                     </button>
                 </div>
-                <div class=" w-full lg:w-7/12 bg-gray-200 rounded-md" style="height:620px;">
-
-                </div>
+                <img src="~/static/img/partners/supplier.png" alt="partner" class=" w-full lg:w-7/12 rounded-md object-cover object-center" style="height:620px;" >
             </div>
             <div class="flex flex-col-reverse lg:flex-row mt-28 lg:space-x-14 lg:space-y-0">
-                <div class=" w-full lg:w-7/12 bg-gray-200 mt-5 lg:mt-0 rounded-md" style="height:620px;">
+                <img src="~/static/img/partners/off-taker.png" alt="off-taker" class=" w-full lg:w-7/12 object-center object-cover mt-5 lg:mt-0 rounded-md" style="height:620px;">
 
-                </div>
                 <div class="w-full lg:w-5/12">
                     <div class=" text-base font-bold">Off-Taker</div>
                     <div class=" mt-4">
@@ -109,9 +106,7 @@
                         </nuxt-link>
                     </div>
                 </div>
-                <div class="w-full lg:w-7/12 bg-gray-200 rounded-md" style="height:620px;">
-
-                </div>
+                <img src="~/static/img/partners/individual.png" alt="individual" class="w-full lg:w-7/12 object-cover object-center rounded-md" style="height:620px;">
             </div>
         </div>
   </div>

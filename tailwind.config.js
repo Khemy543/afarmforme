@@ -27,6 +27,7 @@ module.exports = {
         },
         'indigo':colors.indigo,
         gray : {
+          'normal': '#EAEAEA',
           '50':'#D1D1D1',
           '100':'#F4F4F4',
           '200' : '#E8E8E8',
@@ -38,7 +39,8 @@ module.exports = {
         },
         green:{
           "500" : '#1E5F04',
-          "600":'#206E00'
+          "600":'#206E00',
+          "700": '#319F86'
         },
         red:{
           "500":'#B50000'
