@@ -26,13 +26,11 @@
                 </div>
               </div>
               <div class=" w-1/2 hidden lg:flex flex-col space-y-5">
-                <div class=" flex space-x-5 h-1/2">
-                  <div class=" w-1/2 h-full bg-gray-200"></div>
-                  <div class=" w-1/2 h-full bg-gray-200"></div>
+                <div class=" flex space-x-5 h-1/2 overflow-hidden">
+                  <img src="~/static/img/hero/1-5.png" class=" w-1/2 h-full object-cover object-center" alt="">
+                  <img src="~/static/img/hero/1-3.jpg" class=" w-1/2 h-full object-cover object-center" alt="">
                 </div>
-                <div class=" w-full h-1/2 bg-gray-200">
-
-                </div>
+                <img src="~/static/img/hero/1-8.png" class=" w-full h-1/2 object-cover object-center" alt="">
               </div>
             </div>
             <!--  second slide -->
@@ -53,12 +51,13 @@
                 </div>
               </div>
               <div class="w-1/2 h-full hidden lg:flex justify-end">
-                <div class=" h-full carousel-width relative bg-gray-200">
+                <div class=" h-full carousel-width relative">
+                  <img src="~/static/img/hero/1-7.png" alt="" class="w-full h-full object-cover object-center">
                   <div class=" absolute h-3/4 w-3/4 -bottom-10 -left-10 z-10 grid grid-cols-2 gap-5">
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
+                    <img src="~/static/img/hero/c1.jpg" class=" w-full h-full object-cover object-center">
+                    <img src="~/static/img/hero/c3.webp" class=" w-full h-full object-cover object-center">
+                    <img src="~/static/img/hero/c4.jpg" class=" w-full h-full object-cover object-center">
+                    <img src="~/static/img/hero/1-6.png" class=" w-full h-full object-cover object-center">
                   </div>
                 </div>
               </div>
@@ -83,15 +82,12 @@
                   </nuxt-link>
                 </div>
               </div>
-              <div class="w-1/2 h-full hidden lg:flex justify-end">
-                <div class=" h-full carousel-width relative bg-gray-200">
-                  <div class=" absolute h-3/4 w-3/4 -bottom-10 -left-10 z-10 grid grid-cols-2 gap-5">
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                  </div>
+              <div class=" w-1/2 hidden lg:flex flex-col space-y-5">
+                <div class=" flex space-x-5 h-1/2 overflow-hidden">
+                  <img src="~/static/img/hero/1-5.png" class=" w-1/2 h-full object-cover object-center" alt="">
+                  <img src="~/static/img/hero/1-3.jpg" class=" w-1/2 h-full object-cover object-center" alt="">
                 </div>
+                <img src="~/static/img/hero/1-8.png" class=" w-full h-1/2 object-cover object-center" alt="">
               </div>
             </div>
             <!-- fourth slide -->
@@ -113,12 +109,13 @@
                 </div>
               </div>
               <div class="w-1/2 h-full hidden lg:flex justify-end">
-                <div class=" h-full carousel-width relative bg-gray-200">
+                <div class=" h-full carousel-width relative">
+                  <img src="~/static/img/hero/1-7.png" alt="" class="w-full h-full object-cover object-center">
                   <div class=" absolute h-3/4 w-3/4 -bottom-10 -left-10 z-10 grid grid-cols-2 gap-5">
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
-                    <div class=" w-full bg-gray-400 h-full"></div>
+                    <img src="~/static/img/hero/c1.jpg" class=" w-full h-full object-cover object-center">
+                    <img src="~/static/img/hero/c3.webp" class=" w-full h-full object-cover object-center">
+                    <img src="~/static/img/hero/c4.jpg" class=" w-full h-full object-cover object-center">
+                    <img src="~/static/img/hero/1-6.png" class=" w-full h-full object-cover object-center">
                   </div>
                 </div>
               </div>
